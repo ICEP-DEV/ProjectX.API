@@ -1,0 +1,12 @@
+C:\Users\221447646\ProjectX.API\ProjectX.Service\bin\Debug\net8.0\ProjectX.Service.deps.json
+C:\Users\221447646\ProjectX.API\ProjectX.Service\bin\Debug\net8.0\ProjectX.Service.dll
+C:\Users\221447646\ProjectX.API\ProjectX.Service\bin\Debug\net8.0\ProjectX.Service.pdb
+C:\Users\221447646\ProjectX.API\ProjectX.Service\obj\Debug\net8.0\ProjectX.Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\221447646\ProjectX.API\ProjectX.Service\obj\Debug\net8.0\ProjectX.Service.AssemblyInfoInputs.cache
+C:\Users\221447646\ProjectX.API\ProjectX.Service\obj\Debug\net8.0\ProjectX.Service.AssemblyInfo.cs
+C:\Users\221447646\ProjectX.API\ProjectX.Service\obj\Debug\net8.0\ProjectX.Service.csproj.CoreCompileInputs.cache
+C:\Users\221447646\ProjectX.API\ProjectX.Service\obj\Debug\net8.0\ProjectX.Service.sourcelink.json
+C:\Users\221447646\ProjectX.API\ProjectX.Service\obj\Debug\net8.0\ProjectX.Service.dll
+C:\Users\221447646\ProjectX.API\ProjectX.Service\obj\Debug\net8.0\refint\ProjectX.Service.dll
+C:\Users\221447646\ProjectX.API\ProjectX.Service\obj\Debug\net8.0\ProjectX.Service.pdb
+C:\Users\221447646\ProjectX.API\ProjectX.Service\obj\Debug\net8.0\ref\ProjectX.Service.dll

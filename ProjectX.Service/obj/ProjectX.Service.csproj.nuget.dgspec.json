@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\manasoedj\\Music\\ProjectX.API\\ProjectX.Service\\ProjectX.Service.csproj": {}
+    "C:\\Users\\221447646\\ProjectX.API\\ProjectX.Service\\ProjectX.Service.csproj": {}
   },
   "projects": {
-    "C:\\Users\\manasoedj\\Music\\ProjectX.API\\ProjectX.Service\\ProjectX.Service.csproj": {
+    "C:\\Users\\221447646\\ProjectX.API\\ProjectX.Service\\ProjectX.Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\manasoedj\\Music\\ProjectX.API\\ProjectX.Service\\ProjectX.Service.csproj",
+        "projectUniqueName": "C:\\Users\\221447646\\ProjectX.API\\ProjectX.Service\\ProjectX.Service.csproj",
         "projectName": "ProjectX.Service",
-        "projectPath": "C:\\Users\\manasoedj\\Music\\ProjectX.API\\ProjectX.Service\\ProjectX.Service.csproj",
-        "packagesPath": "C:\\Users\\manasoedj\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\manasoedj\\Music\\ProjectX.API\\ProjectX.Service\\obj\\",
+        "projectPath": "C:\\Users\\221447646\\ProjectX.API\\ProjectX.Service\\ProjectX.Service.csproj",
+        "packagesPath": "C:\\Users\\221447646\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\221447646\\ProjectX.API\\ProjectX.Service\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\manasoedj\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\221447646\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

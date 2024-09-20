@@ -1,6 +1,12 @@
+using Microsoft.EntityFrameworkCore;
+using ProjectX.Data;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddDbContext<AlumniDbContext>(option =>
+option.UseSqlServer(builder.Configuration.GetConnectionString("AlumniDb")));
+
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

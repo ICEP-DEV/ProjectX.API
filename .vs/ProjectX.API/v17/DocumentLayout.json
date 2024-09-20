@@ -1,14 +1,30 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\manasoedj\\Music\\ProjectX.API\\",
+  "WorkspaceRootPath": "C:\\Users\\221447646\\ProjectX.API\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3B572D9C-4D5F-449E-9F2E-E8F393FBC861}|ProjectX.Service\\ProjectX.Service.csproj|c:\\users\\manasoedj\\music\\projectx.api\\projectx.service\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3B572D9C-4D5F-449E-9F2E-E8F393FBC861}|ProjectX.Service\\ProjectX.Service.csproj|solutionrelative:projectx.service\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{13E8DF9E-D804-4AB5-9EFB-C2D579DC0548}|ProjectX.API\\ProjectX.API.csproj|c:\\users\\221447646\\projectx.api\\projectx.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13E8DF9E-D804-4AB5-9EFB-C2D579DC0548}|ProjectX.API\\ProjectX.API.csproj|solutionrelative:projectx.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9A33301B-4952-4F05-81A6-31F5EEF81DF7}|ProjectX.Data\\ProjectX.Data.csproj|c:\\users\\manasoedj\\music\\projectx.api\\projectx.data\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9A33301B-4952-4F05-81A6-31F5EEF81DF7}|ProjectX.Data\\ProjectX.Data.csproj|solutionrelative:projectx.data\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9A33301B-4952-4F05-81A6-31F5EEF81DF7}|ProjectX.Data\\ProjectX.Data.csproj|c:\\users\\221447646\\projectx.api\\projectx.data\\model\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A33301B-4952-4F05-81A6-31F5EEF81DF7}|ProjectX.Data\\ProjectX.Data.csproj|solutionrelative:projectx.data\\model\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13E8DF9E-D804-4AB5-9EFB-C2D579DC0548}|ProjectX.API\\ProjectX.API.csproj|c:\\users\\221447646\\projectx.api\\projectx.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{13E8DF9E-D804-4AB5-9EFB-C2D579DC0548}|ProjectX.API\\ProjectX.API.csproj|solutionrelative:projectx.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A33301B-4952-4F05-81A6-31F5EEF81DF7}|ProjectX.Data\\ProjectX.Data.csproj|c:\\users\\221447646\\projectx.api\\projectx.data\\alumnidbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A33301B-4952-4F05-81A6-31F5EEF81DF7}|ProjectX.Data\\ProjectX.Data.csproj|solutionrelative:projectx.data\\alumnidbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A33301B-4952-4F05-81A6-31F5EEF81DF7}|ProjectX.Data\\ProjectX.Data.csproj|c:\\users\\221447646\\projectx.api\\projectx.data\\model\\alumnusprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A33301B-4952-4F05-81A6-31F5EEF81DF7}|ProjectX.Data\\ProjectX.Data.csproj|solutionrelative:projectx.data\\model\\alumnusprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A33301B-4952-4F05-81A6-31F5EEF81DF7}|ProjectX.Data\\ProjectX.Data.csproj|c:\\users\\221447646\\projectx.api\\projectx.data\\model\\alumnus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A33301B-4952-4F05-81A6-31F5EEF81DF7}|ProjectX.Data\\ProjectX.Data.csproj|solutionrelative:projectx.data\\model\\alumnus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,27 +39,83 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Class1.cs",
-              "DocumentMoniker": "C:\\Users\\manasoedj\\Music\\ProjectX.API\\ProjectX.Service\\Class1.cs",
-              "RelativeDocumentMoniker": "ProjectX.Service\\Class1.cs",
-              "ToolTip": "C:\\Users\\manasoedj\\Music\\ProjectX.API\\ProjectX.Service\\Class1.cs",
-              "RelativeToolTip": "ProjectX.Service\\Class1.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\221447646\\ProjectX.API\\ProjectX.API\\Program.cs",
+              "RelativeDocumentMoniker": "ProjectX.API\\Program.cs",
+              "ToolTip": "C:\\Users\\221447646\\ProjectX.API\\ProjectX.API\\Program.cs",
+              "RelativeToolTip": "ProjectX.API\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAAAKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-09T12:39:55.649Z",
+              "WhenOpened": "2024-09-20T06:39:40.684Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Class1.cs",
-              "DocumentMoniker": "C:\\Users\\manasoedj\\Music\\ProjectX.API\\ProjectX.Data\\Class1.cs",
-              "RelativeDocumentMoniker": "ProjectX.Data\\Class1.cs",
-              "ToolTip": "C:\\Users\\manasoedj\\Music\\ProjectX.API\\ProjectX.Data\\Class1.cs",
-              "RelativeToolTip": "ProjectX.Data\\Class1.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentIndex": 2,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\221447646\\ProjectX.API\\ProjectX.API\\appsettings.json",
+              "RelativeDocumentMoniker": "ProjectX.API\\appsettings.json",
+              "ToolTip": "C:\\Users\\221447646\\ProjectX.API\\ProjectX.API\\appsettings.json",
+              "RelativeToolTip": "ProjectX.API\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-09-20T06:35:53.648Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AlumniDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\221447646\\ProjectX.API\\ProjectX.Data\\AlumniDbContext.cs",
+              "RelativeDocumentMoniker": "ProjectX.Data\\AlumniDbContext.cs",
+              "ToolTip": "C:\\Users\\221447646\\ProjectX.API\\ProjectX.Data\\AlumniDbContext.cs",
+              "RelativeToolTip": "ProjectX.Data\\AlumniDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-09T12:39:39.997Z",
+              "WhenOpened": "2024-09-20T06:25:06.325Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Admin.cs",
+              "DocumentMoniker": "C:\\Users\\221447646\\ProjectX.API\\ProjectX.Data\\Model\\Admin.cs",
+              "RelativeDocumentMoniker": "ProjectX.Data\\Model\\Admin.cs",
+              "ToolTip": "C:\\Users\\221447646\\ProjectX.API\\ProjectX.Data\\Model\\Admin.cs",
+              "RelativeToolTip": "ProjectX.Data\\Model\\Admin.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-19T13:48:09.82Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AlumnusProfile.cs",
+              "DocumentMoniker": "C:\\Users\\221447646\\ProjectX.API\\ProjectX.Data\\Model\\AlumnusProfile.cs",
+              "RelativeDocumentMoniker": "ProjectX.Data\\Model\\AlumnusProfile.cs",
+              "ToolTip": "C:\\Users\\221447646\\ProjectX.API\\ProjectX.Data\\Model\\AlumnusProfile.cs",
+              "RelativeToolTip": "ProjectX.Data\\Model\\AlumnusProfile.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAQwBIAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-19T13:40:36.839Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Alumnus.cs",
+              "DocumentMoniker": "C:\\Users\\221447646\\ProjectX.API\\ProjectX.Data\\Model\\Alumnus.cs",
+              "RelativeDocumentMoniker": "ProjectX.Data\\Model\\Alumnus.cs",
+              "ToolTip": "C:\\Users\\221447646\\ProjectX.API\\ProjectX.Data\\Model\\Alumnus.cs",
+              "RelativeToolTip": "ProjectX.Data\\Model\\Alumnus.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-19T13:35:10.896Z",
               "EditorCaption": ""
             }
           ]

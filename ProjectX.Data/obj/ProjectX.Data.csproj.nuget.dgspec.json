@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\221447646\\ProjectX.API\\ProjectX.Data\\ProjectX.Data.csproj": {}
+    "D:\\ICEP\\projects\\project 4\\Backend Branch-Developer Mode\\ProjectX.Data\\ProjectX.Data.csproj": {}
   },
   "projects": {
-    "C:\\Users\\221447646\\ProjectX.API\\ProjectX.Data\\ProjectX.Data.csproj": {
+    "D:\\ICEP\\projects\\project 4\\Backend Branch-Developer Mode\\ProjectX.Data\\ProjectX.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\221447646\\ProjectX.API\\ProjectX.Data\\ProjectX.Data.csproj",
+        "projectUniqueName": "D:\\ICEP\\projects\\project 4\\Backend Branch-Developer Mode\\ProjectX.Data\\ProjectX.Data.csproj",
         "projectName": "ProjectX.Data",
-        "projectPath": "C:\\Users\\221447646\\ProjectX.API\\ProjectX.Data\\ProjectX.Data.csproj",
-        "packagesPath": "C:\\Users\\221447646\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\221447646\\ProjectX.API\\ProjectX.Data\\obj\\",
+        "projectPath": "D:\\ICEP\\projects\\project 4\\Backend Branch-Developer Mode\\ProjectX.Data\\ProjectX.Data.csproj",
+        "packagesPath": "C:\\Users\\Tshiamo\\.nuget\\packages\\",
+        "outputPath": "D:\\ICEP\\projects\\project 4\\Backend Branch-Developer Mode\\ProjectX.Data\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\221447646\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Tshiamo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -82,7 +87,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

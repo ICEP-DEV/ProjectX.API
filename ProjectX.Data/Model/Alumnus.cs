@@ -11,12 +11,12 @@ namespace ProjectX.Data.Model
     {
         public Alumnus() 
         {
-            Email = string.Empty;
+           
             Password = string.Empty;
         }
         [Key]
         public int AlumnusId { get; set; }//student number
-        public string Email { get; set; }
+  
         public string Password { get; set; }
     }
 }

@@ -28,3 +28,18 @@ D:\ICEP\projects\project 4\Backend Branch-Developer Mode\ProjectX.Data\obj\Debug
 D:\ICEP\projects\project 4\Backend Branch-Developer Mode\ProjectX.Data\obj\Debug\net8.0\ProjectX.Data.pdb
 D:\ICEP\projects\project 4\Backend Branch-Developer Mode\ProjectX.Data\obj\Debug\net8.0\ProjectX.Data.genruntimeconfig.cache
 D:\ICEP\projects\project 4\Backend Branch-Developer Mode\ProjectX.Data\obj\Debug\net8.0\ref\ProjectX.Data.dll
+C:\Users\USER\ProjectX.API\ProjectX.Data\bin\Debug\net8.0\ProjectX.Data.deps.json
+C:\Users\USER\ProjectX.API\ProjectX.Data\bin\Debug\net8.0\ProjectX.Data.runtimeconfig.json
+C:\Users\USER\ProjectX.API\ProjectX.Data\bin\Debug\net8.0\ProjectX.Data.dll
+C:\Users\USER\ProjectX.API\ProjectX.Data\bin\Debug\net8.0\ProjectX.Data.pdb
+C:\Users\USER\ProjectX.API\ProjectX.Data\obj\Debug\net8.0\ProjectX.Data.csproj.AssemblyReference.cache
+C:\Users\USER\ProjectX.API\ProjectX.Data\obj\Debug\net8.0\ProjectX.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\USER\ProjectX.API\ProjectX.Data\obj\Debug\net8.0\ProjectX.Data.AssemblyInfoInputs.cache
+C:\Users\USER\ProjectX.API\ProjectX.Data\obj\Debug\net8.0\ProjectX.Data.AssemblyInfo.cs
+C:\Users\USER\ProjectX.API\ProjectX.Data\obj\Debug\net8.0\ProjectX.Data.csproj.CoreCompileInputs.cache
+C:\Users\USER\ProjectX.API\ProjectX.Data\obj\Debug\net8.0\ProjectX.Data.sourcelink.json
+C:\Users\USER\ProjectX.API\ProjectX.Data\obj\Debug\net8.0\ProjectX.Data.dll
+C:\Users\USER\ProjectX.API\ProjectX.Data\obj\Debug\net8.0\refint\ProjectX.Data.dll
+C:\Users\USER\ProjectX.API\ProjectX.Data\obj\Debug\net8.0\ProjectX.Data.pdb
+C:\Users\USER\ProjectX.API\ProjectX.Data\obj\Debug\net8.0\ProjectX.Data.genruntimeconfig.cache
+C:\Users\USER\ProjectX.API\ProjectX.Data\obj\Debug\net8.0\ref\ProjectX.Data.dll

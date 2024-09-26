@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\ICEP\\projects\\project 4\\Backend Branch-Developer Mode\\ProjectX.Data\\ProjectX.Data.csproj": {}
+    "C:\\Users\\USER\\ProjectX.API\\ProjectX.Data\\ProjectX.Data.csproj": {}
   },
   "projects": {
-    "D:\\ICEP\\projects\\project 4\\Backend Branch-Developer Mode\\ProjectX.Data\\ProjectX.Data.csproj": {
+    "C:\\Users\\USER\\ProjectX.API\\ProjectX.Data\\ProjectX.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\ICEP\\projects\\project 4\\Backend Branch-Developer Mode\\ProjectX.Data\\ProjectX.Data.csproj",
+        "projectUniqueName": "C:\\Users\\USER\\ProjectX.API\\ProjectX.Data\\ProjectX.Data.csproj",
         "projectName": "ProjectX.Data",
-        "projectPath": "D:\\ICEP\\projects\\project 4\\Backend Branch-Developer Mode\\ProjectX.Data\\ProjectX.Data.csproj",
-        "packagesPath": "C:\\Users\\Tshiamo\\.nuget\\packages\\",
-        "outputPath": "D:\\ICEP\\projects\\project 4\\Backend Branch-Developer Mode\\ProjectX.Data\\obj\\",
+        "projectPath": "C:\\Users\\USER\\ProjectX.API\\ProjectX.Data\\ProjectX.Data.csproj",
+        "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\USER\\ProjectX.API\\ProjectX.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Tshiamo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -69,6 +69,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[8.0.8, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.6, )"
             }
           },
           "imports": [

@@ -1721,7 +1721,8 @@
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "8.0.8",
-          "Microsoft.EntityFrameworkCore.SqlServer": "8.0.8"
+          "Microsoft.EntityFrameworkCore.SqlServer": "8.0.8",
+          "System.Data.SqlClient": "4.8.6"
         },
         "compile": {
           "bin/placeholder/ProjectX.Data.dll": {}
@@ -4993,23 +4994,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Tshiamo\\.nuget\\packages\\": {},
+    "C:\\Users\\USER\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\ICEP\\projects\\project 4\\Backend Branch-Developer Mode\\ProjectX.API\\ProjectX.API.csproj",
+      "projectUniqueName": "C:\\Users\\USER\\ProjectX.API\\ProjectX.API\\ProjectX.API.csproj",
       "projectName": "ProjectX.API",
-      "projectPath": "D:\\ICEP\\projects\\project 4\\Backend Branch-Developer Mode\\ProjectX.API\\ProjectX.API.csproj",
-      "packagesPath": "C:\\Users\\Tshiamo\\.nuget\\packages\\",
-      "outputPath": "D:\\ICEP\\projects\\project 4\\Backend Branch-Developer Mode\\ProjectX.API\\obj\\",
+      "projectPath": "C:\\Users\\USER\\ProjectX.API\\ProjectX.API\\ProjectX.API.csproj",
+      "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\USER\\ProjectX.API\\ProjectX.API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Tshiamo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -5025,8 +5026,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\ICEP\\projects\\project 4\\Backend Branch-Developer Mode\\ProjectX.Data\\ProjectX.Data.csproj": {
-              "projectPath": "D:\\ICEP\\projects\\project 4\\Backend Branch-Developer Mode\\ProjectX.Data\\ProjectX.Data.csproj"
+            "C:\\Users\\USER\\ProjectX.API\\ProjectX.Data\\ProjectX.Data.csproj": {
+              "projectPath": "C:\\Users\\USER\\ProjectX.API\\ProjectX.Data\\ProjectX.Data.csproj"
             }
           }
         }

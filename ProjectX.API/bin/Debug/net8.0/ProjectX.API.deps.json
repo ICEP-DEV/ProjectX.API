@@ -990,7 +990,8 @@
       "ProjectX.Data/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "8.0.8",
-          "Microsoft.EntityFrameworkCore.SqlServer": "8.0.8"
+          "Microsoft.EntityFrameworkCore.SqlServer": "8.0.8",
+          "System.Data.SqlClient": "4.8.6"
         },
         "runtime": {
           "ProjectX.Data.dll": {

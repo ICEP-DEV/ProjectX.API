@@ -10,5 +10,6 @@ namespace ProjectX.Data
         public DbSet<Admin> Admins { get; set; }
         public DbSet<Alumnus> Alumnus { get; set; }
         public DbSet<AlumnusProfile> AlumnusProfiles { get; set; }
+        public DbSet<AlumnusRegistration> AlumnusRegistrations { get; set; }
     }
 }

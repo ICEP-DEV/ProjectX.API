@@ -14,6 +14,8 @@ namespace ProjectX.Data.Model
            
             Password = string.Empty;
         }
+
+        public int Id { get; set; }
         [Key]
         public int AlumnusId { get; set; }//student number
   

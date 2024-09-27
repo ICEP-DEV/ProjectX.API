@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,6 +14,9 @@ namespace ProjectX.Data.Model
             Password = string.Empty;
         }
 
+        public int Id { get; set; }
+
+        [Key]
         public int AdminId { get; set; }//staff number
 
         public string Name { get; set; }

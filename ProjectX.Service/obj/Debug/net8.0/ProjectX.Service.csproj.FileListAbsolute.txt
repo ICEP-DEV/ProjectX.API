@@ -22,3 +22,15 @@ C:\Users\USER\ProjectX.API\ProjectX.Service\obj\Debug\net8.0\ProjectX.Service.dl
 C:\Users\USER\ProjectX.API\ProjectX.Service\obj\Debug\net8.0\refint\ProjectX.Service.dll
 C:\Users\USER\ProjectX.API\ProjectX.Service\obj\Debug\net8.0\ProjectX.Service.pdb
 C:\Users\USER\ProjectX.API\ProjectX.Service\obj\Debug\net8.0\ref\ProjectX.Service.dll
+D:\ICEP\projects\project 4\Official AlumniProjectX Backend API FT\ProjectX.Service\bin\Debug\net8.0\ProjectX.Service.deps.json
+D:\ICEP\projects\project 4\Official AlumniProjectX Backend API FT\ProjectX.Service\bin\Debug\net8.0\ProjectX.Service.dll
+D:\ICEP\projects\project 4\Official AlumniProjectX Backend API FT\ProjectX.Service\bin\Debug\net8.0\ProjectX.Service.pdb
+D:\ICEP\projects\project 4\Official AlumniProjectX Backend API FT\ProjectX.Service\obj\Debug\net8.0\ProjectX.Service.GeneratedMSBuildEditorConfig.editorconfig
+D:\ICEP\projects\project 4\Official AlumniProjectX Backend API FT\ProjectX.Service\obj\Debug\net8.0\ProjectX.Service.AssemblyInfoInputs.cache
+D:\ICEP\projects\project 4\Official AlumniProjectX Backend API FT\ProjectX.Service\obj\Debug\net8.0\ProjectX.Service.AssemblyInfo.cs
+D:\ICEP\projects\project 4\Official AlumniProjectX Backend API FT\ProjectX.Service\obj\Debug\net8.0\ProjectX.Service.csproj.CoreCompileInputs.cache
+D:\ICEP\projects\project 4\Official AlumniProjectX Backend API FT\ProjectX.Service\obj\Debug\net8.0\ProjectX.Service.sourcelink.json
+D:\ICEP\projects\project 4\Official AlumniProjectX Backend API FT\ProjectX.Service\obj\Debug\net8.0\ProjectX.Service.dll
+D:\ICEP\projects\project 4\Official AlumniProjectX Backend API FT\ProjectX.Service\obj\Debug\net8.0\refint\ProjectX.Service.dll
+D:\ICEP\projects\project 4\Official AlumniProjectX Backend API FT\ProjectX.Service\obj\Debug\net8.0\ProjectX.Service.pdb
+D:\ICEP\projects\project 4\Official AlumniProjectX Backend API FT\ProjectX.Service\obj\Debug\net8.0\ref\ProjectX.Service.dll

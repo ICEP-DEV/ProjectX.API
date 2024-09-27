@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace ProjectX.Data.Migrations
 {
     /// <inheritdoc />
-    public partial class Initialdatabase : Migration
+    public partial class InitialDatabase : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -17,6 +17,8 @@ namespace ProjectX.Data.Migrations
                 {
                     AdminId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
+                    Id = table.Column<int>(type: "int", nullable: false),
+                    Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Password = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
@@ -30,7 +32,7 @@ namespace ProjectX.Data.Migrations
                 {
                     AlumnusId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Email = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Id = table.Column<int>(type: "int", nullable: false),
                     Password = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
@@ -57,6 +59,24 @@ namespace ProjectX.Data.Migrations
                 {
                     table.PrimaryKey("PK_AlumnusProfiles", x => x.AlumnusProfId);
                 });
+
+            migrationBuilder.CreateTable(
+                name: "AlumnusRegistrations",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    StudentNum = table.Column<int>(type: "int", nullable: false),
+                    FirstName = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    LastName = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Email = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Password = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    IsApproved = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_AlumnusRegistrations", x => x.Id);
+                });
         }
 
         /// <inheritdoc />
@@ -70,6 +90,9 @@ namespace ProjectX.Data.Migrations
 
             migrationBuilder.DropTable(
                 name: "AlumnusProfiles");
+
+            migrationBuilder.DropTable(
+                name: "AlumnusRegistrations");
         }
     }
 }

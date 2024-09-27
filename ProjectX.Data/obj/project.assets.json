@@ -4394,23 +4394,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\USER\\.nuget\\packages\\": {},
+    "C:\\Users\\Tshiamo\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\USER\\ProjectX.API\\ProjectX.Data\\ProjectX.Data.csproj",
+      "projectUniqueName": "D:\\ICEP\\projects\\project 4\\Official AlumniProjectX Backend API FT\\ProjectX.Data\\ProjectX.Data.csproj",
       "projectName": "ProjectX.Data",
-      "projectPath": "C:\\Users\\USER\\ProjectX.API\\ProjectX.Data\\ProjectX.Data.csproj",
-      "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\USER\\ProjectX.API\\ProjectX.Data\\obj\\",
+      "projectPath": "D:\\ICEP\\projects\\project 4\\Official AlumniProjectX Backend API FT\\ProjectX.Data\\ProjectX.Data.csproj",
+      "packagesPath": "C:\\Users\\Tshiamo\\.nuget\\packages\\",
+      "outputPath": "D:\\ICEP\\projects\\project 4\\Official AlumniProjectX Backend API FT\\ProjectX.Data\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Tshiamo\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],

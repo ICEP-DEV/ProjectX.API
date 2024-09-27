@@ -43,3 +43,18 @@ C:\Users\USER\ProjectX.API\ProjectX.Data\obj\Debug\net8.0\refint\ProjectX.Data.d
 C:\Users\USER\ProjectX.API\ProjectX.Data\obj\Debug\net8.0\ProjectX.Data.pdb
 C:\Users\USER\ProjectX.API\ProjectX.Data\obj\Debug\net8.0\ProjectX.Data.genruntimeconfig.cache
 C:\Users\USER\ProjectX.API\ProjectX.Data\obj\Debug\net8.0\ref\ProjectX.Data.dll
+D:\ICEP\projects\project 4\Official AlumniProjectX Backend API FT\ProjectX.Data\bin\Debug\net8.0\ProjectX.Data.deps.json
+D:\ICEP\projects\project 4\Official AlumniProjectX Backend API FT\ProjectX.Data\bin\Debug\net8.0\ProjectX.Data.runtimeconfig.json
+D:\ICEP\projects\project 4\Official AlumniProjectX Backend API FT\ProjectX.Data\bin\Debug\net8.0\ProjectX.Data.dll
+D:\ICEP\projects\project 4\Official AlumniProjectX Backend API FT\ProjectX.Data\bin\Debug\net8.0\ProjectX.Data.pdb
+D:\ICEP\projects\project 4\Official AlumniProjectX Backend API FT\ProjectX.Data\obj\Debug\net8.0\ProjectX.Data.csproj.AssemblyReference.cache
+D:\ICEP\projects\project 4\Official AlumniProjectX Backend API FT\ProjectX.Data\obj\Debug\net8.0\ProjectX.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\ICEP\projects\project 4\Official AlumniProjectX Backend API FT\ProjectX.Data\obj\Debug\net8.0\ProjectX.Data.AssemblyInfoInputs.cache
+D:\ICEP\projects\project 4\Official AlumniProjectX Backend API FT\ProjectX.Data\obj\Debug\net8.0\ProjectX.Data.AssemblyInfo.cs
+D:\ICEP\projects\project 4\Official AlumniProjectX Backend API FT\ProjectX.Data\obj\Debug\net8.0\ProjectX.Data.csproj.CoreCompileInputs.cache
+D:\ICEP\projects\project 4\Official AlumniProjectX Backend API FT\ProjectX.Data\obj\Debug\net8.0\ProjectX.Data.sourcelink.json
+D:\ICEP\projects\project 4\Official AlumniProjectX Backend API FT\ProjectX.Data\obj\Debug\net8.0\ProjectX.Data.dll
+D:\ICEP\projects\project 4\Official AlumniProjectX Backend API FT\ProjectX.Data\obj\Debug\net8.0\refint\ProjectX.Data.dll
+D:\ICEP\projects\project 4\Official AlumniProjectX Backend API FT\ProjectX.Data\obj\Debug\net8.0\ProjectX.Data.pdb
+D:\ICEP\projects\project 4\Official AlumniProjectX Backend API FT\ProjectX.Data\obj\Debug\net8.0\ProjectX.Data.genruntimeconfig.cache
+D:\ICEP\projects\project 4\Official AlumniProjectX Backend API FT\ProjectX.Data\obj\Debug\net8.0\ref\ProjectX.Data.dll

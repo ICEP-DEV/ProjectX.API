@@ -13,12 +13,10 @@ namespace ProjectX.Data.Model
             Name = string.Empty;
             Password = string.Empty;
         }
-
+        [Key]
         public int Id { get; set; }
 
-        [Key]
         public int AdminId { get; set; }//staff number
-
         public string Name { get; set; }
         public string Password { get; set; }
     }

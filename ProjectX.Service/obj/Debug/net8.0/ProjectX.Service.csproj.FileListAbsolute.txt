@@ -34,3 +34,21 @@ D:\ICEP\projects\project 4\Official AlumniProjectX Backend API FT\ProjectX.Servi
 D:\ICEP\projects\project 4\Official AlumniProjectX Backend API FT\ProjectX.Service\obj\Debug\net8.0\refint\ProjectX.Service.dll
 D:\ICEP\projects\project 4\Official AlumniProjectX Backend API FT\ProjectX.Service\obj\Debug\net8.0\ProjectX.Service.pdb
 D:\ICEP\projects\project 4\Official AlumniProjectX Backend API FT\ProjectX.Service\obj\Debug\net8.0\ref\ProjectX.Service.dll
+C:\Users\221447646\AlumniSpace\ProjectX.Service\bin\Debug\net8.0\ProjectX.Service.deps.json
+C:\Users\221447646\AlumniSpace\ProjectX.Service\bin\Debug\net8.0\ProjectX.Service.dll
+C:\Users\221447646\AlumniSpace\ProjectX.Service\bin\Debug\net8.0\ProjectX.Service.pdb
+C:\Users\221447646\AlumniSpace\ProjectX.Service\obj\Debug\net8.0\ProjectX.Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\221447646\AlumniSpace\ProjectX.Service\obj\Debug\net8.0\ProjectX.Service.AssemblyInfoInputs.cache
+C:\Users\221447646\AlumniSpace\ProjectX.Service\obj\Debug\net8.0\ProjectX.Service.AssemblyInfo.cs
+C:\Users\221447646\AlumniSpace\ProjectX.Service\obj\Debug\net8.0\ProjectX.Service.csproj.CoreCompileInputs.cache
+C:\Users\221447646\AlumniSpace\ProjectX.Service\obj\Debug\net8.0\ProjectX.Service.sourcelink.json
+C:\Users\221447646\AlumniSpace\ProjectX.Service\obj\Debug\net8.0\ProjectX.Service.dll
+C:\Users\221447646\AlumniSpace\ProjectX.Service\obj\Debug\net8.0\refint\ProjectX.Service.dll
+C:\Users\221447646\AlumniSpace\ProjectX.Service\obj\Debug\net8.0\ProjectX.Service.pdb
+C:\Users\221447646\AlumniSpace\ProjectX.Service\obj\Debug\net8.0\ref\ProjectX.Service.dll
+C:\Users\221447646\AlumniSpace\ProjectX.Service\bin\Debug\net8.0\ProjectX.Data.dll
+C:\Users\221447646\AlumniSpace\ProjectX.Service\bin\Debug\net8.0\TUTDb.Data.dll
+C:\Users\221447646\AlumniSpace\ProjectX.Service\bin\Debug\net8.0\ProjectX.Data.pdb
+C:\Users\221447646\AlumniSpace\ProjectX.Service\bin\Debug\net8.0\TUTDb.Data.pdb
+C:\Users\221447646\AlumniSpace\ProjectX.Service\obj\Debug\net8.0\ProjectX.Service.csproj.AssemblyReference.cache
+C:\Users\221447646\AlumniSpace\ProjectX.Service\obj\Debug\net8.0\ProjectX.8950EF3A.Up2Date

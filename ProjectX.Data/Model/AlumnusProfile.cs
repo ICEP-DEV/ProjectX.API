@@ -24,7 +24,7 @@ namespace ProjectX.Data.Model
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string Course { get; set; }
-        public DateOnly GraduationYears { get; set; }
+        public int GraduationYear { get; set; }
         public string Campus { get; set; }
         public string Faculty { get; set; }
         public byte ProfilePicture { get; set; }

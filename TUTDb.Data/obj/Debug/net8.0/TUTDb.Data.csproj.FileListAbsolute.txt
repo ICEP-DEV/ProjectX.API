@@ -1,0 +1,15 @@
+C:\Users\221447646\AlumniSpace\TUTDb.Data\bin\Debug\net8.0\TUTDb.Data.deps.json
+C:\Users\221447646\AlumniSpace\TUTDb.Data\bin\Debug\net8.0\TUTDb.Data.runtimeconfig.json
+C:\Users\221447646\AlumniSpace\TUTDb.Data\bin\Debug\net8.0\TUTDb.Data.dll
+C:\Users\221447646\AlumniSpace\TUTDb.Data\bin\Debug\net8.0\TUTDb.Data.pdb
+C:\Users\221447646\AlumniSpace\TUTDb.Data\obj\Debug\net8.0\TUTDb.Data.csproj.AssemblyReference.cache
+C:\Users\221447646\AlumniSpace\TUTDb.Data\obj\Debug\net8.0\TUTDb.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\221447646\AlumniSpace\TUTDb.Data\obj\Debug\net8.0\TUTDb.Data.AssemblyInfoInputs.cache
+C:\Users\221447646\AlumniSpace\TUTDb.Data\obj\Debug\net8.0\TUTDb.Data.AssemblyInfo.cs
+C:\Users\221447646\AlumniSpace\TUTDb.Data\obj\Debug\net8.0\TUTDb.Data.csproj.CoreCompileInputs.cache
+C:\Users\221447646\AlumniSpace\TUTDb.Data\obj\Debug\net8.0\TUTDb.Data.sourcelink.json
+C:\Users\221447646\AlumniSpace\TUTDb.Data\obj\Debug\net8.0\TUTDb.Data.dll
+C:\Users\221447646\AlumniSpace\TUTDb.Data\obj\Debug\net8.0\refint\TUTDb.Data.dll
+C:\Users\221447646\AlumniSpace\TUTDb.Data\obj\Debug\net8.0\TUTDb.Data.pdb
+C:\Users\221447646\AlumniSpace\TUTDb.Data\obj\Debug\net8.0\TUTDb.Data.genruntimeconfig.cache
+C:\Users\221447646\AlumniSpace\TUTDb.Data\obj\Debug\net8.0\ref\TUTDb.Data.dll

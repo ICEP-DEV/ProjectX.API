@@ -12,8 +12,8 @@ using ProjectX.Data;
 namespace ProjectX.Data.Migrations
 {
     [DbContext(typeof(AlumniDbContext))]
-    [Migration("20240927151304_InitialDatabase")]
-    partial class InitialDatabase
+    [Migration("20241001132657_New-database")]
+    partial class Newdatabase
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -27,13 +27,13 @@ namespace ProjectX.Data.Migrations
 
             modelBuilder.Entity("ProjectX.Data.Model.Admin", b =>
                 {
-                    b.Property<int>("AdminId")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("AdminId"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<int>("Id")
+                    b.Property<int>("AdminId")
                         .HasColumnType("int");
 
                     b.Property<string>("Name")
@@ -44,27 +44,37 @@ namespace ProjectX.Data.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("AdminId");
+                    b.HasKey("Id");
 
-                    b.ToTable("Admins");
+                    b.ToTable("admin");
                 });
 
             modelBuilder.Entity("ProjectX.Data.Model.Alumnus", b =>
                 {
-                    b.Property<int>("AlumnusId")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("AlumnusId"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<int>("Id")
+                    b.Property<int>("AlumnusId")
                         .HasColumnType("int");
+
+                    b.Property<DateTime>("CreatedOn")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Password")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("AlumnusId");
+                    b.Property<int>("isActive")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
 
                     b.ToTable("Alumnus");
                 });
@@ -96,8 +106,8 @@ namespace ProjectX.Data.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateOnly>("GraduationYears")
-                        .HasColumnType("date");
+                    b.Property<int>("GraduationYear")
+                        .HasColumnType("int");
 
                     b.Property<string>("LastName")
                         .IsRequired()
@@ -108,31 +118,7 @@ namespace ProjectX.Data.Migrations
 
                     b.HasKey("AlumnusProfId");
 
-                    b.ToTable("AlumnusProfiles");
-                });
-
-            modelBuilder.Entity("ProjectX.Data.Model.AlumnusRegistration", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<string>("Email")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Password")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("StudentNum")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("AlumnusRegistrations");
+                    b.ToTable("AlumnusProfile");
                 });
 #pragma warning restore 612, 618
         }

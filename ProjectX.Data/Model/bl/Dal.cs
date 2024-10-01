@@ -12,10 +12,10 @@ namespace ProjectX.Data.Model.bl
 {
     public class Dal
     {
-        public Response AlumnusRegistration(AlumnusRegistration alumnusRegistration, SqlConnection connection)
+        public Response AlumnusRegistration(Alumnus alumnusRegistration, SqlConnection connection)
         {
             Response response = new Response();
-            SqlCommand cmd = new SqlCommand("INSERT INTO AlumnusRegistrations(StudentNum,Email,Password) VALUES('" + alumnusRegistration.StudentNum + "','" + alumnusRegistration.Email + "', '" + alumnusRegistration.Password + "')", connection);
+            SqlCommand cmd = new SqlCommand("INSERT INTO Alumnus(AlumnusId,Email,Password) VALUES('" + alumnusRegistration.AlumnusId + "','" + alumnusRegistration.Email + "', '" + alumnusRegistration.Password + "')", connection);
             connection.Open();
             int i = cmd.ExecuteNonQuery();
             connection.Close();
@@ -35,9 +35,9 @@ namespace ProjectX.Data.Model.bl
             return response;
         }
 
-        public Response Login(AlumnusRegistration alumnusRegistration, SqlConnection connection)
+        public Response Login(Alumnus alumnusRegistration, SqlConnection connection)
         {
-            SqlDataAdapter da = new SqlDataAdapter("SELECT * FROM AlumnusRegistrations WHERE Email = '" + alumnusRegistration.StudentNum + "' AND Password = '" + alumnusRegistration.Password + "'", connection);
+            SqlDataAdapter da = new SqlDataAdapter("SELECT * FROM Alumnus WHERE Email = '" + alumnusRegistration.AlumnusId + "' AND Password = '" + alumnusRegistration.Password + "'", connection);
             DataTable dt = new DataTable();
             da.Fill(dt);
             Response response = new Response();
@@ -46,7 +46,7 @@ namespace ProjectX.Data.Model.bl
             {
                 response.StatusCode = 200;
                 response.StatusMessage = "Login successful";
-                AlumnusRegistration alumnusReg = new AlumnusRegistration();
+                Alumnus alumnusReg = new Alumnus();
                 alumnusReg.Id = Convert.ToInt32(dt.Rows[0]["Id"]);
                 alumnusReg.Email = Convert.ToString(dt.Rows[0]["Email"]);
                 response.AlumnusRegistration = alumnusReg;
@@ -60,11 +60,11 @@ namespace ProjectX.Data.Model.bl
             return response;
         }
 
-        public Response AlumnusApproval(AlumnusRegistration alumnusRegistration, SqlConnection connection)
+        public Response AlumnusApproval(Alumnus alumnusRegistration, SqlConnection connection)
         {
 
             Response response = new Response();
-            SqlCommand cmd = new SqlCommand("UPDATE AlumnusRegistrations SET IsApproved = 1 WHERE StudentNum = '" + alumnusRegistration.StudentNum + "' ", connection);
+            SqlCommand cmd = new SqlCommand("UPDATE Alumnus SET IsApproved = 1 WHERE StudentNum = '" + alumnusRegistration.AlumnusId + "' ", connection);
             connection.Open();
             int i = cmd.ExecuteNonQuery();
             connection.Close();

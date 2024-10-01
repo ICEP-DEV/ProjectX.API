@@ -14,9 +14,9 @@ namespace ProjectX.Data.Model.dto
 
         public Admin admin { get; set; }
 
-        public List<AlumnusRegistration> listAlumnusRegistration { get; set; }
+        public List<Alumnus> listAlumnus { get; set; }
 
-        public AlumnusRegistration AlumnusRegistration { get; set; }
+        public Alumnus AlumnusRegistration { get; set; }
 
     }
 }

@@ -17,7 +17,8 @@ option.UseSqlServer(builder.Configuration.GetConnectionString("TUTDb")));
 builder.Services.AddControllers();
 builder.Services.AddCors(option => option.AddPolicy("corspolicy", builder =>
 {
-    builder.AllowAnyOrigin()
+    //builder.AllowAnyOrigin()
+    builder.WithOrigins("http://localhost:3000")
     .AllowAnyMethod()
     .AllowAnyHeader();
 

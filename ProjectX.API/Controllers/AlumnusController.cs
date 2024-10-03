@@ -28,7 +28,7 @@ namespace ProjectX.API.Controllers
 
         [HttpPost]
         [Route("Registration")]
-        public async Task<IActionResult> Registration(AlumnusDTO alumnusDTO)
+        public async Task<IActionResult> Registration([FromBody] AlumnusDTO alumnusDTO)
         {
             if (!ModelState.IsValid)
             {
@@ -36,7 +36,7 @@ namespace ProjectX.API.Controllers
             }
 
             // Check if the alumnus already exists
-            var objAlumnus = _alumniDbContext.Alumnus.FirstOrDefault(a => a.Email == alumnusDTO.Email);
+            var objAlumnus = _alumniDbContext.Alumnus.FirstOrDefault(a => a.AlumnusId == alumnusDTO.StudentNum);
 
             if (objAlumnus == null)
             {
@@ -52,18 +52,20 @@ namespace ProjectX.API.Controllers
                 await _alumniDbContext.SaveChangesAsync(); // Save changes to the AlumnusDb
 
                 // After successful registration, transfer the alumni data
-                try
-                {
-                    // Call the service to transfer alumni data from tutDb to AlumnusProfile
-                    await _alumnusService.TransferAlumniDataToAlumnusProfile(newAlumnus.AlumnusId);
+                /* try
+                 {
+                     // Call the service to transfer alumni data from tutDb to AlumnusProfile
+                     await _alumnusService.TransferAlumniDataToAlumnusProfile(newAlumnus.AlumnusId);
 
-                    return Ok($"Alumnus {alumnusDTO.StudentNum} has registered successfully, and data has been transferred.");
-                }
-                catch (Exception ex)
-                {
-                    // If the data transfer fails, return an error response
-                    return StatusCode(500, $"Alumnus registered, but data transfer failed: {ex.Message}");
-                }
+                     return Ok($"Alumnus {alumnusDTO.StudentNum} has registered successfully, and data has been transferred.");
+                 }
+                 catch (Exception ex)
+                 {
+                     // If the data transfer fails, return an error response
+                     return StatusCode(500, $"Alumnus registered, but data transfer failed: {ex.Message}");
+                 }*/
+
+                return Ok($"Alumnus {alumnusDTO.StudentNum} has registered successfully, and data has been transferred.");
             }
             else
             {
@@ -75,15 +77,30 @@ namespace ProjectX.API.Controllers
 
         [HttpPost]
         [Route("Login")]
-        public IActionResult Login(LoginDTO loginDTO)
+        public IActionResult Login([FromBody] LoginDTO loginDTO)
         {
-            var alumnus = _alumniDbContext.Alumnus.FirstOrDefault(a => a.Email == loginDTO.Email && a.Password == loginDTO.Password);
 
-            if (alumnus != null)
+            if (loginDTO.Role == "admin")
             {
-                return Ok(alumnus);
+                // Handle admin login
+                var admin = _alumniDbContext.admin.FirstOrDefault(a => a.AdminId == loginDTO.UserId && a.Password == loginDTO.Password);
+                if (admin != null)
+                {
+                    return Ok(admin);
+                }
             }
-            return NoContent();
+            else if (loginDTO.Role == "alumni")
+            {
+                // Handle alumnus login
+                var alumnus = _alumniDbContext.Alumnus.FirstOrDefault(a => a.AlumnusId == loginDTO.UserId && a.Password == loginDTO.Password);
+
+                if (alumnus != null)
+                {
+                    return Ok(alumnus);
+                }
+            }
+            return Unauthorized("Invalid credentials.");
+
         }
 
         [HttpGet]

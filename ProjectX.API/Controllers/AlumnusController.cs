@@ -7,6 +7,7 @@ using ProjectX.Data.Model.bl;
 using System.Data.SqlClient;
 using ProjectX.Service;
 using ProjectX.Data;
+using TUTDb.Data;
 
 
 
@@ -19,11 +20,15 @@ namespace ProjectX.API.Controllers
     {
         private readonly AlumniDbContext _alumniDbContext;
         private readonly AlumnusService _alumnusService;
+        private readonly TUTDbContext _tutDbContext;
+        private readonly ILogger<AlumnusController> _logger;
 
-        public AlumnusController(AlumniDbContext alumniDbContext, AlumnusService alumnusService)
+        public AlumnusController(AlumniDbContext alumniDbContext, AlumnusService alumnusService, TUTDbContext tutDbContext, ILogger<AlumnusController> logger)
         {
             _alumniDbContext = alumniDbContext;
             _alumnusService = alumnusService;
+            _tutDbContext = tutDbContext;
+            _logger = logger;
         }
 
         [HttpPost]
@@ -33,6 +38,14 @@ namespace ProjectX.API.Controllers
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
+            }
+
+            // Check if the student number exists in the TutDb
+            var studentInTutDb = _tutDbContext.Alumni.FirstOrDefault(s => s.AlumnusId == alumnusDTO.StudentNum);
+
+            if (studentInTutDb == null)
+            {
+                return BadRequest("You are not a TUT alumni. Registration denied.");
             }
 
             // Check if the alumnus already exists
@@ -84,8 +97,13 @@ namespace ProjectX.API.Controllers
             {
                 // Handle admin login
                 var admin = _alumniDbContext.admin.FirstOrDefault(a => a.AdminId == loginDTO.UserId && a.Password == loginDTO.Password);
+
                 if (admin != null)
                 {
+                    // Set session variables
+                    HttpContext.Session.SetString("UserId", admin.AdminId.ToString());
+                    HttpContext.Session.SetString("UserName", admin.Name);
+                    HttpContext.Session.SetString("UserRole", "admin");
                     return Ok(admin);
                 }
             }
@@ -96,12 +114,49 @@ namespace ProjectX.API.Controllers
 
                 if (alumnus != null)
                 {
+                    // Set session variables
+                    HttpContext.Session.SetString("UserId", alumnus.AlumnusId.ToString());
+                    HttpContext.Session.SetString("UserEmail", alumnus.Email);
+                    HttpContext.Session.SetString("UserRole", "alumni");
                     return Ok(alumnus);
                 }
             }
             return Unauthorized("Invalid credentials.");
-
         }
+
+        [HttpGet]
+        [Route("IsLoggedIn")]
+        public IActionResult IsLoggedIn()
+        {
+            var userId = HttpContext.Session.GetString("UserId");
+
+            if (string.IsNullOrEmpty(userId))
+            {
+                _logger.LogWarning("IsLoggedIn: User not logged in.");
+                return Unauthorized(new { message = "User not logged in." });
+            }
+
+            var email = HttpContext.Session.GetString("UserEmail");
+            var role = HttpContext.Session.GetString("UserRole");
+
+            _logger.LogInformation($"IsLoggedIn: UserId = {userId}, Email = {email}, Role = {role}");
+
+            return Ok(new
+            {
+                UserId = userId,
+                Email = email,
+                Role = role
+            });
+        }
+
+        [HttpPost]
+        [Route("Logout")]
+        public IActionResult Logout()
+        {
+            HttpContext.Session.Clear(); // Clear all session data
+            return Ok(new { message = "Logged out successfully." });
+        }
+
 
         [HttpGet]
         [Route("GetAlumnis")]

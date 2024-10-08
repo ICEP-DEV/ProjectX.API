@@ -7,7 +7,7 @@ using ProjectX.Data.Model.bl;
 using System.Data.SqlClient;
 using ProjectX.Service;
 using ProjectX.Data;
-using TUTDb.Data;
+
 
 
 
@@ -19,15 +19,15 @@ namespace ProjectX.API.Controllers
     public class AlumnusController : ControllerBase
     {
         private readonly AlumniDbContext _alumniDbContext;
-        private readonly AlumnusService _alumnusService;
-        private readonly TUTDbContext _tutDbContext;
+        private readonly IAlumnusService _alumnusService;
+        
         private readonly ILogger<AlumnusController> _logger;
 
-        public AlumnusController(AlumniDbContext alumniDbContext, AlumnusService alumnusService, TUTDbContext tutDbContext, ILogger<AlumnusController> logger)
+        public AlumnusController(AlumniDbContext alumniDbContext, IAlumnusService alumnusService, ILogger<AlumnusController> logger)
         {
             _alumniDbContext = alumniDbContext;
             _alumnusService = alumnusService;
-            _tutDbContext = tutDbContext;
+           
             _logger = logger;
         }
 
@@ -41,7 +41,7 @@ namespace ProjectX.API.Controllers
             }
 
             // Check if the student number exists in the TutDb
-            var studentInTutDb = _tutDbContext.Alumni.FirstOrDefault(s => s.AlumnusId == alumnusDTO.StudentNum);
+            var studentInTutDb = _alumniDbContext.Alumni.FirstOrDefault(s => s.AlumnusId == alumnusDTO.StudentNum);
 
             if (studentInTutDb == null)
             {
@@ -65,7 +65,7 @@ namespace ProjectX.API.Controllers
                 await _alumniDbContext.SaveChangesAsync(); // Save changes to the AlumnusDb
 
                 // After successful registration, transfer the alumni data
-                /* try
+                 try
                  {
                      // Call the service to transfer alumni data from tutDb to AlumnusProfile
                      await _alumnusService.TransferAlumniDataToAlumnusProfile(newAlumnus.AlumnusId);
@@ -76,14 +76,14 @@ namespace ProjectX.API.Controllers
                  {
                      // If the data transfer fails, return an error response
                      return StatusCode(500, $"Alumnus registered, but data transfer failed: {ex.Message}");
-                 }*/
+                 }
 
-                return Ok($"Alumnus {alumnusDTO.StudentNum} has registered successfully, and data has been transferred.");
+               // return Ok($"Alumnus {alumnusDTO.StudentNum} has registered successfully, and data has been transferred.");
             }
             else
             {
                 // If the alumnus already exists, return an error
-                return BadRequest($"Alumnus with email '{objAlumnus.Email}' already exists. Try again.");
+                return BadRequest($"Alumnus '{objAlumnus.AlumnusId}' already exists.");
             }
         }
 
@@ -92,37 +92,62 @@ namespace ProjectX.API.Controllers
         [Route("Login")]
         public IActionResult Login([FromBody] LoginDTO loginDTO)
         {
-
             if (loginDTO.Role == "admin")
             {
-                // Handle admin login
-                var admin = _alumniDbContext.admin.FirstOrDefault(a => a.AdminId == loginDTO.UserId && a.Password == loginDTO.Password);
+                // Check if admin exists by UserId
+                var admin = _alumniDbContext.Admin.FirstOrDefault(a => a.AdminId == loginDTO.UserId);
 
                 if (admin != null)
                 {
-                    // Set session variables
-                    HttpContext.Session.SetString("UserId", admin.AdminId.ToString());
-                    HttpContext.Session.SetString("UserName", admin.Name);
-                    HttpContext.Session.SetString("UserRole", "admin");
-                    return Ok(admin);
+                    // If admin exists, check if the password is correct
+                    if (admin.Password == loginDTO.Password)
+                    {
+                        // Set session variables
+                        HttpContext.Session.SetString("UserId", admin.AdminId.ToString());
+                        HttpContext.Session.SetString("UserName", admin.Name);
+                        HttpContext.Session.SetString("UserRole", "admin");
+                        return Ok(admin);
+                    }
+                    else
+                    {
+                        return Unauthorized("Incorrect password.");
+                    }
+                }
+                else
+                {
+                    return NotFound("Admin not found.");
                 }
             }
             else if (loginDTO.Role == "alumni")
             {
-                // Handle alumnus login
-                var alumnus = _alumniDbContext.Alumnus.FirstOrDefault(a => a.AlumnusId == loginDTO.UserId && a.Password == loginDTO.Password);
+                // Check if alumnus exists by UserId
+                var alumnus = _alumniDbContext.Alumnus.FirstOrDefault(a => a.AlumnusId == loginDTO.UserId);
 
                 if (alumnus != null)
                 {
-                    // Set session variables
-                    HttpContext.Session.SetString("UserId", alumnus.AlumnusId.ToString());
-                    HttpContext.Session.SetString("UserEmail", alumnus.Email);
-                    HttpContext.Session.SetString("UserRole", "alumni");
-                    return Ok(alumnus);
+                    // If alumnus exists, check if the password is correct
+                    if (alumnus.Password == loginDTO.Password)
+                    {
+                        // Set session variables
+                        HttpContext.Session.SetString("UserId", alumnus.AlumnusId.ToString());
+                        HttpContext.Session.SetString("UserEmail", alumnus.Email);
+                        HttpContext.Session.SetString("UserRole", "alumni");
+                        return Ok(alumnus);
+                    }
+                    else
+                    {
+                        return Unauthorized("Incorrect password.");
+                    }
+                }
+                else
+                {
+                    return NotFound("Alumnus not found. Please sign up.");
                 }
             }
-            return Unauthorized("Invalid credentials.");
+
+            return BadRequest("Invalid role specified.");
         }
+
 
         [HttpGet]
         [Route("IsLoggedIn")]

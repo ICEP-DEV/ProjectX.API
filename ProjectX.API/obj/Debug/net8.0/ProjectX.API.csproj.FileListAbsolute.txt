@@ -629,8 +629,6 @@ C:\Users\221447646\AlumniSpace\ProjectX.API\bin\Debug\net8.0\ProjectX.API.dll
 C:\Users\221447646\AlumniSpace\ProjectX.API\bin\Debug\net8.0\ProjectX.API.pdb
 C:\Users\221447646\AlumniSpace\ProjectX.API\bin\Debug\net8.0\Azure.Core.dll
 C:\Users\221447646\AlumniSpace\ProjectX.API\bin\Debug\net8.0\Azure.Identity.dll
-C:\Users\221447646\AlumniSpace\ProjectX.API\bin\Debug\net8.0\EntityFramework.SqlServer.dll
-C:\Users\221447646\AlumniSpace\ProjectX.API\bin\Debug\net8.0\EntityFramework.dll
 C:\Users\221447646\AlumniSpace\ProjectX.API\bin\Debug\net8.0\Humanizer.dll
 C:\Users\221447646\AlumniSpace\ProjectX.API\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\221447646\AlumniSpace\ProjectX.API\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
@@ -745,9 +743,7 @@ C:\Users\221447646\AlumniSpace\ProjectX.API\bin\Debug\net8.0\runtimes\win\lib\ne
 C:\Users\221447646\AlumniSpace\ProjectX.API\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\221447646\AlumniSpace\ProjectX.API\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 C:\Users\221447646\AlumniSpace\ProjectX.API\bin\Debug\net8.0\ProjectX.Data.dll
-C:\Users\221447646\AlumniSpace\ProjectX.API\bin\Debug\net8.0\TUTDb.Data.dll
 C:\Users\221447646\AlumniSpace\ProjectX.API\bin\Debug\net8.0\ProjectX.Data.pdb
-C:\Users\221447646\AlumniSpace\ProjectX.API\bin\Debug\net8.0\TUTDb.Data.pdb
 C:\Users\221447646\AlumniSpace\ProjectX.API\obj\Debug\net8.0\ProjectX.API.csproj.AssemblyReference.cache
 C:\Users\221447646\AlumniSpace\ProjectX.API\obj\Debug\net8.0\ProjectX.API.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\221447646\AlumniSpace\ProjectX.API\obj\Debug\net8.0\ProjectX.API.AssemblyInfoInputs.cache

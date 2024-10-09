@@ -47,8 +47,6 @@ C:\Users\221447646\AlumniSpace\ProjectX.Service\obj\Debug\net8.0\refint\ProjectX
 C:\Users\221447646\AlumniSpace\ProjectX.Service\obj\Debug\net8.0\ProjectX.Service.pdb
 C:\Users\221447646\AlumniSpace\ProjectX.Service\obj\Debug\net8.0\ref\ProjectX.Service.dll
 C:\Users\221447646\AlumniSpace\ProjectX.Service\bin\Debug\net8.0\ProjectX.Data.dll
-C:\Users\221447646\AlumniSpace\ProjectX.Service\bin\Debug\net8.0\TUTDb.Data.dll
 C:\Users\221447646\AlumniSpace\ProjectX.Service\bin\Debug\net8.0\ProjectX.Data.pdb
-C:\Users\221447646\AlumniSpace\ProjectX.Service\bin\Debug\net8.0\TUTDb.Data.pdb
 C:\Users\221447646\AlumniSpace\ProjectX.Service\obj\Debug\net8.0\ProjectX.Service.csproj.AssemblyReference.cache
 C:\Users\221447646\AlumniSpace\ProjectX.Service\obj\Debug\net8.0\ProjectX.8950EF3A.Up2Date

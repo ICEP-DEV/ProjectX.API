@@ -9,8 +9,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProjectX.Data", "ProjectX.D
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProjectX.Service", "ProjectX.Service\ProjectX.Service.csproj", "{3B572D9C-4D5F-449E-9F2E-E8F393FBC861}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TUTDb.Data", "TUTDb.Data\TUTDb.Data.csproj", "{BBA30471-64A5-4134-B7DC-FDF39BFA7447}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,10 +27,6 @@ Global
 		{3B572D9C-4D5F-449E-9F2E-E8F393FBC861}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3B572D9C-4D5F-449E-9F2E-E8F393FBC861}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3B572D9C-4D5F-449E-9F2E-E8F393FBC861}.Release|Any CPU.Build.0 = Release|Any CPU
-		{BBA30471-64A5-4134-B7DC-FDF39BFA7447}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BBA30471-64A5-4134-B7DC-FDF39BFA7447}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BBA30471-64A5-4134-B7DC-FDF39BFA7447}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BBA30471-64A5-4134-B7DC-FDF39BFA7447}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

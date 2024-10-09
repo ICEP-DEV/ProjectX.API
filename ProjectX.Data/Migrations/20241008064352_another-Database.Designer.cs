@@ -12,8 +12,8 @@ using ProjectX.Data;
 namespace ProjectX.Data.Migrations
 {
     [DbContext(typeof(AlumniDbContext))]
-    [Migration("20241001132657_New-database")]
-    partial class Newdatabase
+    [Migration("20241008064352_another-Database")]
+    partial class anotherDatabase
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -46,7 +46,46 @@ namespace ProjectX.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("admin");
+                    b.ToTable("Admin");
+                });
+
+            modelBuilder.Entity("ProjectX.Data.Model.Alumni", b =>
+                {
+                    b.Property<int>("id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("id"));
+
+                    b.Property<int>("AlumnusId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Campus")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Course")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Faculty")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("FirstName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("GraduationYear")
+                        .HasColumnType("int");
+
+                    b.Property<string>("LastName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("id");
+
+                    b.ToTable("Alumni");
                 });
 
             modelBuilder.Entity("ProjectX.Data.Model.Alumnus", b =>

@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace ProjectX.Data.Migrations
 {
     /// <inheritdoc />
-    public partial class Newdatabase : Migration
+    public partial class NewDatabase : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -24,6 +24,25 @@ namespace ProjectX.Data.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_admin", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Alumni",
+                columns: table => new
+                {
+                    id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    AlumnusId = table.Column<int>(type: "int", nullable: false),
+                    FirstName = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    LastName = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Course = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    GraduationYear = table.Column<int>(type: "int", nullable: false),
+                    Campus = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Faculty = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Alumni", x => x.id);
                 });
 
             migrationBuilder.CreateTable(
@@ -69,6 +88,9 @@ namespace ProjectX.Data.Migrations
         {
             migrationBuilder.DropTable(
                 name: "admin");
+
+            migrationBuilder.DropTable(
+                name: "Alumni");
 
             migrationBuilder.DropTable(
                 name: "Alumnus");

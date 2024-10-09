@@ -7,8 +7,12 @@ namespace ProjectX.Data
     {
         public AlumniDbContext(DbContextOptions<AlumniDbContext> options) : base(options) { }
 
-        public DbSet<Admin> admin { get; set; }
+        public DbSet<Admin> Admin { get; set; }
         public DbSet<AlumnusProfile> AlumnusProfile { get; set; }
         public DbSet<Alumnus> Alumnus { get; set; }
+        public DbSet<Alumni> Alumni { get; set; }
+
+
+      
     }
 }

@@ -12,7 +12,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ProjectX.Data\ProjectX.Data.csproj" />
-    <ProjectReference Include="..\TUTDb.Data\TUTDb.Data.csproj" />
   </ItemGroup>
 
 </Project>

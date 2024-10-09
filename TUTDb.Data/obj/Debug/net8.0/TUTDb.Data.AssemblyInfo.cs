@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TUTDb.Data")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+906272763dea1f9cea6931fbe8c2a29f1b9cc70c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+74527dad36fe198b91083356200614ff8a0376f5")]
 [assembly: System.Reflection.AssemblyProductAttribute("TUTDb.Data")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TUTDb.Data")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

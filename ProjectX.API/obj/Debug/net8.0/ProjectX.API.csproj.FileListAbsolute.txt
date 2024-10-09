@@ -776,3 +776,10 @@ C:\Users\221447646\ProjectX.API\ProjectX.API\obj\Debug\net8.0\refint\ProjectX.AP
 C:\Users\221447646\ProjectX.API\ProjectX.API\obj\Debug\net8.0\ProjectX.API.pdb
 C:\Users\221447646\ProjectX.API\ProjectX.API\obj\Debug\net8.0\ProjectX.API.genruntimeconfig.cache
 C:\Users\221447646\ProjectX.API\ProjectX.API\obj\Debug\net8.0\ref\ProjectX.API.dll
+C:\Users\USER\AlumniSpace\ProjectX.API\obj\Debug\net8.0\ProjectX.API.csproj.AssemblyReference.cache
+C:\Users\USER\AlumniSpace\ProjectX.API\obj\Debug\net8.0\ProjectX.API.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\USER\AlumniSpace\ProjectX.API\obj\Debug\net8.0\ProjectX.API.AssemblyInfoInputs.cache
+C:\Users\USER\AlumniSpace\ProjectX.API\obj\Debug\net8.0\ProjectX.API.AssemblyInfo.cs
+C:\Users\USER\AlumniSpace\ProjectX.API\obj\Debug\net8.0\ProjectX.API.csproj.CoreCompileInputs.cache
+C:\Users\USER\AlumniSpace\ProjectX.API\obj\Debug\net8.0\ProjectX.API.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\USER\AlumniSpace\ProjectX.API\obj\Debug\net8.0\ProjectX.API.sourcelink.json

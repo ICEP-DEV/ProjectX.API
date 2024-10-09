@@ -32,7 +32,7 @@ builder.Services.AddCors(option => option.AddPolicy("corspolicy", builder =>
 }));
 builder.Services.AddScoped<AlumniDbContext, AlumniDbContext>();
 builder.Services.AddScoped<IAlumnusService, AlumnusService>();// Register AlumnusService
-
+builder.Services.AddScoped<IGuestService, GuestService>();// Register AlumnusService
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

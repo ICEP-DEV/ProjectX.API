@@ -41,127 +41,117 @@
     ]
   },
   {
-    "ContainingType": "ProjectX.API.Controllers.AlumnusRegistrationController",
-    "Method": "AlumnusApproval",
-    "RelativePath": "api/AlumnusRegistration/AlumnusApproval",
-    "HttpMethod": "POST",
+    "ContainingType": "ProjectX.API.Controllers.AlumnusController",
+    "Method": "GetAlumnis",
+    "RelativePath": "api/Alumnus/GetAlumnis/GetAlumnis",
+    "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
-    "Parameters": [
-      {
-        "Name": "Id",
-        "Type": "System.Int32",
-        "IsRequired": false
-      },
-      {
-        "Name": "StudentNum",
-        "Type": "System.Int32",
-        "IsRequired": false
-      },
-      {
-        "Name": "Email",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "Password",
-        "Type": "System.String",
-        "IsRequired": false
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "ProjectX.Data.Model.dto.Response",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
+    "Parameters": [],
+    "ReturnTypes": []
   },
   {
-    "ContainingType": "ProjectX.API.Controllers.AlumnusRegistrationController",
-    "Method": "AlumnusRegistration",
-    "RelativePath": "api/AlumnusRegistration/AlumnusRegistration",
-    "HttpMethod": "POST",
+    "ContainingType": "ProjectX.API.Controllers.AlumnusController",
+    "Method": "GetAlumnusProfile",
+    "RelativePath": "api/Alumnus/GetAlumnusProfile/GetAlumnusProfile",
+    "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
-    "Parameters": [
-      {
-        "Name": "Id",
-        "Type": "System.Int32",
-        "IsRequired": false
-      },
-      {
-        "Name": "StudentNum",
-        "Type": "System.Int32",
-        "IsRequired": false
-      },
-      {
-        "Name": "Email",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "Password",
-        "Type": "System.String",
-        "IsRequired": false
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "ProjectX.Data.Model.dto.Response",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
+    "Parameters": [],
+    "ReturnTypes": []
   },
   {
-    "ContainingType": "ProjectX.API.Controllers.AlumnusRegistrationController",
+    "ContainingType": "ProjectX.API.Controllers.AlumnusController",
+    "Method": "GetLoggedAlumnusProfile",
+    "RelativePath": "api/Alumnus/GetLoggedAlumnusProfile/GetLoggedAlumnusProfile",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjectX.API.Controllers.AlumnusController",
+    "Method": "IsLoggedIn",
+    "RelativePath": "api/Alumnus/IsLoggedIn/IsLoggedIn",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjectX.API.Controllers.AlumnusController",
     "Method": "Login",
-    "RelativePath": "api/AlumnusRegistration/Login",
+    "RelativePath": "api/Alumnus/Login/Login",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "Id",
+        "Name": "loginDTO",
+        "Type": "ProjectX.Data.Model.dto.LoginDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjectX.API.Controllers.AlumnusController",
+    "Method": "Logout",
+    "RelativePath": "api/Alumnus/Logout/Logout",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjectX.API.Controllers.AlumnusController",
+    "Method": "Registration",
+    "RelativePath": "api/Alumnus/Registration/Registration",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "alumnusDTO",
+        "Type": "ProjectX.Data.Model.dto.AlumnusDTO",
+        "IsRequired": true
+      },
+      {
+        "Name": "ItsId",
         "Type": "System.Int32",
-        "IsRequired": false
-      },
-      {
-        "Name": "StudentNum",
-        "Type": "System.Int32",
-        "IsRequired": false
-      },
-      {
-        "Name": "Email",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "Password",
-        "Type": "System.String",
         "IsRequired": false
       }
     ],
-    "ReturnTypes": [
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjectX.API.Controllers.AlumnusController",
+    "Method": "VerifyAlumni",
+    "RelativePath": "api/Alumnus/VerifyAlumni/VerifyAlumni",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
       {
-        "Type": "ProjectX.Data.Model.dto.Response",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
+        "Name": "verifyDTO",
+        "Type": "ProjectX.Data.Model.dto.VerifyDTO",
+        "IsRequired": true
       }
-    ]
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjectX.API.Controllers.ConnectionController",
+    "Method": "ConnectToServer",
+    "RelativePath": "api/Connection/connect",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
   },
   {
     "ContainingType": "ProjectX.API.Controllers.WeatherForecastController",

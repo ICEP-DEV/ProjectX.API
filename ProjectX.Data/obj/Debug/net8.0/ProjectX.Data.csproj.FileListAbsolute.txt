@@ -73,3 +73,9 @@ C:\Users\221447646\ProjectX.API\ProjectX.Data\obj\Debug\net8.0\refint\ProjectX.D
 C:\Users\221447646\ProjectX.API\ProjectX.Data\obj\Debug\net8.0\ProjectX.Data.pdb
 C:\Users\221447646\ProjectX.API\ProjectX.Data\obj\Debug\net8.0\ProjectX.Data.genruntimeconfig.cache
 C:\Users\221447646\ProjectX.API\ProjectX.Data\obj\Debug\net8.0\ref\ProjectX.Data.dll
+C:\Users\USER\AlumniSpace\ProjectX.Data\obj\Debug\net8.0\ProjectX.Data.csproj.AssemblyReference.cache
+C:\Users\USER\AlumniSpace\ProjectX.Data\obj\Debug\net8.0\ProjectX.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\USER\AlumniSpace\ProjectX.Data\obj\Debug\net8.0\ProjectX.Data.AssemblyInfoInputs.cache
+C:\Users\USER\AlumniSpace\ProjectX.Data\obj\Debug\net8.0\ProjectX.Data.AssemblyInfo.cs
+C:\Users\USER\AlumniSpace\ProjectX.Data\obj\Debug\net8.0\ProjectX.Data.csproj.CoreCompileInputs.cache
+C:\Users\USER\AlumniSpace\ProjectX.Data\obj\Debug\net8.0\ProjectX.Data.sourcelink.json

@@ -4547,11 +4547,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\221447646\\AlumniSpace\\ProjectX.Data\\ProjectX.Data.csproj",
+      "projectUniqueName": "C:\\Users\\221447646\\ProjectX.API\\ProjectX.Data\\ProjectX.Data.csproj",
       "projectName": "ProjectX.Data",
-      "projectPath": "C:\\Users\\221447646\\AlumniSpace\\ProjectX.Data\\ProjectX.Data.csproj",
+      "projectPath": "C:\\Users\\221447646\\ProjectX.API\\ProjectX.Data\\ProjectX.Data.csproj",
       "packagesPath": "C:\\Users\\221447646\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\221447646\\AlumniSpace\\ProjectX.Data\\obj\\",
+      "outputPath": "C:\\Users\\221447646\\ProjectX.API\\ProjectX.Data\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\221447646\\AppData\\Roaming\\NuGet\\NuGet.Config",

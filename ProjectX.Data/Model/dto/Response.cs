@@ -16,7 +16,7 @@ namespace ProjectX.Data.Model.dto
 
         public List<Alumnus> listAlumnus { get; set; }
 
-        public Alumnus AlumnusRegistration { get; set; }
+        
 
     }
 }

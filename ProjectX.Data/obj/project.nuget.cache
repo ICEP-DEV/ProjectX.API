@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "7kwHrZXxWq1YiwZu3thR7mSwxft5VSRaMPecZY6QHmK+gPlQIPLHRa8J/DyUCgu0i0pe5J4CigWGc8+s4MM8TA==",
+  "dgSpecHash": "B7trw0k/GbiwtcdUoGqx9NHbpCzsNUf8/B1NbcEyNiDpjo6LkC2PgiCu7unldvjbf//WUNOxOVBRJ2C43ncbvA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\221447646\\AlumniSpace\\ProjectX.Data\\ProjectX.Data.csproj",
+  "projectFilePath": "C:\\Users\\221447646\\ProjectX.API\\ProjectX.Data\\ProjectX.Data.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\221447646\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\221447646\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

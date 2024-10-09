@@ -12,8 +12,8 @@ using ProjectX.Data;
 namespace ProjectX.Data.Migrations
 {
     [DbContext(typeof(AlumniDbContext))]
-    [Migration("20241008064352_another-Database")]
-    partial class anotherDatabase
+    [Migration("20241009132145_Alumnus-database")]
+    partial class Alumnusdatabase
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -77,6 +77,9 @@ namespace ProjectX.Data.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("GraduationYear")
+                        .HasColumnType("int");
+
+                    b.Property<int>("ItsPin")
                         .HasColumnType("int");
 
                     b.Property<string>("LastName")
@@ -152,8 +155,13 @@ namespace ProjectX.Data.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<byte>("ProfilePicture")
-                        .HasColumnType("tinyint");
+                    b.Property<string>("LinkedInProfile")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<byte[]>("ProfilePicture")
+                        .IsRequired()
+                        .HasColumnType("varbinary(max)");
 
                     b.HasKey("AlumnusProfId");
 

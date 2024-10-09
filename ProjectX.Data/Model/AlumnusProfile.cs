@@ -17,6 +17,12 @@ namespace ProjectX.Data.Model
             Course = string.Empty;
             Campus = string.Empty;
             Faculty = string.Empty;
+            LinkedInProfile = string.Empty;
+
+            // Initialize ProfilePicture from a GIF file
+            string filePath = "C:\\Users\\221447646\\Downloads\\1\\1\\intro-bg1.gif";
+            ProfilePicture = File.Exists(filePath) ? File.ReadAllBytes(filePath) : new byte[0]; // fallback to an empty byte array if file is not found
+
         }
 
         [Key]
@@ -27,7 +33,9 @@ namespace ProjectX.Data.Model
         public int GraduationYear { get; set; }
         public string Campus { get; set; }
         public string Faculty { get; set; }
-        public byte ProfilePicture { get; set; }
+        public string LinkedInProfile { get; set; }
+        public byte[] ProfilePicture { get; set; }
+
 
 
         [ForeignKey("Alumnus")]

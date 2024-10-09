@@ -1,24 +1,24 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Http;
+using Microsoft.EntityFrameworkCore;
 using ProjectX.Data;
 using ProjectX.Data.Model;
 
 
 namespace ProjectX.Service
 {
-    public class AlumnusService: IAlumnusService
+    public class AlumnusService : IAlumnusService
     {
-        
         private readonly AlumniDbContext _alumniDbContext;
+        //private readonly IHttpContextAccessor _httpContextAccessor;
 
-        public AlumnusService( AlumniDbContext alumniDbContext)
+        public AlumnusService(AlumniDbContext alumniDbContext)
         {
-            
             _alumniDbContext = alumniDbContext;
+            //_httpContextAccessor = httpContextAccessor;
         }
 
-       public async Task<Alumni> TransferAlumniDataToAlumnusProfile(int alumnusId)
-{
-            // Fetch the alumnus details from the Alumnus table (AlumnusDb)
+        public async Task<Alumni> TransferAlumniDataToAlumnusProfile(int alumnusId)
+        {
             var alumnus = await _alumniDbContext.Alumnus.FirstOrDefaultAsync(a => a.AlumnusId == alumnusId);
 
             if (alumnus == null)
@@ -26,7 +26,6 @@ namespace ProjectX.Service
                 throw new Exception("Alumnus not found.");
             }
 
-            // Fetch the related alumni details from the Alumni table (tutDb)
             var alumniDetails = await _alumniDbContext.Alumni.FirstOrDefaultAsync(a => a.AlumnusId == alumnusId);
 
             if (alumniDetails == null)
@@ -34,7 +33,6 @@ namespace ProjectX.Service
                 throw new Exception("Alumni details not found.");
             }
 
-            // Create an AlumnusProfile object and populate it with data from Alumni
             AlumnusProfile alumnusProfile = new AlumnusProfile
             {
                 AlumnusId = alumnusId,
@@ -46,13 +44,37 @@ namespace ProjectX.Service
                 Faculty = alumniDetails.Faculty
             };
 
-            // Save the new AlumnusProfile to the AlumnusDb
             _alumniDbContext.AlumnusProfile.Add(alumnusProfile);
             await _alumniDbContext.SaveChangesAsync();
 
-            // Return the alumni details
             return alumniDetails;
         }
 
+       /* public async Task<Alumni> VerifyAlumniByItsPin(string itsPin)
+        {
+            var alumni = await _alumniDbContext.Alumni.FirstOrDefaultAsync(a => a.ItsPin.ToString() == itsPin);
+
+            if (alumni == null)
+            {
+                throw new UnauthorizedAccessException("ITS pin does not exist.");
+            }
+
+            _httpContextAccessor.HttpContext.Session.SetString("ItsId", alumni.AlumnusId.ToString());
+
+            return alumni;
+        }
+
+        public async Task<AlumnusProfile> GetAlumnusProfile(int alumnusId)
+        {
+            var alumnusProfile = await _alumniDbContext.AlumnusProfile.FirstOrDefaultAsync(a => a.AlumnusId == alumnusId);
+
+            if (alumnusProfile == null)
+            {
+                throw new Exception("Alumnus profile not found.");
+            }
+
+            return alumnusProfile;
+        }*/
     }
+
 }

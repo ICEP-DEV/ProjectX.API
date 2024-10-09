@@ -6,13 +6,13 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace ProjectX.Data.Migrations
 {
     /// <inheritdoc />
-    public partial class NewDatabase : Migration
+    public partial class Alumnusdatabase : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "admin",
+                name: "Admin",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
@@ -23,7 +23,7 @@ namespace ProjectX.Data.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_admin", x => x.Id);
+                    table.PrimaryKey("PK_Admin", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -38,7 +38,8 @@ namespace ProjectX.Data.Migrations
                     Course = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     GraduationYear = table.Column<int>(type: "int", nullable: false),
                     Campus = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Faculty = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    Faculty = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    ItsPin = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -74,7 +75,8 @@ namespace ProjectX.Data.Migrations
                     GraduationYear = table.Column<int>(type: "int", nullable: false),
                     Campus = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Faculty = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    ProfilePicture = table.Column<byte>(type: "tinyint", nullable: false),
+                    LinkedInProfile = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    ProfilePicture = table.Column<byte[]>(type: "varbinary(max)", nullable: false),
                     AlumnusId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
@@ -87,7 +89,7 @@ namespace ProjectX.Data.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "admin");
+                name: "Admin");
 
             migrationBuilder.DropTable(
                 name: "Alumni");

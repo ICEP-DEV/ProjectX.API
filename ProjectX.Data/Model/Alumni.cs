@@ -23,6 +23,7 @@ namespace ProjectX.Data.Model
         public int GraduationYear { get; set; }
         public string Campus { get; set; }
         public string Faculty { get; set; }
+        public int ItsPin { get; set; }
         
 
     }

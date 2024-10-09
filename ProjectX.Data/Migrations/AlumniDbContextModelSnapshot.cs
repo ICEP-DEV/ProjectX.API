@@ -76,6 +76,9 @@ namespace ProjectX.Data.Migrations
                     b.Property<int>("GraduationYear")
                         .HasColumnType("int");
 
+                    b.Property<int>("ItsPin")
+                        .HasColumnType("int");
+
                     b.Property<string>("LastName")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -149,8 +152,13 @@ namespace ProjectX.Data.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<byte>("ProfilePicture")
-                        .HasColumnType("tinyint");
+                    b.Property<string>("LinkedInProfile")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<byte[]>("ProfilePicture")
+                        .IsRequired()
+                        .HasColumnType("varbinary(max)");
 
                     b.HasKey("AlumnusProfId");
 

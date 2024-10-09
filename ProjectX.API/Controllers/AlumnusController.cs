@@ -7,6 +7,7 @@ using ProjectX.Data.Model.bl;
 using System.Data.SqlClient;
 using ProjectX.Service;
 using ProjectX.Data;
+using Microsoft.EntityFrameworkCore;
 
 
 
@@ -33,60 +34,123 @@ namespace ProjectX.API.Controllers
 
         [HttpPost]
         [Route("Registration")]
-        public async Task<IActionResult> Registration([FromBody] AlumnusDTO alumnusDTO)
+        public async Task<IActionResult> Registration([FromBody] AlumnusDTO alumnusDTO,VerifyDTO verifyDTO)
         {
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
             }
 
-            // Check if the student number exists in the TutDb
-            var studentInTutDb = _alumniDbContext.Alumni.FirstOrDefault(s => s.AlumnusId == alumnusDTO.StudentNum);
-
+            // Step 1: Verify if the student exists in the TutDb
+            var studentInTutDb = await _alumniDbContext.Alumni.FirstOrDefaultAsync(s => s.AlumnusId == alumnusDTO.StudentNum);
             if (studentInTutDb == null)
             {
                 return BadRequest("You are not a TUT alumni. Registration denied.");
             }
 
-            // Check if the alumnus already exists
-            var objAlumnus = _alumniDbContext.Alumnus.FirstOrDefault(a => a.AlumnusId == alumnusDTO.StudentNum);
-
-            if (objAlumnus == null)
+            // Step 2: Verify the alumni using the ITS Pin before proceeding
+            /*try
             {
-                // Create a new alumnus and save it in the Alumnus table
-                var newAlumnus = new Alumnus
+                var verifiedAlumni = await _alumnusService.VerifyAlumniByItsPin(alumnusDTO.ItsPin);
+                if (verifiedAlumni == null)
                 {
-                    AlumnusId = alumnusDTO.StudentNum,
-                    Email = alumnusDTO.Email,
-                    Password = alumnusDTO.Password
-                };
-
-                _alumniDbContext.Alumnus.Add(newAlumnus);
-                await _alumniDbContext.SaveChangesAsync(); // Save changes to the AlumnusDb
-
-                // After successful registration, transfer the alumni data
-                 try
-                 {
-                     // Call the service to transfer alumni data from tutDb to AlumnusProfile
-                     await _alumnusService.TransferAlumniDataToAlumnusProfile(newAlumnus.AlumnusId);
-
-                     return Ok($"Alumnus {alumnusDTO.StudentNum} has registered successfully, and data has been transferred.");
-                 }
-                 catch (Exception ex)
-                 {
-                     // If the data transfer fails, return an error response
-                     return StatusCode(500, $"Alumnus registered, but data transfer failed: {ex.Message}");
-                 }
-
-               // return Ok($"Alumnus {alumnusDTO.StudentNum} has registered successfully, and data has been transferred.");
+                    return BadRequest("Verification failed. Invalid ITS Pin.");
+                }
             }
-            else
+            catch (UnauthorizedAccessException ex)
             {
-                // If the alumnus already exists, return an error
+                return Unauthorized(ex.Message); // Return an unauthorized response if verification fails
+            }*/
+
+            // Step 3: Check if the alumnus already exists in the Alumnus table
+            var objAlumnus = await _alumniDbContext.Alumnus.FirstOrDefaultAsync(a => a.AlumnusId == alumnusDTO.StudentNum);
+            if (objAlumnus != null)
+            {
                 return BadRequest($"Alumnus '{objAlumnus.AlumnusId}' already exists.");
+            }
+
+            // Step 4: Create a new alumnus and add it to the Alumnus table
+            var newAlumnus = new Alumnus
+            {
+                AlumnusId = alumnusDTO.StudentNum,
+                Email = alumnusDTO.Email,
+                Password = alumnusDTO.Password
+            };
+
+            _alumniDbContext.Alumnus.Add(newAlumnus);
+            await _alumniDbContext.SaveChangesAsync(); // Save the new alumnus
+
+            // Step 5: Transfer alumni data after successful registration
+            try
+            {
+                // Call the service to transfer alumni data from TutDb to AlumnusProfile
+                await _alumnusService.TransferAlumniDataToAlumnusProfile(newAlumnus.AlumnusId);
+
+                return Ok($"Alumnus {alumnusDTO.StudentNum} has registered successfully, and data has been transferred.");
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Alumnus registered, but data transfer failed: {ex.Message}");
             }
         }
 
+
+        [HttpPost]
+        [Route("VerifyAlumni")]
+        public IActionResult VerifyAlumni([FromBody] VerifyDTO verifyDTO)
+        {
+
+            // Check if alumni exists by UserId
+            var alumni = _alumniDbContext.Alumni.FirstOrDefault(a => a.ItsPin == verifyDTO.ItsId);
+           
+
+            //var userIdString = HttpContext.Session.GetString("UserId");
+
+            if (alumni != null)
+            {
+
+                // If its pin exists, 
+              
+                    // Set session variables
+                    HttpContext.Session.SetString("ItsId", alumni.AlumnusId.ToString());
+                    return Ok(alumni);
+               
+            }
+            else
+            {
+                return Unauthorized(" ITS pin does not exist.");
+            }
+            
+        }
+        [HttpGet]
+        [Route("GetAlumnusProfile")]
+        public IActionResult GetAlumnusProfile()
+        {
+            var itsIdString = HttpContext.Session.GetString("ItsId");
+
+            if (string.IsNullOrEmpty(itsIdString))
+            {
+                return Unauthorized("Alumnus does not exist");
+            }
+
+            // Convert UserId to int since AlumnusId is of type int in the database
+            if (!int.TryParse(itsIdString, out int userId))
+            {
+                return BadRequest("Invalid ITS pin.");
+            }
+
+            // Fetch the AlumnusProfile using the AlumnusId from session
+            var alumnusProfile = _alumniDbContext.AlumnusProfile.FirstOrDefault(a => a.AlumnusId == userId);
+
+            if (alumnusProfile != null)
+            {
+                return Ok(alumnusProfile);
+            }
+            else
+            {
+                return NoContent(); // Return no content if the profile is not found
+            }
+        }
 
         [HttpPost]
         [Route("Login")]
@@ -174,6 +238,36 @@ namespace ProjectX.API.Controllers
             });
         }
 
+        [HttpGet]
+        [Route("GetLoggedAlumnusProfile")]
+        public IActionResult GetLoggedAlumnusProfile()
+        {
+            var userIdString = HttpContext.Session.GetString("UserId");
+
+            if (string.IsNullOrEmpty(userIdString))
+            {
+                return Unauthorized("User not logged in.");
+            }
+
+            // Convert UserId to int since AlumnusId is of type int in the database
+            if (!int.TryParse(userIdString, out int userId))
+            {
+                return BadRequest("Invalid UserId.");
+            }
+
+            // Fetch the AlumnusProfile using the AlumnusId from session
+            var alumnusProfile = _alumniDbContext.AlumnusProfile.FirstOrDefault(a => a.AlumnusId == userId);
+
+            if (alumnusProfile != null)
+            {
+                return Ok(alumnusProfile);
+            }
+            else
+            {
+                return NoContent(); // Return no content if the profile is not found
+            }
+        }
+
         [HttpPost]
         [Route("Logout")]
         public IActionResult Logout()
@@ -190,21 +284,6 @@ namespace ProjectX.API.Controllers
             return Ok(_alumniDbContext.Alumnus.ToList());
         }
 
-        [HttpGet]
-        [Route("GetAlumnus")]
-        public IActionResult GetAlumnus(int id)
-        {
-            var alumnus = _alumniDbContext.Alumnus.FirstOrDefault(a => a.AlumnusId == id);
-
-            if (alumnus != null)
-            {
-                return Ok(alumnus);
-            }
-            else
-            {
-                return NoContent();
-            }
-
-        }
+        
     }
 }

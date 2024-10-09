@@ -1,4 +1,5 @@
-﻿using ProjectX.Data.Model.dto;
+﻿using ProjectX.Data.Model;
+using ProjectX.Data.Model.dto;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,6 +11,6 @@ namespace ProjectX.Service
 {
     public interface IGuestService
     {
-        Task<Donation> GetDonation([FromBody]DonationDTO donationDTO);
+        Task<Donation> CreateDonation(DonationDTO donationDTO);
     }
 }

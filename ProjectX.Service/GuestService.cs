@@ -1,9 +1,13 @@
-﻿using ProjectX.Data.Model;
+﻿using ProjectX.Data;
+using ProjectX.Data.Model;
+using ProjectX.Data.Model.dto;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web.Http;
+
 
 namespace ProjectX.Service
 {
@@ -16,24 +20,33 @@ namespace ProjectX.Service
             _alumniDbContext = alumniDbContext;
         }
 
-        public async Task<Donation> GetDonation([FromBody] DonationDTO donationDTO)
+        public async Task<Donation> CreateDonation(DonationDTO donationDTO)
         {
-            if (!ModelState.IsValid)
+            try
             {
-                return BadRequest(ModelState);
-            }
+                // Create new donation object
+                Donation newDonation = new Donation
+                {
+                    Name = donationDTO.Name,
+                    Surname = donationDTO.Surname,
+                    Email = donationDTO.Email,
+                    Event = donationDTO.Event
+                };
 
-            //create new donation object
-            var newDonation = new Donation
+                // Add to the database
+                _alumniDbContext.Donation.Add(newDonation);
+                await _alumniDbContext.SaveChangesAsync(); // Save the new donation
+
+                return newDonation;
+            }
+            catch (Exception ex)
             {
-                Name = donationDTO.Name,
-                Surname = donationDTO.Surname,
-                Email = donationDTO.Email,
-                Event = donationDTO.Event
+                // Optionally, log the exception and handle it as per your requirements
+                throw new Exception($"Error while creating donation: {ex.Message}", ex);
             }
-
-            _alumniDbContext.Alumnus.Add(newDonation);
-            await _alumniDbContext.SaveChangesAsync(); // Save the new donation
         }
+
+
+
     }
 }

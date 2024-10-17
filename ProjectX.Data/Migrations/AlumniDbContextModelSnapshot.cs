@@ -164,6 +164,39 @@ namespace ProjectX.Data.Migrations
 
                     b.ToTable("AlumnusProfile");
                 });
+
+            modelBuilder.Entity("ProjectX.Data.Model.Donation", b =>
+                {
+                    b.Property<int>("DonationId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("DonationId"));
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("EventOptions")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Phone")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Surname")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("DonationId");
+
+                    b.ToTable("Donation");
+                });
 #pragma warning restore 612, 618
         }
     }

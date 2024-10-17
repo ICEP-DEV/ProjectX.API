@@ -10,10 +10,10 @@ namespace ProjectX.Service
     {
         Task<Alumni> TransferAlumniDataToAlumnusProfile(int alumnusId);
 
-        /*Task<Alumni> VerifyAlumniByItsPin(string itsPin);
+        Task<Alumni> VerifyAlumniByItsPin(int itsPin);
 
-        Task<AlumnusProfile> GetAlumnusProfile(int alumnusId);
-        */
+        Task<AlumnusProfile> GetAlumnus(int alumnusId);
+        
     }
     
 }

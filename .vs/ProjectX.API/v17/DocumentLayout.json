@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\221447646\\ProjectX.API\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{3B572D9C-4D5F-449E-9F2E-E8F393FBC861}|ProjectX.Service\\ProjectX.Service.csproj|c:\\users\\221447646\\projectx.api\\projectx.service\\alumnusservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B572D9C-4D5F-449E-9F2E-E8F393FBC861}|ProjectX.Service\\ProjectX.Service.csproj|solutionrelative:projectx.service\\alumnusservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{13E8DF9E-D804-4AB5-9EFB-C2D579DC0548}|ProjectX.API\\ProjectX.API.csproj|c:\\users\\221447646\\projectx.api\\projectx.api\\controllers\\alumnuscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{13E8DF9E-D804-4AB5-9EFB-C2D579DC0548}|ProjectX.API\\ProjectX.API.csproj|solutionrelative:projectx.api\\controllers\\alumnuscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -11,12 +15,36 @@
       "RelativeMoniker": "D:0:0:{3B572D9C-4D5F-449E-9F2E-E8F393FBC861}|ProjectX.Service\\ProjectX.Service.csproj|solutionrelative:projectx.service\\ialumnusservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3B572D9C-4D5F-449E-9F2E-E8F393FBC861}|ProjectX.Service\\ProjectX.Service.csproj|c:\\users\\221447646\\projectx.api\\projectx.service\\alumnusservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3B572D9C-4D5F-449E-9F2E-E8F393FBC861}|ProjectX.Service\\ProjectX.Service.csproj|solutionrelative:projectx.service\\alumnusservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9A33301B-4952-4F05-81A6-31F5EEF81DF7}|ProjectX.Data\\ProjectX.Data.csproj|c:\\users\\221447646\\projectx.api\\projectx.data\\model\\alumni.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A33301B-4952-4F05-81A6-31F5EEF81DF7}|ProjectX.Data\\ProjectX.Data.csproj|solutionrelative:projectx.data\\model\\alumni.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13E8DF9E-D804-4AB5-9EFB-C2D579DC0548}|ProjectX.API\\ProjectX.API.csproj|c:\\users\\221447646\\projectx.api\\projectx.api\\controllers\\guestcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13E8DF9E-D804-4AB5-9EFB-C2D579DC0548}|ProjectX.API\\ProjectX.API.csproj|solutionrelative:projectx.api\\controllers\\guestcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B572D9C-4D5F-449E-9F2E-E8F393FBC861}|ProjectX.Service\\ProjectX.Service.csproj|c:\\users\\221447646\\projectx.api\\projectx.service\\iguestservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B572D9C-4D5F-449E-9F2E-E8F393FBC861}|ProjectX.Service\\ProjectX.Service.csproj|solutionrelative:projectx.service\\iguestservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B572D9C-4D5F-449E-9F2E-E8F393FBC861}|ProjectX.Service\\ProjectX.Service.csproj|c:\\users\\221447646\\projectx.api\\projectx.service\\guestservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B572D9C-4D5F-449E-9F2E-E8F393FBC861}|ProjectX.Service\\ProjectX.Service.csproj|solutionrelative:projectx.service\\guestservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A33301B-4952-4F05-81A6-31F5EEF81DF7}|ProjectX.Data\\ProjectX.Data.csproj|c:\\users\\221447646\\projectx.api\\projectx.data\\model\\dto\\donationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A33301B-4952-4F05-81A6-31F5EEF81DF7}|ProjectX.Data\\ProjectX.Data.csproj|solutionrelative:projectx.data\\model\\dto\\donationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A33301B-4952-4F05-81A6-31F5EEF81DF7}|ProjectX.Data\\ProjectX.Data.csproj|c:\\users\\221447646\\projectx.api\\projectx.data\\model\\donation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A33301B-4952-4F05-81A6-31F5EEF81DF7}|ProjectX.Data\\ProjectX.Data.csproj|solutionrelative:projectx.data\\model\\donation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{13E8DF9E-D804-4AB5-9EFB-C2D579DC0548}|ProjectX.API\\ProjectX.API.csproj|c:\\users\\221447646\\projectx.api\\projectx.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{13E8DF9E-D804-4AB5-9EFB-C2D579DC0548}|ProjectX.API\\ProjectX.API.csproj|solutionrelative:projectx.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A33301B-4952-4F05-81A6-31F5EEF81DF7}|ProjectX.Data\\ProjectX.Data.csproj|c:\\users\\221447646\\projectx.api\\projectx.data\\alumnidbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A33301B-4952-4F05-81A6-31F5EEF81DF7}|ProjectX.Data\\ProjectX.Data.csproj|solutionrelative:projectx.data\\alumnidbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9A33301B-4952-4F05-81A6-31F5EEF81DF7}|ProjectX.Data\\ProjectX.Data.csproj|c:\\users\\221447646\\projectx.api\\projectx.data\\model\\alumnusprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -39,14 +67,6 @@
       "RelativeMoniker": "D:0:0:{9A33301B-4952-4F05-81A6-31F5EEF81DF7}|ProjectX.Data\\ProjectX.Data.csproj|solutionrelative:projectx.data\\model\\dto\\alumnusdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9A33301B-4952-4F05-81A6-31F5EEF81DF7}|ProjectX.Data\\ProjectX.Data.csproj|c:\\users\\221447646\\projectx.api\\projectx.data\\model\\alumni.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9A33301B-4952-4F05-81A6-31F5EEF81DF7}|ProjectX.Data\\ProjectX.Data.csproj|solutionrelative:projectx.data\\model\\alumni.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9A33301B-4952-4F05-81A6-31F5EEF81DF7}|ProjectX.Data\\ProjectX.Data.csproj|c:\\users\\221447646\\projectx.api\\projectx.data\\alumnidbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9A33301B-4952-4F05-81A6-31F5EEF81DF7}|ProjectX.Data\\ProjectX.Data.csproj|solutionrelative:projectx.data\\alumnidbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{9A33301B-4952-4F05-81A6-31F5EEF81DF7}|ProjectX.Data\\ProjectX.Data.csproj|c:\\users\\221447646\\projectx.api\\projectx.data\\model\\alumnus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9A33301B-4952-4F05-81A6-31F5EEF81DF7}|ProjectX.Data\\ProjectX.Data.csproj|solutionrelative:projectx.data\\model\\alumnus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -58,7 +78,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 12,
           "Children": [
             {
               "$type": "Bookmark",
@@ -78,7 +98,72 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Donation.cs",
+              "DocumentMoniker": "C:\\Users\\221447646\\ProjectX.API\\ProjectX.Data\\Model\\Donation.cs",
+              "RelativeDocumentMoniker": "ProjectX.Data\\Model\\Donation.cs",
+              "ToolTip": "C:\\Users\\221447646\\ProjectX.API\\ProjectX.Data\\Model\\Donation.cs",
+              "RelativeToolTip": "ProjectX.Data\\Model\\Donation.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-10T06:53:52.277Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "DonationDTO.cs",
+              "DocumentMoniker": "C:\\Users\\221447646\\ProjectX.API\\ProjectX.Data\\Model\\dto\\DonationDTO.cs",
+              "RelativeDocumentMoniker": "ProjectX.Data\\Model\\dto\\DonationDTO.cs",
+              "ToolTip": "C:\\Users\\221447646\\ProjectX.API\\ProjectX.Data\\Model\\dto\\DonationDTO.cs",
+              "RelativeToolTip": "ProjectX.Data\\Model\\dto\\DonationDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-10T06:52:32.712Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "GuestService.cs",
+              "DocumentMoniker": "C:\\Users\\221447646\\ProjectX.API\\ProjectX.Service\\GuestService.cs",
+              "RelativeDocumentMoniker": "ProjectX.Service\\GuestService.cs",
+              "ToolTip": "C:\\Users\\221447646\\ProjectX.API\\ProjectX.Service\\GuestService.cs",
+              "RelativeToolTip": "ProjectX.Service\\GuestService.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAUwCAAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-10T06:46:57.415Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 5,
+              "Title": "IGuestService.cs",
+              "DocumentMoniker": "C:\\Users\\221447646\\ProjectX.API\\ProjectX.Service\\IGuestService.cs",
+              "RelativeDocumentMoniker": "ProjectX.Service\\IGuestService.cs",
+              "ToolTip": "C:\\Users\\221447646\\ProjectX.API\\ProjectX.Service\\IGuestService.cs",
+              "RelativeToolTip": "ProjectX.Service\\IGuestService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-10T06:46:54.744Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "GuestController.cs",
+              "DocumentMoniker": "C:\\Users\\221447646\\ProjectX.API\\ProjectX.API\\Controllers\\GuestController.cs",
+              "RelativeDocumentMoniker": "ProjectX.API\\Controllers\\GuestController.cs",
+              "ToolTip": "C:\\Users\\221447646\\ProjectX.API\\ProjectX.API\\Controllers\\GuestController.cs",
+              "RelativeToolTip": "ProjectX.API\\Controllers\\GuestController.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAABIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-10T06:46:13.989Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "VerifyDTO.cs",
               "DocumentMoniker": "C:\\Users\\221447646\\ProjectX.API\\ProjectX.Data\\Model\\dto\\VerifyDTO.cs",
               "RelativeDocumentMoniker": "ProjectX.Data\\Model\\dto\\VerifyDTO.cs",
@@ -90,7 +175,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 3,
               "Title": "Alumni.cs",
               "DocumentMoniker": "C:\\Users\\221447646\\ProjectX.API\\ProjectX.Data\\Model\\Alumni.cs",
               "RelativeDocumentMoniker": "ProjectX.Data\\Model\\Alumni.cs",
@@ -98,49 +183,51 @@
               "RelativeToolTip": "ProjectX.Data\\Model\\Alumni.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-09T12:45:13.19Z"
+              "WhenOpened": "2024-10-09T12:45:13.19Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "IAlumnusService.cs",
               "DocumentMoniker": "C:\\Users\\221447646\\ProjectX.API\\ProjectX.Service\\IAlumnusService.cs",
               "RelativeDocumentMoniker": "ProjectX.Service\\IAlumnusService.cs",
               "ToolTip": "C:\\Users\\221447646\\ProjectX.API\\ProjectX.Service\\IAlumnusService.cs",
               "RelativeToolTip": "ProjectX.Service\\IAlumnusService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAKAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAA3AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-08T07:15:37.975Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "AlumnusService.cs",
               "DocumentMoniker": "C:\\Users\\221447646\\ProjectX.API\\ProjectX.Service\\AlumnusService.cs",
               "RelativeDocumentMoniker": "ProjectX.Service\\AlumnusService.cs",
               "ToolTip": "C:\\Users\\221447646\\ProjectX.API\\ProjectX.Service\\AlumnusService.cs",
               "RelativeToolTip": "ProjectX.Service\\AlumnusService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAJAAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAADUAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-08T07:08:34.458Z"
+              "WhenOpened": "2024-10-08T07:08:34.458Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "AlumnusController.cs",
               "DocumentMoniker": "C:\\Users\\221447646\\ProjectX.API\\ProjectX.API\\Controllers\\AlumnusController.cs",
               "RelativeDocumentMoniker": "ProjectX.API\\Controllers\\AlumnusController.cs",
               "ToolTip": "C:\\Users\\221447646\\ProjectX.API\\ProjectX.API\\Controllers\\AlumnusController.cs",
               "RelativeToolTip": "ProjectX.API\\Controllers\\AlumnusController.cs",
-              "ViewState": "AQIAAHQAAAAAAAAAAAAwwH0AAAAkAAAA",
+              "ViewState": "AQIAACcAAAAAAAAAAAAwwDgAAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-01T12:58:06.01Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 9,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\221447646\\ProjectX.API\\ProjectX.API\\Program.cs",
               "RelativeDocumentMoniker": "ProjectX.API\\Program.cs",
@@ -152,7 +239,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 13,
               "Title": "LoginDTO.cs",
               "DocumentMoniker": "C:\\Users\\221447646\\ProjectX.API\\ProjectX.Data\\Model\\dto\\LoginDTO.cs",
               "RelativeDocumentMoniker": "ProjectX.Data\\Model\\dto\\LoginDTO.cs",
@@ -164,7 +251,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 16,
               "Title": "Alumnus.cs",
               "DocumentMoniker": "C:\\Users\\221447646\\ProjectX.API\\ProjectX.Data\\Model\\Alumnus.cs",
               "RelativeDocumentMoniker": "ProjectX.Data\\Model\\Alumnus.cs",
@@ -188,7 +275,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 15,
               "Title": "AlumnusDTO.cs",
               "DocumentMoniker": "C:\\Users\\221447646\\ProjectX.API\\ProjectX.Data\\Model\\dto\\AlumnusDTO.cs",
               "RelativeDocumentMoniker": "ProjectX.Data\\Model\\dto\\AlumnusDTO.cs",
@@ -200,7 +287,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 11,
               "Title": "AlumnusProfile.cs",
               "DocumentMoniker": "C:\\Users\\221447646\\ProjectX.API\\ProjectX.Data\\Model\\AlumnusProfile.cs",
               "RelativeDocumentMoniker": "ProjectX.Data\\Model\\AlumnusProfile.cs",
@@ -212,7 +299,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 14,
               "Title": "Response.cs",
               "DocumentMoniker": "C:\\Users\\221447646\\ProjectX.API\\ProjectX.Data\\Model\\dto\\Response.cs",
               "RelativeDocumentMoniker": "ProjectX.Data\\Model\\dto\\Response.cs",

@@ -9,12 +9,12 @@ namespace ProjectX.Service
     public class AlumnusService : IAlumnusService
     {
         private readonly AlumniDbContext _alumniDbContext;
-        //private readonly IHttpContextAccessor _httpContextAccessor;
+       // private readonly IHttpContextAccessor _httpContextAccessor;
 
         public AlumnusService(AlumniDbContext alumniDbContext)
         {
             _alumniDbContext = alumniDbContext;
-            //_httpContextAccessor = httpContextAccessor;
+            //_httpContextAccessor = HttpContextAccessor;
         }
 
         public async Task<Alumni> TransferAlumniDataToAlumnusProfile(int alumnusId)
@@ -50,21 +50,21 @@ namespace ProjectX.Service
             return alumniDetails;
         }
 
-       /* public async Task<Alumni> VerifyAlumniByItsPin(string itsPin)
+        public async Task<Alumni> VerifyAlumniByItsPin(int itsPin)
         {
-            var alumni = await _alumniDbContext.Alumni.FirstOrDefaultAsync(a => a.ItsPin.ToString() == itsPin);
+            var alumni = await _alumniDbContext.Alumni.FirstOrDefaultAsync(a => a.ItsPin == itsPin);
 
-            if (alumni == null)
+            /*if (alumni == null)
             {
-                throw new UnauthorizedAccessException("ITS pin does not exist.");
-            }
+                throw new UnauthorizedAccessException("Registration ITS pin does not exist.");
+            }*/
 
-            _httpContextAccessor.HttpContext.Session.SetString("ItsId", alumni.AlumnusId.ToString());
+           // _httpContextAccessor.HttpContext.Session.SetString("ItsId", alumni.AlumnusId.ToString());
 
             return alumni;
         }
 
-        public async Task<AlumnusProfile> GetAlumnusProfile(int alumnusId)
+        public async Task<AlumnusProfile> GetAlumnus(int alumnusId)
         {
             var alumnusProfile = await _alumniDbContext.AlumnusProfile.FirstOrDefaultAsync(a => a.AlumnusId == alumnusId);
 
@@ -74,7 +74,7 @@ namespace ProjectX.Service
             }
 
             return alumnusProfile;
-        }*/
+        }
     }
 
 }

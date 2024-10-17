@@ -32,6 +32,8 @@ namespace ProjectX.API.Controllers
             _logger = logger;
         }
 
+
+
         [HttpPost]
         [Route("Registration")]
         public async Task<IActionResult> Registration([FromBody] AlumnusDTO alumnusDTO,VerifyDTO verifyDTO)
@@ -49,18 +51,18 @@ namespace ProjectX.API.Controllers
             }
 
             // Step 2: Verify the alumni using the ITS Pin before proceeding
-            /*try
+            try
             {
-                var verifiedAlumni = await _alumnusService.VerifyAlumniByItsPin(alumnusDTO.ItsPin);
+                var verifiedAlumni = await _alumnusService.VerifyAlumniByItsPin(verifyDTO.ItsId);
                 if (verifiedAlumni == null)
                 {
-                    return BadRequest("Verification failed. Invalid ITS Pin.");
+                    return BadRequest("Registration failed. Invalid ITS Pin.");
                 }
             }
             catch (UnauthorizedAccessException ex)
             {
                 return Unauthorized(ex.Message); // Return an unauthorized response if verification fails
-            }*/
+            }
 
             // Step 3: Check if the alumnus already exists in the Alumnus table
             var objAlumnus = await _alumniDbContext.Alumnus.FirstOrDefaultAsync(a => a.AlumnusId == alumnusDTO.StudentNum);
@@ -69,7 +71,14 @@ namespace ProjectX.API.Controllers
                 return BadRequest($"Alumnus '{objAlumnus.AlumnusId}' already exists.");
             }
 
-            // Step 4: Create a new alumnus and add it to the Alumnus table
+            //step 4: Check if email does not belong to any registered alumni
+            var alumnusEmail = await _alumniDbContext.Alumnus.FirstOrDefaultAsync(a => a.Email == alumnusDTO.Email);
+            if (alumnusEmail != null)
+            {
+                return BadRequest($"Email already belongs to another alumni");
+            }
+
+            // Step 5: Create a new alumnus and add it to the Alumnus table
             var newAlumnus = new Alumnus
             {
                 AlumnusId = alumnusDTO.StudentNum,
@@ -80,7 +89,7 @@ namespace ProjectX.API.Controllers
             _alumniDbContext.Alumnus.Add(newAlumnus);
             await _alumniDbContext.SaveChangesAsync(); // Save the new alumnus
 
-            // Step 5: Transfer alumni data after successful registration
+            // Step 6: Transfer alumni data after successful registration
             try
             {
                 // Call the service to transfer alumni data from TutDb to AlumnusProfile
@@ -95,33 +104,6 @@ namespace ProjectX.API.Controllers
         }
 
 
-        [HttpPost]
-        [Route("VerifyAlumni")]
-        public IActionResult VerifyAlumni([FromBody] VerifyDTO verifyDTO)
-        {
-
-            // Check if alumni exists by UserId
-            var alumni = _alumniDbContext.Alumni.FirstOrDefault(a => a.ItsPin == verifyDTO.ItsId);
-           
-
-            //var userIdString = HttpContext.Session.GetString("UserId");
-
-            if (alumni != null)
-            {
-
-                // If its pin exists, 
-              
-                    // Set session variables
-                    HttpContext.Session.SetString("ItsId", alumni.AlumnusId.ToString());
-                    return Ok(alumni);
-               
-            }
-            else
-            {
-                return Unauthorized(" ITS pin does not exist.");
-            }
-            
-        }
         [HttpGet]
         [Route("GetAlumnusProfile")]
         public IActionResult GetAlumnusProfile()

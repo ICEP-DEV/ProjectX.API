@@ -9,5 +9,9 @@
         public string Password { get; set; }
 
         public int ItsPin { get; set; }
+
+        /*Token properties for password reset
+        public string ResetToken { get; set; }
+        public DateTime? ResetTokenExpiry { get; set; }*/
     }
 }

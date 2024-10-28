@@ -6,14 +6,17 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace ProjectX.Service
-{public interface IAlumnusService
+{
+    public interface IAlumnusService
     {
         Task<Alumni> TransferAlumniDataToAlumnusProfile(int alumnusId);
 
         Task<Alumni> VerifyAlumniByItsPin(int itsPin);
 
-        Task<AlumnusProfile> GetAlumnus(int alumnusId);
-        
+        string GenerateToken();
+       // Task<Alumni> SendPasswordResetEmail(string toEmail, string resetLink);
+       void SendPasswordResetEmail(string toEmail, string resetLink);
+
     }
     
 }

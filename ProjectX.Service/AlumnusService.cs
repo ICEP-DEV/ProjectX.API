@@ -2,7 +2,8 @@
 using Microsoft.EntityFrameworkCore;
 using ProjectX.Data;
 using ProjectX.Data.Model;
-
+using System.Net.Mail;
+using System.Security.Cryptography;
 
 namespace ProjectX.Service
 {
@@ -54,13 +55,6 @@ namespace ProjectX.Service
         {
             var alumni = await _alumniDbContext.Alumni.FirstOrDefaultAsync(a => a.ItsPin == itsPin);
 
-            /*if (alumni == null)
-            {
-                throw new UnauthorizedAccessException("Registration ITS pin does not exist.");
-            }*/
-
-           // _httpContextAccessor.HttpContext.Session.SetString("ItsId", alumni.AlumnusId.ToString());
-
             return alumni;
         }
 
@@ -75,6 +69,44 @@ namespace ProjectX.Service
 
             return alumnusProfile;
         }
+        // Utility function to generate a unique reset token
+        public string GenerateToken()
+        {
+            using (var cryptoProvider = new RNGCryptoServiceProvider())
+            {
+                byte[] tokenBytes = new byte[32];
+                cryptoProvider.GetBytes(tokenBytes);
+                return Convert.ToBase64String(tokenBytes);
+            }
+        }
+        public void SendPasswordResetEmail(string toEmail, string resetLink)
+        {
+            var fromAddress = new MailAddress("fundiswakhanyi20@gmail.com", "AlumniSpace");
+            var toAddress = new MailAddress(toEmail);
+            const string subject = "Password Reset Request";
+            string body = $"Click the following link to reset your password: {resetLink}";
+
+            using (var smtpClient = new SmtpClient
+            {
+                Host = "smtp.gmail.com",
+                Port = 587,
+                EnableSsl = true,
+                Credentials = new System.Net.NetworkCredential("alumnispace208@gmail.com", "ALUMNIspace@tut4lyf")
+            })
+            {
+                using (var message = new MailMessage(fromAddress, toAddress)
+                {
+                    Subject = subject,
+                    Body = body,
+                    IsBodyHtml = true
+                })
+                {
+                    smtpClient.Send(message);
+                }
+            }
+            throw new NotImplementedException();
+        }
     }
 
+   
 }

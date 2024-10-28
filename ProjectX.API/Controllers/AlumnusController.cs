@@ -8,7 +8,7 @@ using System.Data.SqlClient;
 using ProjectX.Service;
 using ProjectX.Data;
 using Microsoft.EntityFrameworkCore;
-
+using System.Security.Cryptography;
 
 
 
@@ -21,14 +21,14 @@ namespace ProjectX.API.Controllers
     {
         private readonly AlumniDbContext _alumniDbContext;
         private readonly IAlumnusService _alumnusService;
-        
+
         private readonly ILogger<AlumnusController> _logger;
 
         public AlumnusController(AlumniDbContext alumniDbContext, IAlumnusService alumnusService, ILogger<AlumnusController> logger)
         {
             _alumniDbContext = alumniDbContext;
             _alumnusService = alumnusService;
-           
+
             _logger = logger;
         }
 
@@ -89,22 +89,29 @@ namespace ProjectX.API.Controllers
             _alumniDbContext.Alumnus.Add(newAlumnus);
             await _alumniDbContext.SaveChangesAsync(); // Save the new alumnus
 
-            // Step 6: Transfer alumni data after successful registration
+
+            // Step 6: Set session variables
+
+            HttpContext.Session.SetString("UserId", newAlumnus.AlumnusId.ToString());
+
+
+
+            // Step 7: Transfer alumni data after successful registration
             try
             {
                 // Call the service to transfer alumni data from TutDb to AlumnusProfile
                 await _alumnusService.TransferAlumniDataToAlumnusProfile(newAlumnus.AlumnusId);
 
                 return Ok($"Alumnus {alumnusDTO.StudentNum} has registered successfully, and data has been transferred.");
-                //step 7: store id in a session
-                HttpContext.Session.SetString("AlumnusID", newAlumnus.AlumnusId.ToString());
+
+
             }
             catch (Exception ex)
             {
                 return StatusCode(500, $"Alumnus registered, but data transfer failed: {ex.Message}");
             }
 
-           
+
         }
 
 
@@ -112,7 +119,8 @@ namespace ProjectX.API.Controllers
         [Route("GetAlumnusProfile")]
         public IActionResult GetAlumnusProfile()
         {
-            var itsIdString = HttpContext.Session.GetString("AlumnusID");
+            var itsIdString = HttpContext.Session.GetString("UserId");
+            Console.WriteLine("UserId in session: " + itsIdString);
 
             if (string.IsNullOrEmpty(itsIdString))
             {
@@ -224,35 +232,64 @@ namespace ProjectX.API.Controllers
             });
         }
 
-        [HttpGet]
-        [Route("GetLoggedAlumnusProfile")]
-        public IActionResult GetLoggedAlumnusProfile()
+        [HttpPost]
+        [Route("RequestPassword")]
+        public async Task<IActionResult> RequestPassword([FromBody] AlumnusDTO alumnusDTO)
         {
-            var userIdString = HttpContext.Session.GetString("UserId");
-
-            if (string.IsNullOrEmpty(userIdString))
+            // Step 1: Verify if email exists in the alumni database
+            var alumni = _alumniDbContext.Alumnus.FirstOrDefault(a => a.Email == alumnusDTO.Email);
+            if (alumni == null)
             {
-                return Unauthorized("User not logged in.");
+                return BadRequest("Email not found!");
             }
 
-            // Convert UserId to int since AlumnusId is of type int in the database
-            if (!int.TryParse(userIdString, out int userId))
-            {
-                return BadRequest("Invalid UserId.");
-            }
+            // Step 2: Generate a unique password reset token
+            //var resetToken = _alumnusService.GenerateToken();
 
-            // Fetch the AlumnusProfile using the AlumnusId from session
-            var alumnusProfile = _alumniDbContext.AlumnusProfile.FirstOrDefault(a => a.AlumnusId == userId);
+            // Step 3: Store the reset token and timestamp in the database (not shown here for simplicity)
+            /* You would add columns to your Alumnus model for ResetToken and ResetTokenExpiry.
+            alumnusDTO.ResetToken = resetToken;
+            alumnusDTO.ResetTokenExpiry = DateTime.Now.AddHours(1); // Token expires in 1 hour
+            await _alumniDbContext.SaveChangesAsync();*/
 
-            if (alumnusProfile != null)
-            {
-                return Ok(alumnusProfile);
-            }
-            else
-            {
-                return NoContent(); // Return no content if the profile is not found
-            }
+            // Step 4: Compose the reset link
+            var resetLink = $"https://localhost:3000/reset-password?";
+
+            // Step 5: Send the reset link via email
+            _alumnusService.SendPasswordResetEmail(alumni.Email, resetLink);
+
+            return Ok("Password reset link has been sent to your email.");
         }
+
+        /*   [HttpGet]
+           [Route("GetLoggedAlumnusProfile")]
+           public IActionResult GetLoggedAlumnusProfile()
+           {
+               var userIdString = HttpContext.Session.GetString("UserId");
+
+               if (string.IsNullOrEmpty(userIdString))
+               {
+                   return Unauthorized("User not logged in.");
+               }
+
+               // Convert UserId to int since AlumnusId is of type int in the database
+               if (!int.TryParse(userIdString, out int userId))
+               {
+                   return BadRequest("Invalid UserId.");
+               }
+
+               // Fetch the AlumnusProfile using the AlumnusId from session
+               var alumnusProfile = _alumniDbContext.AlumnusProfile.FirstOrDefault(a => a.AlumnusId == userId);
+
+               if (alumnusProfile != null)
+               {
+                   return Ok(alumnusProfile);
+               }
+               else
+               {
+                   return NoContent(); // Return no content if the profile is not found
+               }
+           }*/
 
         [HttpPost]
         [Route("Logout")]

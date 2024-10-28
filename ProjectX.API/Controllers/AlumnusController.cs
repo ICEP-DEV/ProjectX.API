@@ -36,7 +36,7 @@ namespace ProjectX.API.Controllers
 
         [HttpPost]
         [Route("Registration")]
-        public async Task<IActionResult> Registration([FromBody] AlumnusDTO alumnusDTO,VerifyDTO verifyDTO)
+        public async Task<IActionResult> Registration([FromBody] AlumnusDTO alumnusDTO)
         {
             if (!ModelState.IsValid)
             {
@@ -53,7 +53,7 @@ namespace ProjectX.API.Controllers
             // Step 2: Verify the alumni using the ITS Pin before proceeding
             try
             {
-                var verifiedAlumni = await _alumnusService.VerifyAlumniByItsPin(verifyDTO.ItsId);
+                var verifiedAlumni = await _alumnusService.VerifyAlumniByItsPin(alumnusDTO.ItsPin);
                 if (verifiedAlumni == null)
                 {
                     return BadRequest("Registration failed. Invalid ITS Pin.");
@@ -96,11 +96,15 @@ namespace ProjectX.API.Controllers
                 await _alumnusService.TransferAlumniDataToAlumnusProfile(newAlumnus.AlumnusId);
 
                 return Ok($"Alumnus {alumnusDTO.StudentNum} has registered successfully, and data has been transferred.");
+                //step 7: store id in a session
+                HttpContext.Session.SetString("AlumnusID", newAlumnus.AlumnusId.ToString());
             }
             catch (Exception ex)
             {
                 return StatusCode(500, $"Alumnus registered, but data transfer failed: {ex.Message}");
             }
+
+           
         }
 
 
@@ -108,20 +112,19 @@ namespace ProjectX.API.Controllers
         [Route("GetAlumnusProfile")]
         public IActionResult GetAlumnusProfile()
         {
-            var itsIdString = HttpContext.Session.GetString("ItsId");
+            var itsIdString = HttpContext.Session.GetString("AlumnusID");
 
             if (string.IsNullOrEmpty(itsIdString))
             {
-                return Unauthorized("Alumnus does not exist");
+                return Unauthorized("Alumnus does not exist.");
             }
 
-            // Convert UserId to int since AlumnusId is of type int in the database
             if (!int.TryParse(itsIdString, out int userId))
             {
                 return BadRequest("Invalid ITS pin.");
             }
 
-            // Fetch the AlumnusProfile using the AlumnusId from session
+            // Fetch the AlumnusProfile using the AlumnusId stored in the session
             var alumnusProfile = _alumniDbContext.AlumnusProfile.FirstOrDefault(a => a.AlumnusId == userId);
 
             if (alumnusProfile != null)
@@ -133,6 +136,7 @@ namespace ProjectX.API.Controllers
                 return NoContent(); // Return no content if the profile is not found
             }
         }
+
 
         [HttpPost]
         [Route("Login")]

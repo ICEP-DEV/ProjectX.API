@@ -70,3 +70,19 @@ C:\Users\221447646\ProjectX.API\ProjectX.Service\obj\Debug\net8.0\ProjectX.Servi
 C:\Users\221447646\ProjectX.API\ProjectX.Service\obj\Debug\net8.0\refint\ProjectX.Service.dll
 C:\Users\221447646\ProjectX.API\ProjectX.Service\obj\Debug\net8.0\ProjectX.Service.pdb
 C:\Users\221447646\ProjectX.API\ProjectX.Service\obj\Debug\net8.0\ref\ProjectX.Service.dll
+C:\Users\USER\OneDrive - Tshwane University of Technology\Desktop\AlumniSpace\ProjectX.API\ProjectX.Service\bin\Debug\net8.0\ProjectX.Service.deps.json
+C:\Users\USER\OneDrive - Tshwane University of Technology\Desktop\AlumniSpace\ProjectX.API\ProjectX.Service\bin\Debug\net8.0\ProjectX.Service.dll
+C:\Users\USER\OneDrive - Tshwane University of Technology\Desktop\AlumniSpace\ProjectX.API\ProjectX.Service\bin\Debug\net8.0\ProjectX.Service.pdb
+C:\Users\USER\OneDrive - Tshwane University of Technology\Desktop\AlumniSpace\ProjectX.API\ProjectX.Service\bin\Debug\net8.0\ProjectX.Data.dll
+C:\Users\USER\OneDrive - Tshwane University of Technology\Desktop\AlumniSpace\ProjectX.API\ProjectX.Service\bin\Debug\net8.0\ProjectX.Data.pdb
+C:\Users\USER\OneDrive - Tshwane University of Technology\Desktop\AlumniSpace\ProjectX.API\ProjectX.Service\obj\Debug\net8.0\ProjectX.Service.csproj.AssemblyReference.cache
+C:\Users\USER\OneDrive - Tshwane University of Technology\Desktop\AlumniSpace\ProjectX.API\ProjectX.Service\obj\Debug\net8.0\ProjectX.Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\USER\OneDrive - Tshwane University of Technology\Desktop\AlumniSpace\ProjectX.API\ProjectX.Service\obj\Debug\net8.0\ProjectX.Service.AssemblyInfoInputs.cache
+C:\Users\USER\OneDrive - Tshwane University of Technology\Desktop\AlumniSpace\ProjectX.API\ProjectX.Service\obj\Debug\net8.0\ProjectX.Service.AssemblyInfo.cs
+C:\Users\USER\OneDrive - Tshwane University of Technology\Desktop\AlumniSpace\ProjectX.API\ProjectX.Service\obj\Debug\net8.0\ProjectX.Service.csproj.CoreCompileInputs.cache
+C:\Users\USER\OneDrive - Tshwane University of Technology\Desktop\AlumniSpace\ProjectX.API\ProjectX.Service\obj\Debug\net8.0\ProjectX.Service.sourcelink.json
+C:\Users\USER\OneDrive - Tshwane University of Technology\Desktop\AlumniSpace\ProjectX.API\ProjectX.Service\obj\Debug\net8.0\ProjectX.8950EF3A.Up2Date
+C:\Users\USER\OneDrive - Tshwane University of Technology\Desktop\AlumniSpace\ProjectX.API\ProjectX.Service\obj\Debug\net8.0\ProjectX.Service.dll
+C:\Users\USER\OneDrive - Tshwane University of Technology\Desktop\AlumniSpace\ProjectX.API\ProjectX.Service\obj\Debug\net8.0\refint\ProjectX.Service.dll
+C:\Users\USER\OneDrive - Tshwane University of Technology\Desktop\AlumniSpace\ProjectX.API\ProjectX.Service\obj\Debug\net8.0\ProjectX.Service.pdb
+C:\Users\USER\OneDrive - Tshwane University of Technology\Desktop\AlumniSpace\ProjectX.API\ProjectX.Service\obj\Debug\net8.0\ref\ProjectX.Service.dll

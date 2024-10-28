@@ -118,39 +118,8 @@
         "Name": "alumnusDTO",
         "Type": "ProjectX.Data.Model.dto.AlumnusDTO",
         "IsRequired": true
-      },
-      {
-        "Name": "ItsId",
-        "Type": "System.Int32",
-        "IsRequired": false
       }
     ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "ProjectX.API.Controllers.AlumnusController",
-    "Method": "VerifyAlumni",
-    "RelativePath": "api/Alumnus/VerifyAlumni/VerifyAlumni",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "verifyDTO",
-        "Type": "ProjectX.Data.Model.dto.VerifyDTO",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "ProjectX.API.Controllers.ConnectionController",
-    "Method": "ConnectToServer",
-    "RelativePath": "api/Connection/connect",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
     "ReturnTypes": []
   },
   {

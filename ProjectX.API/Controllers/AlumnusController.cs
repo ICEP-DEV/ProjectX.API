@@ -53,7 +53,7 @@ namespace ProjectX.API.Controllers
             // Step 2: Verify the alumni using the ITS Pin before proceeding
             try
             {
-                var verifiedAlumni = await _alumnusService.VerifyAlumniByItsPin(alumnusDTO.ItsPin);
+                var verifiedAlumni = await _alumnusService.VerifyAlumniByItsPin(alumnusDTO.ItsPin, alumnusDTO.StudentNum);
                 if (verifiedAlumni == null)
                 {
                     return BadRequest("Registration failed. Invalid ITS Pin.");
@@ -233,32 +233,29 @@ namespace ProjectX.API.Controllers
         }
 
         [HttpPost]
-        [Route("RequestPassword")]
-        public async Task<IActionResult> RequestPassword([FromBody] AlumnusDTO alumnusDTO)
+        [Route("ResetPassword")]
+        public async Task<IActionResult> ResetPassword([FromBody] AlumnusDTO alumnusDTO)
         {
-            // Step 1: Verify if email exists in the alumni database
-            var alumni = _alumniDbContext.Alumnus.FirstOrDefault(a => a.Email == alumnusDTO.Email);
-            if (alumni == null)
+            // Step 1: Verify if a record with the specified Email and ItsPin exists for the same alumni
+            var alumni = (from a in _alumniDbContext.Alumnus
+                          join p in _alumniDbContext.Alumni on a.AlumnusId equals p.AlumnusId
+                          where a.Email == alumnusDTO.Email && p.ItsPin == alumnusDTO.ItsPin
+                          select a).FirstOrDefault();
+
+            if(alumni==null)
             {
-                return BadRequest("Email not found!");
+                return BadRequest("Invalid email or ITS pin!");
             }
 
-            // Step 2: Generate a unique password reset token
-            //var resetToken = _alumnusService.GenerateToken();
+            //step 3:update password
 
-            // Step 3: Store the reset token and timestamp in the database (not shown here for simplicity)
-            /* You would add columns to your Alumnus model for ResetToken and ResetTokenExpiry.
-            alumnusDTO.ResetToken = resetToken;
-            alumnusDTO.ResetTokenExpiry = DateTime.Now.AddHours(1); // Token expires in 1 hour
-            await _alumniDbContext.SaveChangesAsync();*/
+            alumni.Password = alumnusDTO.Password;
+            
 
-            // Step 4: Compose the reset link
-            var resetLink = $"https://localhost:3000/reset-password?";
+            _alumniDbContext.Alumnus.Update(alumni);
+            await _alumniDbContext.SaveChangesAsync(); // Save the new password
 
-            // Step 5: Send the reset link via email
-            _alumnusService.SendPasswordResetEmail(alumni.Email, resetLink);
-
-            return Ok("Password reset link has been sent to your email.");
+            return Ok("Password reset successful");
         }
 
         /*   [HttpGet]

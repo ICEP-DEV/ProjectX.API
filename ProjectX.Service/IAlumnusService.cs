@@ -11,11 +11,8 @@ namespace ProjectX.Service
     {
         Task<Alumni> TransferAlumniDataToAlumnusProfile(int alumnusId);
 
-        Task<Alumni> VerifyAlumniByItsPin(int itsPin);
+        Task<Alumni> VerifyAlumniByItsPin(int itsPin, int alumnusID);
 
-        string GenerateToken();
-       // Task<Alumni> SendPasswordResetEmail(string toEmail, string resetLink);
-       void SendPasswordResetEmail(string toEmail, string resetLink);
 
     }
     

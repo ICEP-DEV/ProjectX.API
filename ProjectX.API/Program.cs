@@ -27,7 +27,8 @@ builder.Services.AddCors(option => option.AddPolicy("corspolicy", builder =>
     //builder.AllowAnyOrigin()
     builder.AllowAnyOrigin()
     .AllowAnyMethod()
-    .AllowAnyHeader();
+    .AllowAnyHeader()
+    .AllowCredentials();
 
 }));
 builder.Services.AddScoped<AlumniDbContext, AlumniDbContext>();

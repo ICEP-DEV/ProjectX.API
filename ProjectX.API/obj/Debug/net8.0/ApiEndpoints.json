@@ -62,16 +62,6 @@
   },
   {
     "ContainingType": "ProjectX.API.Controllers.AlumnusController",
-    "Method": "GetLoggedAlumnusProfile",
-    "RelativePath": "api/Alumnus/GetLoggedAlumnusProfile/GetLoggedAlumnusProfile",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "ProjectX.API.Controllers.AlumnusController",
     "Method": "IsLoggedIn",
     "RelativePath": "api/Alumnus/IsLoggedIn/IsLoggedIn",
     "HttpMethod": "GET",
@@ -110,6 +100,22 @@
     "ContainingType": "ProjectX.API.Controllers.AlumnusController",
     "Method": "Registration",
     "RelativePath": "api/Alumnus/Registration/Registration",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "alumnusDTO",
+        "Type": "ProjectX.Data.Model.dto.AlumnusDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjectX.API.Controllers.AlumnusController",
+    "Method": "ResetPassword",
+    "RelativePath": "api/Alumnus/ResetPassword/ResetPassword",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,

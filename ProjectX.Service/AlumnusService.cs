@@ -10,7 +10,7 @@ namespace ProjectX.Service
     public class AlumnusService : IAlumnusService
     {
         private readonly AlumniDbContext _alumniDbContext;
-       // private readonly IHttpContextAccessor _httpContextAccessor;
+        // private readonly IHttpContextAccessor _httpContextAccessor;
 
         public AlumnusService(AlumniDbContext alumniDbContext)
         {
@@ -51,9 +51,9 @@ namespace ProjectX.Service
             return alumniDetails;
         }
 
-        public async Task<Alumni> VerifyAlumniByItsPin(int itsPin)
+        public async Task<Alumni> VerifyAlumniByItsPin(int itsPin, int alumnusID)
         {
-            var alumni = await _alumniDbContext.Alumni.FirstOrDefaultAsync(a => a.ItsPin == itsPin);
+            var alumni = await _alumniDbContext.Alumni.FirstOrDefaultAsync( a => a.ItsPin == itsPin && a.AlumnusId == alumnusID);
 
             return alumni;
         }
@@ -69,44 +69,7 @@ namespace ProjectX.Service
 
             return alumnusProfile;
         }
-        // Utility function to generate a unique reset token
-        public string GenerateToken()
-        {
-            using (var cryptoProvider = new RNGCryptoServiceProvider())
-            {
-                byte[] tokenBytes = new byte[32];
-                cryptoProvider.GetBytes(tokenBytes);
-                return Convert.ToBase64String(tokenBytes);
-            }
-        }
-        public void SendPasswordResetEmail(string toEmail, string resetLink)
-        {
-            var fromAddress = new MailAddress("fundiswakhanyi20@gmail.com", "AlumniSpace");
-            var toAddress = new MailAddress(toEmail);
-            const string subject = "Password Reset Request";
-            string body = $"Click the following link to reset your password: {resetLink}";
-
-            using (var smtpClient = new SmtpClient
-            {
-                Host = "smtp.gmail.com",
-                Port = 587,
-                EnableSsl = true,
-                Credentials = new System.Net.NetworkCredential("alumnispace208@gmail.com", "ALUMNIspace@tut4lyf")
-            })
-            {
-                using (var message = new MailMessage(fromAddress, toAddress)
-                {
-                    Subject = subject,
-                    Body = body,
-                    IsBodyHtml = true
-                })
-                {
-                    smtpClient.Send(message);
-                }
-            }
-            throw new NotImplementedException();
-        }
+        
     }
-
    
 }

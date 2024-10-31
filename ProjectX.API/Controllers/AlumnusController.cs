@@ -145,6 +145,29 @@ namespace ProjectX.API.Controllers
             }
         }
 
+        [HttpPost]
+        [Route("UpdateProfile")]
+        public async Task<IActionResult> UpdateProfile([FromBody] AlumnusDTO alumnusDTO)
+        {
+            // Step 1: Find the alumnus profile by StudentNum (AlumnusId)
+            var alumni = await _alumniDbContext.AlumnusProfile
+                .FirstOrDefaultAsync(a => a.AlumnusId == alumnusDTO.StudentNum);
+
+            if (alumni == null)
+            {
+                return NotFound("Profile not found.");
+            }
+
+            // Step 2: Update the LinkedIn profile
+            alumni.LinkedInProfile = alumnusDTO.LinkedInProfile;
+
+            _alumniDbContext.AlumnusProfile.Update(alumni);
+            await _alumniDbContext.SaveChangesAsync();
+
+            return Ok("Profile Updated");
+        }
+
+
 
         [HttpPost]
         [Route("Login")]
@@ -257,36 +280,6 @@ namespace ProjectX.API.Controllers
 
             return Ok("Password reset successful");
         }
-
-        /*   [HttpGet]
-           [Route("GetLoggedAlumnusProfile")]
-           public IActionResult GetLoggedAlumnusProfile()
-           {
-               var userIdString = HttpContext.Session.GetString("UserId");
-
-               if (string.IsNullOrEmpty(userIdString))
-               {
-                   return Unauthorized("User not logged in.");
-               }
-
-               // Convert UserId to int since AlumnusId is of type int in the database
-               if (!int.TryParse(userIdString, out int userId))
-               {
-                   return BadRequest("Invalid UserId.");
-               }
-
-               // Fetch the AlumnusProfile using the AlumnusId from session
-               var alumnusProfile = _alumniDbContext.AlumnusProfile.FirstOrDefault(a => a.AlumnusId == userId);
-
-               if (alumnusProfile != null)
-               {
-                   return Ok(alumnusProfile);
-               }
-               else
-               {
-                   return NoContent(); // Return no content if the profile is not found
-               }
-           }*/
 
         [HttpPost]
         [Route("Logout")]

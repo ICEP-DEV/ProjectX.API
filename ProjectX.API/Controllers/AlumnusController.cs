@@ -290,12 +290,7 @@ namespace ProjectX.API.Controllers
         }
 
 
-        [HttpGet]
-        [Route("GetAlumnis")]
-        public IActionResult GetAlumnis()
-        {
-            return Ok(_alumniDbContext.Alumnus.ToList());
-        }
+        
 
         
     }

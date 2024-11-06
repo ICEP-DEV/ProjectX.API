@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
+using ProjectX.Data;
 using ProjectX.Data.Model;
 using ProjectX.Data.Model.bl;
 using ProjectX.Data.Model.dto;
@@ -16,10 +18,12 @@ namespace ProjectX.API.Controllers
     {
 
         private readonly IConfiguration _configuration;
+        private readonly AlumniDbContext _alumniDbContext;
 
-        public AdminController(IConfiguration configuration)
+        public AdminController(IConfiguration configuration, AlumniDbContext alumniDbContext)
         {
             _configuration = configuration;
+            _alumniDbContext = alumniDbContext;
         }
 
         [HttpPost]
@@ -37,9 +41,43 @@ namespace ProjectX.API.Controllers
             return response;
         }
 
-        //public IActionResult Index()
-        //{
-        //    return View();
-        //}
+        [HttpGet]
+        [Route("GetAlumnis")]
+        public IActionResult GetAlumnis()
+        {
+            return Ok(_alumniDbContext.AlumnusProfile.ToList());
+        }
+
+        [HttpGet]
+        [Route("CountAlumniPerFaculty")]
+        public IActionResult CountAlumniPerFaculty()
+        {
+            // Group by faculty and count the number of alumni in each faculty
+            var facultyCounts = _alumniDbContext.AlumnusProfile
+                .GroupBy(a => a.Faculty)
+                .Select(g => new
+                {
+                    Faculty = g.Key,
+                    RegisteredAlumni = g.Count()
+                })
+                .ToList();
+
+            return Ok(facultyCounts);
+        }
+
+        [HttpGet]
+        [Route("TrackAlumni")]
+        public IActionResult TrackAlumni()
+        {
+            var track = _alumniDbContext.AlumnusProfile
+                .GroupBy(a => a.GraduationYear)
+                .Select(g => new 
+                {
+                    Graduated = g.Key,
+                    GraduatedAlumni = g.Count()
+                }).ToList();
+
+            return Ok(track);
+        }
     }
 }

@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace ProjectX.Data.Migrations
 {
     /// <inheritdoc />
-    public partial class Alumnusdatabase : Migration
+    public partial class NewDatabase : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -83,6 +83,42 @@ namespace ProjectX.Data.Migrations
                 {
                     table.PrimaryKey("PK_AlumnusProfile", x => x.AlumnusProfId);
                 });
+
+            migrationBuilder.CreateTable(
+                name: "Donation",
+                columns: table => new
+                {
+                    DonationId = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Surname = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Email = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Phone = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    EventOptions = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Donation", x => x.DonationId);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Event",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Title = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Description = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Date = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Time = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Venue = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    VolunteerRoles = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Media = table.Column<byte[]>(type: "varbinary(max)", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Event", x => x.Id);
+                });
         }
 
         /// <inheritdoc />
@@ -99,6 +135,12 @@ namespace ProjectX.Data.Migrations
 
             migrationBuilder.DropTable(
                 name: "AlumnusProfile");
+
+            migrationBuilder.DropTable(
+                name: "Donation");
+
+            migrationBuilder.DropTable(
+                name: "Event");
         }
     }
 }

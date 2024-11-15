@@ -21,14 +21,15 @@ namespace ProjectX.API.Controllers
     {
         private readonly AlumniDbContext _alumniDbContext;
         private readonly IAlumnusService _alumnusService;
+        private readonly IJobService _jobService;
 
         private readonly ILogger<AlumnusController> _logger;
 
-        public AlumnusController(AlumniDbContext alumniDbContext, IAlumnusService alumnusService, ILogger<AlumnusController> logger)
+        public AlumnusController(AlumniDbContext alumniDbContext, IAlumnusService alumnusService, IJobService jobService, ILogger<AlumnusController> logger)
         {
             _alumniDbContext = alumniDbContext;
             _alumnusService = alumnusService;
-
+            _jobService = jobService;
             _logger = logger;
         }
 
@@ -145,7 +146,7 @@ namespace ProjectX.API.Controllers
             }
         }
 
-        [HttpPost]
+        [HttpPut]
         [Route("UpdateProfile")]
         public async Task<IActionResult> UpdateProfile([FromBody] AlumnusDTO alumnusDTO)
         {
@@ -166,8 +167,6 @@ namespace ProjectX.API.Controllers
 
             return Ok("Profile Updated");
         }
-
-
 
         [HttpPost]
         [Route("Login")]
@@ -255,7 +254,7 @@ namespace ProjectX.API.Controllers
             });
         }
 
-        [HttpPost]
+        [HttpPut]
         [Route("ResetPassword")]
         public async Task<IActionResult> ResetPassword([FromBody] AlumnusDTO alumnusDTO)
         {
@@ -280,6 +279,43 @@ namespace ProjectX.API.Controllers
 
             return Ok("Password reset successful");
         }
+
+        [HttpGet]
+        [Route("GetEvents")]
+        public IActionResult GetEvent()
+        {
+            var events = _alumniDbContext.Event
+                .Select(e => new EventsDTO
+                {
+                    Id = e.Id,
+                    Title = e.Title,
+                    Description = e.Description,
+                    Date = e.Date,
+                    Time = e.Time,
+                    Venue = e.Venue,
+                    VolunteerRoles = e.VolunteerRoles,
+                    Media = Convert.ToBase64String(e.Media) // Convert byte[] to Base64 string
+                })
+                .ToList();
+
+            return Ok(events);
+        }
+        [HttpGet]
+        [Route("GetJobsByFaculty/{faculty}")]
+        public IActionResult GetJobsByFaculty(string faculty)
+        {
+            var jobs = _jobService.GetJobsByFaculty(faculty);
+
+            if (!jobs.Any())
+            {
+                return NotFound($"No jobs found for faculty: {faculty}");
+            }
+
+            return Ok(jobs);
+        }
+
+
+
 
         [HttpPost]
         [Route("Logout")]

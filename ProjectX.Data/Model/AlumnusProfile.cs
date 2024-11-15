@@ -21,7 +21,7 @@ namespace ProjectX.Data.Model
 
             // Initialize ProfilePicture from a GIF file
             string filePath = "";
-            ProfilePicture = File.Exists(filePath) ? File.ReadAllBytes(filePath) : new byte[0]; // fallback to an empty byte array if file is not found
+            ProfilePicture = File.Exists(filePath) ? File.ReadAllBytes(filePath) : []; // fallback to an empty byte array if file is not found
 
         }
 

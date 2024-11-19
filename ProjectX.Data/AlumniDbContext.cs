@@ -13,6 +13,7 @@ namespace ProjectX.Data
         public DbSet<Alumni> Alumni { get; set; }
         public DbSet<Donation> Donation { get; set; }
         public DbSet<Event> Event { get; set; }
+        public DbSet<Job> Job{ get; set; }
 
     }
 }

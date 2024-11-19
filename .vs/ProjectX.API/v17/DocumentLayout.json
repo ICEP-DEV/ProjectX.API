@@ -3,40 +3,56 @@
   "WorkspaceRootPath": "C:\\Users\\221447646\\AlumniSpace\\ProjectX.API\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3B572D9C-4D5F-449E-9F2E-E8F393FBC861}|ProjectX.Service\\ProjectX.Service.csproj|c:\\users\\221447646\\alumnispace\\projectx.api\\projectx.service\\ijobservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3B572D9C-4D5F-449E-9F2E-E8F393FBC861}|ProjectX.Service\\ProjectX.Service.csproj|solutionrelative:projectx.service\\ijobservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3B572D9C-4D5F-449E-9F2E-E8F393FBC861}|ProjectX.Service\\ProjectX.Service.csproj|c:\\users\\221447646\\alumnispace\\projectx.api\\projectx.service\\jobservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3B572D9C-4D5F-449E-9F2E-E8F393FBC861}|ProjectX.Service\\ProjectX.Service.csproj|solutionrelative:projectx.service\\jobservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{13E8DF9E-D804-4AB5-9EFB-C2D579DC0548}|ProjectX.API\\ProjectX.API.csproj|c:\\users\\221447646\\alumnispace\\projectx.api\\projectx.api\\controllers\\alumnuscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{13E8DF9E-D804-4AB5-9EFB-C2D579DC0548}|ProjectX.API\\ProjectX.API.csproj|solutionrelative:projectx.api\\controllers\\alumnuscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\221447646\\AlumniSpace\\ProjectX.API\\ProjectX.Data\\Migrations\\20241118134000_news-database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ProjectX.Data\\Migrations\\20241118134000_news-database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{13E8DF9E-D804-4AB5-9EFB-C2D579DC0548}|ProjectX.API\\ProjectX.API.csproj|c:\\users\\221447646\\alumnispace\\projectx.api\\projectx.api\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{13E8DF9E-D804-4AB5-9EFB-C2D579DC0548}|ProjectX.API\\ProjectX.API.csproj|solutionrelative:projectx.api\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9A33301B-4952-4F05-81A6-31F5EEF81DF7}|ProjectX.Data\\ProjectX.Data.csproj|c:\\users\\221447646\\alumnispace\\projectx.api\\projectx.data\\model\\jobs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9A33301B-4952-4F05-81A6-31F5EEF81DF7}|ProjectX.Data\\ProjectX.Data.csproj|solutionrelative:projectx.data\\model\\jobs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9A33301B-4952-4F05-81A6-31F5EEF81DF7}|ProjectX.Data\\ProjectX.Data.csproj|c:\\users\\221447646\\alumnispace\\projectx.api\\projectx.data\\model\\dto\\newsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A33301B-4952-4F05-81A6-31F5EEF81DF7}|ProjectX.Data\\ProjectX.Data.csproj|solutionrelative:projectx.data\\model\\dto\\newsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9A33301B-4952-4F05-81A6-31F5EEF81DF7}|ProjectX.Data\\ProjectX.Data.csproj|c:\\users\\221447646\\alumnispace\\projectx.api\\projectx.data\\model\\dto\\jobsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9A33301B-4952-4F05-81A6-31F5EEF81DF7}|ProjectX.Data\\ProjectX.Data.csproj|solutionrelative:projectx.data\\model\\dto\\jobsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{13E8DF9E-D804-4AB5-9EFB-C2D579DC0548}|ProjectX.API\\ProjectX.API.csproj|c:\\users\\221447646\\alumnispace\\projectx.api\\projectx.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{13E8DF9E-D804-4AB5-9EFB-C2D579DC0548}|ProjectX.API\\ProjectX.API.csproj|solutionrelative:projectx.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9A33301B-4952-4F05-81A6-31F5EEF81DF7}|ProjectX.Data\\ProjectX.Data.csproj|c:\\users\\221447646\\alumnispace\\projectx.api\\projectx.data\\model\\dto\\eventsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A33301B-4952-4F05-81A6-31F5EEF81DF7}|ProjectX.Data\\ProjectX.Data.csproj|solutionrelative:projectx.data\\model\\dto\\eventsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9A33301B-4952-4F05-81A6-31F5EEF81DF7}|ProjectX.Data\\ProjectX.Data.csproj|c:\\users\\221447646\\alumnispace\\projectx.api\\projectx.data\\model\\event.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9A33301B-4952-4F05-81A6-31F5EEF81DF7}|ProjectX.Data\\ProjectX.Data.csproj|solutionrelative:projectx.data\\model\\event.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{9A33301B-4952-4F05-81A6-31F5EEF81DF7}|ProjectX.Data\\ProjectX.Data.csproj|c:\\users\\221447646\\alumnispace\\projectx.api\\projectx.data\\model\\news.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A33301B-4952-4F05-81A6-31F5EEF81DF7}|ProjectX.Data\\ProjectX.Data.csproj|solutionrelative:projectx.data\\model\\news.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13E8DF9E-D804-4AB5-9EFB-C2D579DC0548}|ProjectX.API\\ProjectX.API.csproj|c:\\users\\221447646\\alumnispace\\projectx.api\\projectx.api\\controllers\\alumnuscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13E8DF9E-D804-4AB5-9EFB-C2D579DC0548}|ProjectX.API\\ProjectX.API.csproj|solutionrelative:projectx.api\\controllers\\alumnuscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\221447646\\AlumniSpace\\ProjectX.API\\ProjectX.Data\\Migrations\\20241118064826_jobs-database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ProjectX.Data\\Migrations\\20241118064826_jobs-database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{9A33301B-4952-4F05-81A6-31F5EEF81DF7}|ProjectX.Data\\ProjectX.Data.csproj|c:\\users\\221447646\\alumnispace\\projectx.api\\projectx.data\\model\\alumnusprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9A33301B-4952-4F05-81A6-31F5EEF81DF7}|ProjectX.Data\\ProjectX.Data.csproj|solutionrelative:projectx.data\\model\\alumnusprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13E8DF9E-D804-4AB5-9EFB-C2D579DC0548}|ProjectX.API\\ProjectX.API.csproj|c:\\users\\221447646\\alumnispace\\projectx.api\\projectx.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13E8DF9E-D804-4AB5-9EFB-C2D579DC0548}|ProjectX.API\\ProjectX.API.csproj|solutionrelative:projectx.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A33301B-4952-4F05-81A6-31F5EEF81DF7}|ProjectX.Data\\ProjectX.Data.csproj|c:\\users\\221447646\\alumnispace\\projectx.api\\projectx.data\\alumnidbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A33301B-4952-4F05-81A6-31F5EEF81DF7}|ProjectX.Data\\ProjectX.Data.csproj|solutionrelative:projectx.data\\alumnidbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A33301B-4952-4F05-81A6-31F5EEF81DF7}|ProjectX.Data\\ProjectX.Data.csproj|c:\\users\\221447646\\alumnispace\\projectx.api\\projectx.data\\model\\job.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A33301B-4952-4F05-81A6-31F5EEF81DF7}|ProjectX.Data\\ProjectX.Data.csproj|solutionrelative:projectx.data\\model\\job.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A33301B-4952-4F05-81A6-31F5EEF81DF7}|ProjectX.Data\\ProjectX.Data.csproj|c:\\users\\221447646\\alumnispace\\projectx.api\\projectx.data\\model\\dto\\jobsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A33301B-4952-4F05-81A6-31F5EEF81DF7}|ProjectX.Data\\ProjectX.Data.csproj|solutionrelative:projectx.data\\model\\dto\\jobsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,17 +62,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 4,
               "Title": "Event.cs",
               "DocumentMoniker": "C:\\Users\\221447646\\AlumniSpace\\ProjectX.API\\ProjectX.Data\\Model\\Event.cs",
               "RelativeDocumentMoniker": "ProjectX.Data\\Model\\Event.cs",
               "ToolTip": "C:\\Users\\221447646\\AlumniSpace\\ProjectX.API\\ProjectX.Data\\Model\\Event.cs",
               "RelativeToolTip": "ProjectX.Data\\Model\\Event.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAA/AAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-14T13:55:01.759Z",
               "IsPinned": true,
@@ -64,15 +80,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "IJobService.cs",
-              "DocumentMoniker": "C:\\Users\\221447646\\AlumniSpace\\ProjectX.API\\ProjectX.Service\\IJobService.cs",
-              "RelativeDocumentMoniker": "ProjectX.Service\\IJobService.cs",
-              "ToolTip": "C:\\Users\\221447646\\AlumniSpace\\ProjectX.API\\ProjectX.Service\\IJobService.cs",
-              "RelativeToolTip": "ProjectX.Service\\IJobService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAFAAAA",
+              "DocumentIndex": 11,
+              "Title": "Job.cs",
+              "DocumentMoniker": "C:\\Users\\221447646\\AlumniSpace\\ProjectX.API\\ProjectX.Data\\Model\\Job.cs",
+              "RelativeDocumentMoniker": "ProjectX.Data\\Model\\Job.cs",
+              "ToolTip": "C:\\Users\\221447646\\AlumniSpace\\ProjectX.API\\ProjectX.Data\\Model\\Job.cs",
+              "RelativeToolTip": "ProjectX.Data\\Model\\Job.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-15T12:40:17.385Z",
+              "WhenOpened": "2024-11-15T12:37:45.512Z",
               "IsPinned": true,
               "EditorCaption": ""
             },
@@ -94,65 +110,117 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "JobService.cs",
-              "DocumentMoniker": "C:\\Users\\221447646\\AlumniSpace\\ProjectX.API\\ProjectX.Service\\JobService.cs",
-              "RelativeDocumentMoniker": "ProjectX.Service\\JobService.cs",
-              "ToolTip": "C:\\Users\\221447646\\AlumniSpace\\ProjectX.API\\ProjectX.Service\\JobService.cs",
-              "RelativeToolTip": "ProjectX.Service\\JobService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAJAAAA",
+              "DocumentIndex": 0,
+              "Title": "20241118134000_news-database.cs",
+              "DocumentMoniker": "C:\\Users\\221447646\\AlumniSpace\\ProjectX.API\\ProjectX.Data\\Migrations\\20241118134000_news-database.cs",
+              "RelativeDocumentMoniker": "ProjectX.Data\\Migrations\\20241118134000_news-database.cs",
+              "ToolTip": "C:\\Users\\221447646\\AlumniSpace\\ProjectX.API\\ProjectX.Data\\Migrations\\20241118134000_news-database.cs",
+              "RelativeToolTip": "ProjectX.Data\\Migrations\\20241118134000_news-database.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-15T12:39:58.319Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Jobs.cs",
-              "DocumentMoniker": "C:\\Users\\221447646\\AlumniSpace\\ProjectX.API\\ProjectX.Data\\Model\\Jobs.cs",
-              "RelativeDocumentMoniker": "ProjectX.Data\\Model\\Jobs.cs",
-              "ToolTip": "C:\\Users\\221447646\\AlumniSpace\\ProjectX.API\\ProjectX.Data\\Model\\Jobs.cs",
-              "RelativeToolTip": "ProjectX.Data\\Model\\Jobs.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAA8AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-15T12:37:45.512Z",
+              "WhenOpened": "2024-11-18T13:40:00.432Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
+              "Title": "News.cs",
+              "DocumentMoniker": "C:\\Users\\221447646\\AlumniSpace\\ProjectX.API\\ProjectX.Data\\Model\\News.cs",
+              "RelativeDocumentMoniker": "ProjectX.Data\\Model\\News.cs",
+              "ToolTip": "C:\\Users\\221447646\\AlumniSpace\\ProjectX.API\\ProjectX.Data\\Model\\News.cs",
+              "RelativeToolTip": "ProjectX.Data\\Model\\News.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T13:03:15.379Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "NewsDTO.cs",
+              "DocumentMoniker": "C:\\Users\\221447646\\AlumniSpace\\ProjectX.API\\ProjectX.Data\\Model\\dto\\NewsDTO.cs",
+              "RelativeDocumentMoniker": "ProjectX.Data\\Model\\dto\\NewsDTO.cs",
+              "ToolTip": "C:\\Users\\221447646\\AlumniSpace\\ProjectX.API\\ProjectX.Data\\Model\\dto\\NewsDTO.cs",
+              "RelativeToolTip": "ProjectX.Data\\Model\\dto\\NewsDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T13:03:03.356Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "20241118064826_jobs-database.cs",
+              "DocumentMoniker": "C:\\Users\\221447646\\AlumniSpace\\ProjectX.API\\ProjectX.Data\\Migrations\\20241118064826_jobs-database.cs",
+              "RelativeDocumentMoniker": "ProjectX.Data\\Migrations\\20241118064826_jobs-database.cs",
+              "ToolTip": "C:\\Users\\221447646\\AlumniSpace\\ProjectX.API\\ProjectX.Data\\Migrations\\20241118064826_jobs-database.cs",
+              "RelativeToolTip": "ProjectX.Data\\Migrations\\20241118064826_jobs-database.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T06:48:26.606Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AlumniDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\221447646\\AlumniSpace\\ProjectX.API\\ProjectX.Data\\AlumniDbContext.cs",
+              "RelativeDocumentMoniker": "ProjectX.Data\\AlumniDbContext.cs",
+              "ToolTip": "C:\\Users\\221447646\\AlumniSpace\\ProjectX.API\\ProjectX.Data\\AlumniDbContext.cs",
+              "RelativeToolTip": "ProjectX.Data\\AlumniDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T06:37:59.276Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "EventsDTO.cs",
+              "DocumentMoniker": "C:\\Users\\221447646\\AlumniSpace\\ProjectX.API\\ProjectX.Data\\Model\\dto\\EventsDTO.cs",
+              "RelativeDocumentMoniker": "ProjectX.Data\\Model\\dto\\EventsDTO.cs",
+              "ToolTip": "C:\\Users\\221447646\\AlumniSpace\\ProjectX.API\\ProjectX.Data\\Model\\dto\\EventsDTO.cs",
+              "RelativeToolTip": "ProjectX.Data\\Model\\dto\\EventsDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T06:34:46.289Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "JobsDTO.cs",
               "DocumentMoniker": "C:\\Users\\221447646\\AlumniSpace\\ProjectX.API\\ProjectX.Data\\Model\\dto\\JobsDTO.cs",
               "RelativeDocumentMoniker": "ProjectX.Data\\Model\\dto\\JobsDTO.cs",
               "ToolTip": "C:\\Users\\221447646\\AlumniSpace\\ProjectX.API\\ProjectX.Data\\Model\\dto\\JobsDTO.cs",
               "RelativeToolTip": "ProjectX.Data\\Model\\dto\\JobsDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAIAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-15T12:29:28.424Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\221447646\\AlumniSpace\\ProjectX.API\\ProjectX.API\\Program.cs",
               "RelativeDocumentMoniker": "ProjectX.API\\Program.cs",
               "ToolTip": "C:\\Users\\221447646\\AlumniSpace\\ProjectX.API\\ProjectX.API\\Program.cs",
               "RelativeToolTip": "ProjectX.API\\Program.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAABcAAAAiAAAA",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAACMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-15T06:42:30.68Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "AdminController.cs",
               "DocumentMoniker": "C:\\Users\\221447646\\AlumniSpace\\ProjectX.API\\ProjectX.API\\Controllers\\AdminController.cs",
               "RelativeDocumentMoniker": "ProjectX.API\\Controllers\\AdminController.cs",
               "ToolTip": "C:\\Users\\221447646\\AlumniSpace\\ProjectX.API\\ProjectX.API\\Controllers\\AdminController.cs",
               "RelativeToolTip": "ProjectX.API\\Controllers\\AdminController.cs",
-              "ViewState": "AQIAAHEAAAAAAAAAAAAuwIMAAAAsAAAA",
+              "ViewState": "AQIAAJ8AAAAAAAAAAAAYwHYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-05T11:49:23.342Z",
               "EditorCaption": ""
@@ -167,17 +235,18 @@
               "RelativeToolTip": "ProjectX.Data\\Model\\AlumnusProfile.cs",
               "ViewState": "AQIAAAsAAAAAAAAAAAAQwCEAAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-31T13:06:42.647Z"
+              "WhenOpened": "2024-10-31T13:06:42.647Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "AlumnusController.cs",
               "DocumentMoniker": "C:\\Users\\221447646\\AlumniSpace\\ProjectX.API\\ProjectX.API\\Controllers\\AlumnusController.cs",
               "RelativeDocumentMoniker": "ProjectX.API\\Controllers\\AlumnusController.cs",
               "ToolTip": "C:\\Users\\221447646\\AlumniSpace\\ProjectX.API\\ProjectX.API\\Controllers\\AlumnusController.cs",
               "RelativeToolTip": "ProjectX.API\\Controllers\\AlumnusController.cs",
-              "ViewState": "AQIAACcBAAAAAAAAAAAYwDsBAAAAAAAA",
+              "ViewState": "AQIAAAEBAAAAAAAAAADwvzkBAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-01T12:58:06.01Z",
               "EditorCaption": ""

@@ -21,15 +21,15 @@ namespace ProjectX.API.Controllers
     {
         private readonly AlumniDbContext _alumniDbContext;
         private readonly IAlumnusService _alumnusService;
-        private readonly IJobService _jobService;
+       
 
         private readonly ILogger<AlumnusController> _logger;
 
-        public AlumnusController(AlumniDbContext alumniDbContext, IAlumnusService alumnusService, IJobService jobService, ILogger<AlumnusController> logger)
+        public AlumnusController(AlumniDbContext alumniDbContext, IAlumnusService alumnusService, ILogger<AlumnusController> logger)
         {
             _alumniDbContext = alumniDbContext;
             _alumnusService = alumnusService;
-            _jobService = jobService;
+            
             _logger = logger;
         }
 
@@ -304,15 +304,21 @@ namespace ProjectX.API.Controllers
         [Route("GetJobsByFaculty/{faculty}")]
         public IActionResult GetJobsByFaculty(string faculty)
         {
-            var jobs = _jobService.GetJobsByFaculty(faculty);
+            // Filter jobs by the specified faculty
+            var jobs = _alumniDbContext.Job
+                .Where(a => a.Faculty.Equals(faculty)) // Case-insensitive comparison
+                .ToList();
 
+            // Check if no jobs were found
             if (!jobs.Any())
             {
                 return NotFound($"No jobs found for faculty: {faculty}");
             }
 
+            // Return the filtered jobs
             return Ok(jobs);
         }
+
 
 
 

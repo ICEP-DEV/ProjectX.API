@@ -20,13 +20,13 @@ namespace ProjectX.API.Controllers
 
         private readonly IConfiguration _configuration;
         private readonly AlumniDbContext _alumniDbContext;
-        private readonly IJobService _jobService;
+        
 
-        public AdminController(IConfiguration configuration, AlumniDbContext alumniDbContext, IJobService jobService)
+        public AdminController(IConfiguration configuration, AlumniDbContext alumniDbContext)
         {
             _configuration = configuration;
             _alumniDbContext = alumniDbContext;
-            _jobService = jobService;
+           
         }
 
         [HttpPost]
@@ -61,6 +61,23 @@ namespace ProjectX.API.Controllers
                 .Select(g => new
                 {
                     Faculty = g.Key,
+                    RegisteredAlumni = g.Count()
+                })
+                .ToList();
+
+            return Ok(facultyCounts);
+        }
+
+        [HttpGet]
+        [Route("CountAlumniPerCampus")]
+        public IActionResult CountAlumniPerCampus()
+        {
+            // Group by faculty and count the number of alumni in each faculty
+            var facultyCounts = _alumniDbContext.AlumnusProfile
+                .GroupBy(a => a.Campus)
+                .Select(g => new
+                {
+                    Campus = g.Key,
                     RegisteredAlumni = g.Count()
                 })
                 .ToList();
@@ -123,23 +140,54 @@ namespace ProjectX.API.Controllers
 
         [HttpPost]
         [Route("UploadJob")]
-        public IActionResult UploadJob([FromBody] JobsDTO jobsDTO)
+        public async Task<IActionResult> UploadJob([FromBody] JobsDTO jobsDTO)
         {
-            var newJob = new Jobs
+            var newJob = new Job
             {
                 Faculty = jobsDTO.Faculty,
                 Type = jobsDTO.Type,
-                Position = jobsDTO.Position,
+                Vacancy = jobsDTO.Vacancy,
                 Location = jobsDTO.Location,
                 Closingdate = jobsDTO.Closingdate,
                 Link = jobsDTO.Link,
             };
 
-            _jobService.UploadJobs(newJob);
+           _alumniDbContext. Add(newJob);
+            await _alumniDbContext.SaveChangesAsync();
        
             return Ok("Job uploaded successfully");
         }
 
+        [HttpPost]
+        [Route("UploadNews")]
+        public IActionResult UploadNews([FromForm] NewsDTO newsDTO)
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+            if (newsDTO.NewsType != "general" || newsDTO.NewsType != "magazine")
+            {
+                // Process general news
+                return BadRequest("Invalid News type");
+            }
+
+            // Convert base64 string to byte[]
+            byte[] mediaBytes = Convert.FromBase64String(newsDTO.Media);
+
+            var news = new News
+            {
+                Headline = newsDTO.Headline,
+                Description = newsDTO.Description,
+                Publisher = newsDTO.Publisher,
+                PublishedDate  = newsDTO.PublishedDate,
+                Media = mediaBytes
+
+            };
+            
+            
+            return Ok(new { message = "News uploaded successfully" });
+        }
 
 
     }

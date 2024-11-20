@@ -14,6 +14,7 @@ namespace ProjectX.Data.Model.dto
         public string Description { get; set; } = string.Empty;
         public string Publisher { get; set; } = string.Empty;
         public string PublishedDate { get; set; } = string.Empty;
+        public string Link { get; set; } = string.Empty;
         public string Media { get; set; } = string.Empty;  // Default to an empty byte array
     }
 }

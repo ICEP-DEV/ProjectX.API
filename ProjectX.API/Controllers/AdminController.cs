@@ -160,34 +160,51 @@ namespace ProjectX.API.Controllers
 
         [HttpPost]
         [Route("UploadNews")]
-        public IActionResult UploadNews([FromForm] NewsDTO newsDTO)
+        public async Task<IActionResult> UploadNews([FromForm] NewsDTO newsDTO)
         {
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
             }
-            if (newsDTO.NewsType != "general" || newsDTO.NewsType != "magazine")
+
+            if (newsDTO.NewsType != "general" && newsDTO.NewsType != "magazine")
             {
-                // Process general news
                 return BadRequest("Invalid News type");
             }
 
-            // Convert base64 string to byte[]
-            byte[] mediaBytes = Convert.FromBase64String(newsDTO.Media);
-
-            var news = new News
+            byte[] mediaBytes;
+            try
             {
+                // Remove prefix if it exists
+                string base64Data = newsDTO.Media.Contains(",") ? newsDTO.Media.Substring(newsDTO.Media.IndexOf(",") + 1) : newsDTO.Media;
+
+                // Clean Base64 string
+                base64Data = base64Data.Replace(" ", "").Replace("\n", "").Replace("\r", "");
+
+                mediaBytes = Convert.FromBase64String(base64Data);
+            }
+            catch (FormatException)
+            {
+                return BadRequest("Invalid media format");
+            }
+
+            var newNews = new News
+            {
+                NewsType = newsDTO.NewsType,
                 Headline = newsDTO.Headline,
                 Description = newsDTO.Description,
                 Publisher = newsDTO.Publisher,
-                PublishedDate  = newsDTO.PublishedDate,
+                PublishedDate = newsDTO.PublishedDate,
+                Link = newsDTO.Link,
                 Media = mediaBytes
-
             };
-            
-            
+
+            _alumniDbContext.Add(newNews);
+            await _alumniDbContext.SaveChangesAsync();
+
             return Ok(new { message = "News uploaded successfully" });
         }
+
 
 
     }

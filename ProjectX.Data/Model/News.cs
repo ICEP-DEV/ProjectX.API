@@ -9,10 +9,12 @@ namespace ProjectX.Data.Model
     public class News
     {
         public int Id { get; set; }
-        public string Headline { get; set; }
-        public string Description { get; set; }
-        public string Publisher { get; set; }
-        public string PublishedDate { get; set; }
+        public string NewsType { get; set; } = string.Empty;
+        public string Headline { get; set; } = string.Empty;
+        public string Description { get; set; } = string.Empty;
+        public string Publisher { get; set; } = string.Empty;
+        public string PublishedDate { get; set; } = string.Empty;
+        public string Link { get; set; } = string.Empty;
         public byte[] Media { get; set; } = Array.Empty<byte>();  // Default to an empty byte array
 
     }

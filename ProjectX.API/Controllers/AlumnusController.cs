@@ -270,7 +270,6 @@ namespace ProjectX.API.Controllers
             }
 
             //step 3:update password
-
             alumni.Password = alumnusDTO.Password;
             
 
@@ -348,9 +347,6 @@ namespace ProjectX.API.Controllers
             // Return the filtered news with images as Base64
             return Ok(news);
         }
-
-
-
 
         [HttpPost]
         [Route("Logout")]

@@ -14,6 +14,7 @@ namespace ProjectX.Data.Model
         {
             FirstName = string.Empty;   
             LastName = string.Empty;
+            Email = string.Empty;
             Course = string.Empty;
             Campus = string.Empty;
             Faculty = string.Empty;
@@ -29,6 +30,7 @@ namespace ProjectX.Data.Model
         public int AlumnusProfId { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
+        public string Email { get; set; }
         public string Course { get; set; }
         public int GraduationYear { get; set; }
         public string Campus { get; set; }

@@ -39,6 +39,7 @@ namespace ProjectX.Service
                 AlumnusId = alumnusId,
                 FirstName = alumniDetails.FirstName,
                 LastName = alumniDetails.LastName,
+                Email  = alumnus.Email,
                 Course = alumniDetails.Course,
                 GraduationYear = alumniDetails.GraduationYear,
                 Campus = alumniDetails.Campus,

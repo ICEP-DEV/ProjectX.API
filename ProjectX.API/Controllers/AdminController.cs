@@ -317,6 +317,51 @@ namespace ProjectX.API.Controllers
             return Ok("Job uploaded successfully");
         }
 
+        [HttpPut]
+        [Route("UpdateJob/{id}")]
+        public async Task<IActionResult> UpdateJob(int id, [FromBody] JobsDTO jobsDTO)
+        {
+            var existingJob = await _alumniDbContext.Job.FindAsync(id);
+            if (existingJob == null)
+            {
+                return NotFound(new {message = "Job not found" });
+            }
+
+            //update job fields
+            existingJob.Faculty = jobsDTO.Faculty;
+            existingJob.Type = jobsDTO.Type;
+            existingJob.Vacancy = jobsDTO.Vacancy;
+            existingJob.Location = jobsDTO.Location;
+            existingJob.Closingdate = jobsDTO.Closingdate;
+            existingJob.Link = jobsDTO.Link;
+
+            await _alumniDbContext.SaveChangesAsync();
+            return Ok(new { message = "Job updated successfully" });
+        }
+
+        [HttpDelete]
+        [Route("DeleteJob/{id}")]
+        public async Task<IActionResult> DeleteJob(int id)
+        {
+            // Find the existing news item in the database
+            var existingJob = await _alumniDbContext.Job.FindAsync(id);
+            if (existingJob == null)
+            {
+                return NotFound(new { message = "Job not found" });
+            }
+
+            try
+            {
+                _alumniDbContext.Job.Remove(existingJob); // Correct entity deletion
+                await _alumniDbContext.SaveChangesAsync(); // Save changes to the database
+
+                return Ok(new { message = "Job deleted successfully" }); // Return a success message
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { message = $"Internal server error: {ex.Message}" });
+            }
+        }
 
         [HttpPost]
         [Route("UploadNews")]

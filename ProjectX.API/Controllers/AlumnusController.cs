@@ -228,6 +228,57 @@ namespace ProjectX.API.Controllers
             return BadRequest("Invalid role specified.");
         }
 
+        [HttpPost]
+        [Route("RSVP")]
+        public async Task<IActionResult> RSVP([FromBody] RSVPDTO rSVPDTO)
+        {
+            // Get the logged-in user's details from the session
+            var userIdString = HttpContext.Session.GetString("UserId");
+
+
+            Console.WriteLine("UserId in session: " + userIdString);
+
+            if (string.IsNullOrEmpty(userIdString) || !int.TryParse(userIdString, out int userId))
+            {
+                return Unauthorized("You need to be logged in to RSVP for an event.");
+            }
+
+            // Fetch alumnus details using the UserId from the session
+            var alumnus = await _alumniDbContext.Alumnus.FirstOrDefaultAsync(a => a.AlumnusId == userId);
+            if (alumnus == null)
+            {
+                return NotFound("Alumnus not found.");
+            }
+
+            // Check if the event exists
+            var eventDetails = await _alumniDbContext.Event.FirstOrDefaultAsync(e => e.Id == rSVPDTO.EventId);
+            if (eventDetails == null)
+            {
+                return NotFound("Event not found.");
+            }
+
+            // Check if the alumnus has already RSVP'd for this event
+            var existingRSVP = await _alumniDbContext.RSVPs
+                .FirstOrDefaultAsync(r => r.AlumnusId == userId && r.EventId == rSVPDTO.EventId);
+            if (existingRSVP != null)
+            {
+                return BadRequest("You have already RSVP'd for this event.");
+            }
+
+            // Create a new RSVP record
+            var newRSVP = new RSVP
+            {
+                AlumnusId = alumnus.AlumnusId,
+                EventId = rSVPDTO.EventId,
+                RSVPDate = DateTime.UtcNow,
+            };
+
+            _alumniDbContext.RSVPs.Add(newRSVP);
+            await _alumniDbContext.SaveChangesAsync();
+
+            return Ok($"RSVP successful for event '{eventDetails.Title}' by alumnus '{alumnus.Email}'.");
+        }
+
 
         [HttpGet]
         [Route("IsLoggedIn")]

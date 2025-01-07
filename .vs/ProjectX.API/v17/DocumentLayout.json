@@ -1,45 +1,56 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\221447646\\AlumniSpace\\ProjectX.API\\",
+  "WorkspaceRootPath": "C:\\Users\\USER\\OneDrive - Tshwane University of Technology\\Desktop\\ProjectX\\ProjectX.API\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{13E8DF9E-D804-4AB5-9EFB-C2D579DC0548}|ProjectX.API\\ProjectX.API.csproj|c:\\users\\221447646\\alumnispace\\projectx.api\\projectx.api\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{13E8DF9E-D804-4AB5-9EFB-C2D579DC0548}|ProjectX.API\\ProjectX.API.csproj|solutionrelative:projectx.api\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\USER\\AppData\\Local\\SourceServer\\42fab14becffdbbcdbcad17c04a6341d1d0b22f16971aa8dcaf5bb2b8ddb2b61\\ProjectX.API\\Controllers\\AlumnusController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{13E8DF9E-D804-4AB5-9EFB-C2D579DC0548}|ProjectX.API\\ProjectX.API.csproj|c:\\users\\221447646\\alumnispace\\projectx.api\\projectx.api\\controllers\\alumnuscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{9A33301B-4952-4F05-81A6-31F5EEF81DF7}|ProjectX.Data\\ProjectX.Data.csproj|c:\\users\\user\\onedrive - tshwane university of technology\\desktop\\projectx\\projectx.api\\projectx.data\\model\\dto\\rsvpdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A33301B-4952-4F05-81A6-31F5EEF81DF7}|ProjectX.Data\\ProjectX.Data.csproj|solutionrelative:projectx.data\\model\\dto\\rsvpdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13E8DF9E-D804-4AB5-9EFB-C2D579DC0548}|ProjectX.API\\ProjectX.API.csproj|c:\\users\\user\\onedrive - tshwane university of technology\\desktop\\projectx\\projectx.api\\projectx.api\\controllers\\alumnuscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{13E8DF9E-D804-4AB5-9EFB-C2D579DC0548}|ProjectX.API\\ProjectX.API.csproj|solutionrelative:projectx.api\\controllers\\alumnuscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{13E8DF9E-D804-4AB5-9EFB-C2D579DC0548}|ProjectX.API\\ProjectX.API.csproj|c:\\users\\221447646\\alumnispace\\projectx.api\\projectx.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{13E8DF9E-D804-4AB5-9EFB-C2D579DC0548}|ProjectX.API\\ProjectX.API.csproj|solutionrelative:projectx.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9A33301B-4952-4F05-81A6-31F5EEF81DF7}|ProjectX.Data\\ProjectX.Data.csproj|c:\\users\\user\\onedrive - tshwane university of technology\\desktop\\projectx\\projectx.api\\projectx.data\\model\\rsvp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A33301B-4952-4F05-81A6-31F5EEF81DF7}|ProjectX.Data\\ProjectX.Data.csproj|solutionrelative:projectx.data\\model\\rsvp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3B572D9C-4D5F-449E-9F2E-E8F393FBC861}|ProjectX.Service\\ProjectX.Service.csproj|c:\\users\\221447646\\alumnispace\\projectx.api\\projectx.service\\emailsender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3B572D9C-4D5F-449E-9F2E-E8F393FBC861}|ProjectX.Service\\ProjectX.Service.csproj|solutionrelative:projectx.service\\emailsender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9A33301B-4952-4F05-81A6-31F5EEF81DF7}|ProjectX.Data\\ProjectX.Data.csproj|c:\\users\\user\\onedrive - tshwane university of technology\\desktop\\projectx\\projectx.api\\projectx.data\\alumnidbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A33301B-4952-4F05-81A6-31F5EEF81DF7}|ProjectX.Data\\ProjectX.Data.csproj|solutionrelative:projectx.data\\alumnidbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3B572D9C-4D5F-449E-9F2E-E8F393FBC861}|ProjectX.Service\\ProjectX.Service.csproj|c:\\users\\221447646\\alumnispace\\projectx.api\\projectx.service\\alumnusservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3B572D9C-4D5F-449E-9F2E-E8F393FBC861}|ProjectX.Service\\ProjectX.Service.csproj|solutionrelative:projectx.service\\alumnusservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9A33301B-4952-4F05-81A6-31F5EEF81DF7}|ProjectX.Data\\ProjectX.Data.csproj|c:\\users\\221447646\\alumnispace\\projectx.api\\projectx.data\\migrations\\20241126125906_alert-database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9A33301B-4952-4F05-81A6-31F5EEF81DF7}|ProjectX.Data\\ProjectX.Data.csproj|solutionrelative:projectx.data\\migrations\\20241126125906_alert-database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9A33301B-4952-4F05-81A6-31F5EEF81DF7}|ProjectX.Data\\ProjectX.Data.csproj|c:\\users\\221447646\\alumnispace\\projectx.api\\projectx.data\\model\\alumnusprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9A33301B-4952-4F05-81A6-31F5EEF81DF7}|ProjectX.Data\\ProjectX.Data.csproj|solutionrelative:projectx.data\\model\\alumnusprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3B572D9C-4D5F-449E-9F2E-E8F393FBC861}|ProjectX.Service\\ProjectX.Service.csproj|c:\\users\\221447646\\alumnispace\\projectx.api\\projectx.service\\iemailsender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3B572D9C-4D5F-449E-9F2E-E8F393FBC861}|ProjectX.Service\\ProjectX.Service.csproj|solutionrelative:projectx.service\\iemailsender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9A33301B-4952-4F05-81A6-31F5EEF81DF7}|ProjectX.Data\\ProjectX.Data.csproj|c:\\users\\221447646\\alumnispace\\projectx.api\\projectx.data\\model\\dto\\eventsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{9A33301B-4952-4F05-81A6-31F5EEF81DF7}|ProjectX.Data\\ProjectX.Data.csproj|c:\\users\\user\\onedrive - tshwane university of technology\\desktop\\projectx\\projectx.api\\projectx.data\\model\\dto\\eventsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9A33301B-4952-4F05-81A6-31F5EEF81DF7}|ProjectX.Data\\ProjectX.Data.csproj|solutionrelative:projectx.data\\model\\dto\\eventsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9A33301B-4952-4F05-81A6-31F5EEF81DF7}|ProjectX.Data\\ProjectX.Data.csproj|c:\\users\\221447646\\alumnispace\\projectx.api\\projectx.data\\model\\dto\\jobsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{13E8DF9E-D804-4AB5-9EFB-C2D579DC0548}|ProjectX.API\\ProjectX.API.csproj|c:\\users\\user\\onedrive - tshwane university of technology\\desktop\\projectx\\projectx.api\\projectx.api\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13E8DF9E-D804-4AB5-9EFB-C2D579DC0548}|ProjectX.API\\ProjectX.API.csproj|solutionrelative:projectx.api\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13E8DF9E-D804-4AB5-9EFB-C2D579DC0548}|ProjectX.API\\ProjectX.API.csproj|c:\\users\\user\\onedrive - tshwane university of technology\\desktop\\projectx\\projectx.api\\projectx.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13E8DF9E-D804-4AB5-9EFB-C2D579DC0548}|ProjectX.API\\ProjectX.API.csproj|solutionrelative:projectx.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B572D9C-4D5F-449E-9F2E-E8F393FBC861}|ProjectX.Service\\ProjectX.Service.csproj|c:\\users\\user\\onedrive - tshwane university of technology\\desktop\\projectx\\projectx.api\\projectx.service\\emailsender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B572D9C-4D5F-449E-9F2E-E8F393FBC861}|ProjectX.Service\\ProjectX.Service.csproj|solutionrelative:projectx.service\\emailsender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B572D9C-4D5F-449E-9F2E-E8F393FBC861}|ProjectX.Service\\ProjectX.Service.csproj|c:\\users\\user\\onedrive - tshwane university of technology\\desktop\\projectx\\projectx.api\\projectx.service\\alumnusservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B572D9C-4D5F-449E-9F2E-E8F393FBC861}|ProjectX.Service\\ProjectX.Service.csproj|solutionrelative:projectx.service\\alumnusservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A33301B-4952-4F05-81A6-31F5EEF81DF7}|ProjectX.Data\\ProjectX.Data.csproj|c:\\users\\user\\onedrive - tshwane university of technology\\desktop\\projectx\\projectx.api\\projectx.data\\model\\alumnusprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A33301B-4952-4F05-81A6-31F5EEF81DF7}|ProjectX.Data\\ProjectX.Data.csproj|solutionrelative:projectx.data\\model\\alumnusprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B572D9C-4D5F-449E-9F2E-E8F393FBC861}|ProjectX.Service\\ProjectX.Service.csproj|c:\\users\\user\\onedrive - tshwane university of technology\\desktop\\projectx\\projectx.api\\projectx.service\\iemailsender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B572D9C-4D5F-449E-9F2E-E8F393FBC861}|ProjectX.Service\\ProjectX.Service.csproj|solutionrelative:projectx.service\\iemailsender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A33301B-4952-4F05-81A6-31F5EEF81DF7}|ProjectX.Data\\ProjectX.Data.csproj|c:\\users\\user\\onedrive - tshwane university of technology\\desktop\\projectx\\projectx.api\\projectx.data\\model\\dto\\jobsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9A33301B-4952-4F05-81A6-31F5EEF81DF7}|ProjectX.Data\\ProjectX.Data.csproj|solutionrelative:projectx.data\\model\\dto\\jobsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -50,7 +61,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 11,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -70,75 +81,108 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "20241126125906_Alert-database.cs",
-              "DocumentMoniker": "C:\\Users\\221447646\\AlumniSpace\\ProjectX.API\\ProjectX.Data\\Migrations\\20241126125906_Alert-database.cs",
-              "RelativeDocumentMoniker": "ProjectX.Data\\Migrations\\20241126125906_Alert-database.cs",
-              "ToolTip": "C:\\Users\\221447646\\AlumniSpace\\ProjectX.API\\ProjectX.Data\\Migrations\\20241126125906_Alert-database.cs",
-              "RelativeToolTip": "ProjectX.Data\\Migrations\\20241126125906_Alert-database.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentIndex": 0,
+              "Title": "AlumnusController.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\AppData\\Local\\SourceServer\\42fab14becffdbbcdbcad17c04a6341d1d0b22f16971aa8dcaf5bb2b8ddb2b61\\ProjectX.API\\Controllers\\AlumnusController.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Local\\SourceServer\\42fab14becffdbbcdbcad17c04a6341d1d0b22f16971aa8dcaf5bb2b8ddb2b61\\ProjectX.API\\Controllers\\AlumnusController.cs",
+              "ToolTip": "C:\\Users\\USER\\AppData\\Local\\SourceServer\\42fab14becffdbbcdbcad17c04a6341d1d0b22f16971aa8dcaf5bb2b8ddb2b61\\ProjectX.API\\Controllers\\AlumnusController.cs [Read Only]",
+              "RelativeToolTip": "..\\..\\..\\..\\AppData\\Local\\SourceServer\\42fab14becffdbbcdbcad17c04a6341d1d0b22f16971aa8dcaf5bb2b8ddb2b61\\ProjectX.API\\Controllers\\AlumnusController.cs [Read Only]",
+              "ViewState": "AgIAALwAAAAAAAAAAAAUwMQAAAARAAAAAQAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-26T12:59:08.056Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-10T17:51:36.501Z",
+              "EditorCaption": " [Read Only]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "AlumnusService.cs",
-              "DocumentMoniker": "C:\\Users\\221447646\\AlumniSpace\\ProjectX.API\\ProjectX.Service\\AlumnusService.cs",
-              "RelativeDocumentMoniker": "ProjectX.Service\\AlumnusService.cs",
-              "ToolTip": "C:\\Users\\221447646\\AlumniSpace\\ProjectX.API\\ProjectX.Service\\AlumnusService.cs",
-              "RelativeToolTip": "ProjectX.Service\\AlumnusService.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAAAgwCYAAAAmAAAA",
+              "Title": "AlumniDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\OneDrive - Tshwane University of Technology\\Desktop\\ProjectX\\ProjectX.API\\ProjectX.Data\\AlumniDbContext.cs",
+              "RelativeDocumentMoniker": "ProjectX.Data\\AlumniDbContext.cs",
+              "ToolTip": "C:\\Users\\USER\\OneDrive - Tshwane University of Technology\\Desktop\\ProjectX\\ProjectX.API\\ProjectX.Data\\AlumniDbContext.cs",
+              "RelativeToolTip": "ProjectX.Data\\AlumniDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-26T12:46:06.851Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-10T17:25:06.652Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RSVPDTO.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\OneDrive - Tshwane University of Technology\\Desktop\\ProjectX\\ProjectX.API\\ProjectX.Data\\Model\\dto\\RSVPDTO.cs",
+              "RelativeDocumentMoniker": "ProjectX.Data\\Model\\dto\\RSVPDTO.cs",
+              "ToolTip": "C:\\Users\\USER\\OneDrive - Tshwane University of Technology\\Desktop\\ProjectX\\ProjectX.API\\ProjectX.Data\\Model\\dto\\RSVPDTO.cs",
+              "RelativeToolTip": "ProjectX.Data\\Model\\dto\\RSVPDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T17:24:29.44Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "EmailSender.cs",
-              "DocumentMoniker": "C:\\Users\\221447646\\AlumniSpace\\ProjectX.API\\ProjectX.Service\\EmailSender.cs",
-              "RelativeDocumentMoniker": "ProjectX.Service\\EmailSender.cs",
-              "ToolTip": "C:\\Users\\221447646\\AlumniSpace\\ProjectX.API\\ProjectX.Service\\EmailSender.cs",
-              "RelativeToolTip": "ProjectX.Service\\EmailSender.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAABQAAAA",
+              "Title": "RSVP.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\OneDrive - Tshwane University of Technology\\Desktop\\ProjectX\\ProjectX.API\\ProjectX.Data\\Model\\RSVP.cs",
+              "RelativeDocumentMoniker": "ProjectX.Data\\Model\\RSVP.cs",
+              "ToolTip": "C:\\Users\\USER\\OneDrive - Tshwane University of Technology\\Desktop\\ProjectX\\ProjectX.API\\ProjectX.Data\\Model\\RSVP.cs",
+              "RelativeToolTip": "ProjectX.Data\\Model\\RSVP.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAmwBAAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-26T12:30:16.673Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-10T17:23:52.151Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "IEmailSender.cs",
-              "DocumentMoniker": "C:\\Users\\221447646\\AlumniSpace\\ProjectX.API\\ProjectX.Service\\IEmailSender.cs",
-              "RelativeDocumentMoniker": "ProjectX.Service\\IEmailSender.cs",
-              "ToolTip": "C:\\Users\\221447646\\AlumniSpace\\ProjectX.API\\ProjectX.Service\\IEmailSender.cs",
-              "RelativeToolTip": "ProjectX.Service\\IEmailSender.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAABIAAAA",
+              "DocumentIndex": 9,
+              "Title": "AlumnusService.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\OneDrive - Tshwane University of Technology\\Desktop\\ProjectX\\ProjectX.API\\ProjectX.Service\\AlumnusService.cs",
+              "RelativeDocumentMoniker": "ProjectX.Service\\AlumnusService.cs",
+              "ToolTip": "C:\\Users\\USER\\OneDrive - Tshwane University of Technology\\Desktop\\ProjectX\\ProjectX.API\\ProjectX.Service\\AlumnusService.cs",
+              "RelativeToolTip": "ProjectX.Service\\AlumnusService.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAgwCYAAAAmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-26T12:28:54.117Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-26T12:46:06.851Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
+              "Title": "EmailSender.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\OneDrive - Tshwane University of Technology\\Desktop\\ProjectX\\ProjectX.API\\ProjectX.Service\\EmailSender.cs",
+              "RelativeDocumentMoniker": "ProjectX.Service\\EmailSender.cs",
+              "ToolTip": "C:\\Users\\USER\\OneDrive - Tshwane University of Technology\\Desktop\\ProjectX\\ProjectX.API\\ProjectX.Service\\EmailSender.cs",
+              "RelativeToolTip": "ProjectX.Service\\EmailSender.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAABQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-26T12:30:16.673Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "IEmailSender.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\OneDrive - Tshwane University of Technology\\Desktop\\ProjectX\\ProjectX.API\\ProjectX.Service\\IEmailSender.cs",
+              "RelativeDocumentMoniker": "ProjectX.Service\\IEmailSender.cs",
+              "ToolTip": "C:\\Users\\USER\\OneDrive - Tshwane University of Technology\\Desktop\\ProjectX\\ProjectX.API\\ProjectX.Service\\IEmailSender.cs",
+              "RelativeToolTip": "ProjectX.Service\\IEmailSender.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAABIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-26T12:28:54.117Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "EventsDTO.cs",
-              "DocumentMoniker": "C:\\Users\\221447646\\AlumniSpace\\ProjectX.API\\ProjectX.Data\\Model\\dto\\EventsDTO.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\OneDrive - Tshwane University of Technology\\Desktop\\ProjectX\\ProjectX.API\\ProjectX.Data\\Model\\dto\\EventsDTO.cs",
               "RelativeDocumentMoniker": "ProjectX.Data\\Model\\dto\\EventsDTO.cs",
-              "ToolTip": "C:\\Users\\221447646\\AlumniSpace\\ProjectX.API\\ProjectX.Data\\Model\\dto\\EventsDTO.cs",
+              "ToolTip": "C:\\Users\\USER\\OneDrive - Tshwane University of Technology\\Desktop\\ProjectX\\ProjectX.API\\ProjectX.Data\\Model\\dto\\EventsDTO.cs",
               "RelativeToolTip": "ProjectX.Data\\Model\\dto\\EventsDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAzwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-18T06:34:46.289Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 12,
               "Title": "JobsDTO.cs",
-              "DocumentMoniker": "C:\\Users\\221447646\\AlumniSpace\\ProjectX.API\\ProjectX.Data\\Model\\dto\\JobsDTO.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\OneDrive - Tshwane University of Technology\\Desktop\\ProjectX\\ProjectX.API\\ProjectX.Data\\Model\\dto\\JobsDTO.cs",
               "RelativeDocumentMoniker": "ProjectX.Data\\Model\\dto\\JobsDTO.cs",
-              "ToolTip": "C:\\Users\\221447646\\AlumniSpace\\ProjectX.API\\ProjectX.Data\\Model\\dto\\JobsDTO.cs",
+              "ToolTip": "C:\\Users\\USER\\OneDrive - Tshwane University of Technology\\Desktop\\ProjectX\\ProjectX.API\\ProjectX.Data\\Model\\dto\\JobsDTO.cs",
               "RelativeToolTip": "ProjectX.Data\\Model\\dto\\JobsDTO.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -146,52 +190,49 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\221447646\\AlumniSpace\\ProjectX.API\\ProjectX.API\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\OneDrive - Tshwane University of Technology\\Desktop\\ProjectX\\ProjectX.API\\ProjectX.API\\Program.cs",
               "RelativeDocumentMoniker": "ProjectX.API\\Program.cs",
-              "ToolTip": "C:\\Users\\221447646\\AlumniSpace\\ProjectX.API\\ProjectX.API\\Program.cs",
+              "ToolTip": "C:\\Users\\USER\\OneDrive - Tshwane University of Technology\\Desktop\\ProjectX\\ProjectX.API\\ProjectX.API\\Program.cs",
               "RelativeToolTip": "ProjectX.API\\Program.cs",
               "ViewState": "AQIAABIAAAAAAAAAAAAAABUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-15T06:42:30.68Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AdminController.cs",
-              "DocumentMoniker": "C:\\Users\\221447646\\AlumniSpace\\ProjectX.API\\ProjectX.API\\Controllers\\AdminController.cs",
-              "RelativeDocumentMoniker": "ProjectX.API\\Controllers\\AdminController.cs",
-              "ToolTip": "C:\\Users\\221447646\\AlumniSpace\\ProjectX.API\\ProjectX.API\\Controllers\\AdminController.cs",
-              "RelativeToolTip": "ProjectX.API\\Controllers\\AdminController.cs",
-              "ViewState": "AQIAALMAAAAAAAAAAAAiwLgAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T11:49:23.342Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-15T06:42:30.68Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "AlumnusProfile.cs",
-              "DocumentMoniker": "C:\\Users\\221447646\\AlumniSpace\\ProjectX.API\\ProjectX.Data\\Model\\AlumnusProfile.cs",
-              "RelativeDocumentMoniker": "ProjectX.Data\\Model\\AlumnusProfile.cs",
-              "ToolTip": "C:\\Users\\221447646\\AlumniSpace\\ProjectX.API\\ProjectX.Data\\Model\\AlumnusProfile.cs",
-              "RelativeToolTip": "ProjectX.Data\\Model\\AlumnusProfile.cs",
-              "ViewState": "AQIAABkAAAAAAAAAAAAgwBIAAAAiAAAA",
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\OneDrive - Tshwane University of Technology\\Desktop\\ProjectX\\ProjectX.API\\ProjectX.API\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "ProjectX.API\\Controllers\\AdminController.cs",
+              "ToolTip": "C:\\Users\\USER\\OneDrive - Tshwane University of Technology\\Desktop\\ProjectX\\ProjectX.API\\ProjectX.API\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "ProjectX.API\\Controllers\\AdminController.cs",
+              "ViewState": "AgIAAD0BAAAAAAAAAAAQwFIBAABEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-31T13:06:42.647Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-05T11:49:23.342Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 10,
+              "Title": "AlumnusProfile.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\OneDrive - Tshwane University of Technology\\Desktop\\ProjectX\\ProjectX.API\\ProjectX.Data\\Model\\AlumnusProfile.cs",
+              "RelativeDocumentMoniker": "ProjectX.Data\\Model\\AlumnusProfile.cs",
+              "ToolTip": "C:\\Users\\USER\\OneDrive - Tshwane University of Technology\\Desktop\\ProjectX\\ProjectX.API\\ProjectX.Data\\Model\\AlumnusProfile.cs",
+              "RelativeToolTip": "ProjectX.Data\\Model\\AlumnusProfile.cs",
+              "ViewState": "AQIAABkAAAAAAAAAAAAgwBIAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-31T13:06:42.647Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "AlumnusController.cs",
-              "DocumentMoniker": "C:\\Users\\221447646\\AlumniSpace\\ProjectX.API\\ProjectX.API\\Controllers\\AlumnusController.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\OneDrive - Tshwane University of Technology\\Desktop\\ProjectX\\ProjectX.API\\ProjectX.API\\Controllers\\AlumnusController.cs",
               "RelativeDocumentMoniker": "ProjectX.API\\Controllers\\AlumnusController.cs",
-              "ToolTip": "C:\\Users\\221447646\\AlumniSpace\\ProjectX.API\\ProjectX.API\\Controllers\\AlumnusController.cs",
+              "ToolTip": "C:\\Users\\USER\\OneDrive - Tshwane University of Technology\\Desktop\\ProjectX\\ProjectX.API\\ProjectX.API\\Controllers\\AlumnusController.cs",
               "RelativeToolTip": "ProjectX.API\\Controllers\\AlumnusController.cs",
-              "ViewState": "AQIAABgBAAAAAAAAAAAuwFQBAAAlAAAA",
+              "ViewState": "AgIAAKoAAAAAAAAAAAAqwO0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-01T12:58:06.01Z",
               "EditorCaption": ""

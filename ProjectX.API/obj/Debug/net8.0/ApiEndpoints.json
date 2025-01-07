@@ -1,6 +1,94 @@
 [
   {
     "ContainingType": "ProjectX.API.Controllers.AdminController",
+    "Method": "CountAlumni",
+    "RelativePath": "api/Admin/CountAlumni/CountAlumni",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjectX.API.Controllers.AdminController",
+    "Method": "CountAlumniPerCampus",
+    "RelativePath": "api/Admin/CountAlumniPerCampus/CountAlumniPerCampus",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjectX.API.Controllers.AdminController",
+    "Method": "CountAlumniPerFaculty",
+    "RelativePath": "api/Admin/CountAlumniPerFaculty/CountAlumniPerFaculty",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjectX.API.Controllers.AdminController",
+    "Method": "DeleteEvent",
+    "RelativePath": "api/Admin/DeleteEvent/DeleteEvent/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjectX.API.Controllers.AdminController",
+    "Method": "DeleteJob",
+    "RelativePath": "api/Admin/DeleteJob/DeleteJob/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjectX.API.Controllers.AdminController",
+    "Method": "DeleteNews",
+    "RelativePath": "api/Admin/DeleteNews/DeleteNews/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjectX.API.Controllers.AdminController",
+    "Method": "GetAlumnis",
+    "RelativePath": "api/Admin/GetAlumnis/GetAlumnis",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjectX.API.Controllers.AdminController",
     "Method": "Login",
     "RelativePath": "api/Admin/Login",
     "HttpMethod": "POST",
@@ -41,13 +129,159 @@
     ]
   },
   {
-    "ContainingType": "ProjectX.API.Controllers.AlumnusController",
-    "Method": "GetAlumnis",
-    "RelativePath": "api/Alumnus/GetAlumnis/GetAlumnis",
+    "ContainingType": "ProjectX.API.Controllers.AdminController",
+    "Method": "TrackAlumni",
+    "RelativePath": "api/Admin/TrackAlumni/TrackAlumni",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjectX.API.Controllers.AdminController",
+    "Method": "UpdateEvents",
+    "RelativePath": "api/Admin/UpdateEvents/UpdateEvents/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "eventsDTO",
+        "Type": "ProjectX.Data.Model.dto.EventsDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjectX.API.Controllers.AdminController",
+    "Method": "UpdateJob",
+    "RelativePath": "api/Admin/UpdateJob/UpdateJob/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "jobsDTO",
+        "Type": "ProjectX.Data.Model.dto.JobsDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjectX.API.Controllers.AdminController",
+    "Method": "UpdateNews",
+    "RelativePath": "api/Admin/UpdateNews/UpdateNews/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "newsDTO",
+        "Type": "ProjectX.Data.Model.dto.NewsDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjectX.API.Controllers.AdminController",
+    "Method": "UploadEvents",
+    "RelativePath": "api/Admin/UploadEvents/UploadEvents",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "eventsDTO",
+        "Type": "ProjectX.Data.Model.dto.EventsDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjectX.API.Controllers.AdminController",
+    "Method": "UploadJob",
+    "RelativePath": "api/Admin/UploadJob/UploadJob",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "jobsDTO",
+        "Type": "ProjectX.Data.Model.dto.JobsDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjectX.API.Controllers.AdminController",
+    "Method": "UploadNews",
+    "RelativePath": "api/Admin/UploadNews/UploadNews",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "NewsType",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Headline",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Description",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Publisher",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "PublishedDate",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Link",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Media",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
     "ReturnTypes": []
   },
   {
@@ -58,6 +292,48 @@
     "IsController": true,
     "Order": 0,
     "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjectX.API.Controllers.AlumnusController",
+    "Method": "GetEvent",
+    "RelativePath": "api/Alumnus/GetEvent/GetEvents",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjectX.API.Controllers.AlumnusController",
+    "Method": "GetJobsByFaculty",
+    "RelativePath": "api/Alumnus/GetJobsByFaculty/GetJobsByFaculty/{faculty}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "faculty",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjectX.API.Controllers.AlumnusController",
+    "Method": "GetNewsByType",
+    "RelativePath": "api/Alumnus/GetNewsByType/GetNews/{newstype}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "newstype",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
     "ReturnTypes": []
   },
   {
@@ -116,7 +392,39 @@
     "ContainingType": "ProjectX.API.Controllers.AlumnusController",
     "Method": "ResetPassword",
     "RelativePath": "api/Alumnus/ResetPassword/ResetPassword",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "alumnusDTO",
+        "Type": "ProjectX.Data.Model.dto.AlumnusDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjectX.API.Controllers.AlumnusController",
+    "Method": "RSVP",
+    "RelativePath": "api/Alumnus/RSVP/RSVP",
     "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "rSVPDTO",
+        "Type": "ProjectX.Data.Model.dto.RSVPDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjectX.API.Controllers.AlumnusController",
+    "Method": "UpdateProfile",
+    "RelativePath": "api/Alumnus/UpdateProfile/UpdateProfile",
+    "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
     "Parameters": [

@@ -279,6 +279,58 @@ namespace ProjectX.API.Controllers
             return Ok($"RSVP successful for event '{eventDetails.Title}' by alumnus '{alumnus.Email}'.");
         }
 
+        [HttpPost]
+        [Route("Volunteer")]
+        public async Task<IActionResult> Volunteer([FromBody] VolunteerDTO volunteerDTO)
+        {
+            if (volunteerDTO == null || volunteerDTO.EventId <= 0 || string.IsNullOrEmpty(volunteerDTO.Role) || volunteerDTO.AlumnusId <=0)
+            {
+                return BadRequest("Invalid request data. Please provide valid Event ID and Role.");
+            }
+
+            var alumnus = await _alumniDbContext.AlumnusProfile.FirstOrDefaultAsync(a => a.AlumnusId == volunteerDTO.AlumnusId);
+            if (alumnus == null)
+            {
+                return NotFound("Alumnus not found.");
+            }
+
+            var eventDetails = await _alumniDbContext.Event.FirstOrDefaultAsync(e => e.Id == volunteerDTO.EventId);
+            if (eventDetails == null)
+            {
+                return NotFound("Event not found.");
+            }
+            
+            var existingVolunteer = await _alumniDbContext.Volunteers
+                .FirstOrDefaultAsync(v => v.AlumnusId == volunteerDTO.AlumnusId && v.EventId == volunteerDTO.EventId && v.Role == volunteerDTO.Role);
+
+            if (existingVolunteer != null)
+            {
+                return BadRequest("You have already volunteered for this event with the selected role.");
+            }
+
+            var newVolunteer = new Volunteer
+            {
+                AlumnusId = volunteerDTO.AlumnusId,
+                EventId = volunteerDTO.EventId,
+                Role = volunteerDTO.Role,
+               
+            };
+
+            Console.WriteLine($"New Vonteer: {volunteerDTO.AlumnusId} " + "  :"+ volunteerDTO.EventId + " : " + volunteerDTO.Role + " : " + alumnus.FirstName);
+
+
+            _alumniDbContext.Volunteers.AddAsync(newVolunteer);
+            await _alumniDbContext.SaveChangesAsync();
+
+            return Ok(new
+            {
+                message = "Successfully registered for the event.",
+                eventTitle = eventDetails.Title,
+                role = volunteerDTO.Role
+            });
+        }
+
+
 
         [HttpGet]
         [Route("IsLoggedIn")]
@@ -398,6 +450,8 @@ namespace ProjectX.API.Controllers
             // Return the filtered news with images as Base64
             return Ok(news);
         }
+
+        
 
         [HttpPost]
         [Route("Logout")]

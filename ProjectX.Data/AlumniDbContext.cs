@@ -16,6 +16,7 @@ namespace ProjectX.Data
         public DbSet<Job> Job{ get; set; }
         public DbSet<News> News { get; set; }
         public DbSet<RSVP> RSVPs { get; set; }
+        public DbSet<Volunteer> Volunteers { get; set; }
 
     }
 }

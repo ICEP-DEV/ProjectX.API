@@ -347,6 +347,29 @@ namespace ProjectX.Data.Migrations
                     b.ToTable("RSVPs");
                 });
 
+            modelBuilder.Entity("ProjectX.Data.Model.Volunteer", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("AlumnusId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("EventId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Role")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Volunteers");
+                });
+
             modelBuilder.Entity("ProjectX.Data.Model.RSVP", b =>
                 {
                     b.HasOne("ProjectX.Data.Model.Alumnus", "Alumnus")

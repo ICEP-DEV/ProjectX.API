@@ -22,7 +22,7 @@ namespace ProjectX.API.Controllers
         private readonly IConfiguration _configuration;
         private readonly AlumniDbContext _alumniDbContext;
         private readonly IEmailSender _emailSender;
-        
+
 
         public AdminController(IConfiguration configuration, AlumniDbContext alumniDbContext, IEmailSender emailSender)
         {
@@ -110,6 +110,64 @@ namespace ProjectX.API.Controllers
 
             return Ok(alumni);
         }
+        [HttpGet]
+        [Route("CountVolunteers")]
+        public IActionResult CountVolunteers()
+        {
+            var volunteers = _alumniDbContext.Volunteers.Count();
+
+            return Ok(volunteers);
+        }
+
+        [HttpGet]
+        [Route("GetEvents")]
+        public IActionResult GetEvents()
+        {
+            var events = _alumniDbContext.Event
+                .Select(e => new
+                {
+                    e.Id,
+                    e.Title,
+                    e.Date,
+                    e.Time,
+                    e.Venue,
+                    e.Description,
+                    ResponseCount = _alumniDbContext.Volunteers.Count(v => v.EventId == e.Id)
+                })
+                .ToList();
+
+            return Ok(events);
+        }
+        [HttpGet]
+        [Route("GetEventResponses")]
+        public IActionResult GetEventResponses()
+        {
+            var responses = _alumniDbContext.Volunteers
+                .Join(
+                    _alumniDbContext.AlumnusProfile,
+                    volunteer => volunteer.AlumnusId,
+                    alumnus => alumnus.AlumnusId,
+                    (volunteer, alumnus) => new
+                    {
+                        
+                        AlumnusFirstName = alumnus.FirstName,
+                        AlumnusLastName = alumnus.LastName,
+                        AlumnusEmail = alumnus.Email,
+                        AlumnusCampus = alumnus.Campus,
+                        AlumnusCourse = alumnus.Course,
+                        AlumnusLinkedInProfile = alumnus.LinkedInProfile,
+                        EventId = volunteer.EventId,
+                        EventTitle = _alumniDbContext.Event.FirstOrDefault(e => e.Id == volunteer.EventId).Title,
+                        EventDate = _alumniDbContext.Event.FirstOrDefault(e => e.Id == volunteer.EventId).Date,
+                        VolunteerRole = volunteer.Role,
+                    }
+                )
+                .ToList();
+
+            return Ok(responses);
+        }
+
+
         [HttpPost]
         [Route("UploadEvents")]
         public async Task<IActionResult> UploadEvents([FromBody] EventsDTO eventsDTO)

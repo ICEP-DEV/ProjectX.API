@@ -149,23 +149,26 @@ namespace ProjectX.API.Controllers
                     alumnus => alumnus.AlumnusId,
                     (volunteer, alumnus) => new
                     {
-                        
+                        AlumnusId = alumnus.AlumnusId,
                         AlumnusFirstName = alumnus.FirstName,
                         AlumnusLastName = alumnus.LastName,
                         AlumnusEmail = alumnus.Email,
                         AlumnusCampus = alumnus.Campus,
                         AlumnusCourse = alumnus.Course,
-                        AlumnusLinkedInProfile = alumnus.LinkedInProfile,
                         EventId = volunteer.EventId,
                         EventTitle = _alumniDbContext.Event.FirstOrDefault(e => e.Id == volunteer.EventId).Title,
-                        EventDate = _alumniDbContext.Event.FirstOrDefault(e => e.Id == volunteer.EventId).Date,
+                       // EventDate = _alumniDbContext.Event.FirstOrDefault(e => e.Id == volunteer.EventId).Date,
                         VolunteerRole = volunteer.Role,
                     }
                 )
                 .ToList();
 
+            // Reverse the list to make it first-in-last-out
+            responses.Reverse();
+
             return Ok(responses);
         }
+
 
 
         [HttpPost]

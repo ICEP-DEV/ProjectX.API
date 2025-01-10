@@ -1228,6 +1228,14 @@ C:\Users\USER\OneDrive - Tshwane University of Technology\Desktop\ProjectX\Proje
 C:\Users\USER\OneDrive - Tshwane University of Technology\Desktop\ProjectX\ProjectX.API\ProjectX.API\obj\Debug\net8.0\ProjectX.API.pdb
 C:\Users\USER\OneDrive - Tshwane University of Technology\Desktop\ProjectX\ProjectX.API\ProjectX.API\obj\Debug\net8.0\ProjectX.API.genruntimeconfig.cache
 C:\Users\USER\OneDrive - Tshwane University of Technology\Desktop\ProjectX\ProjectX.API\ProjectX.API\obj\Debug\net8.0\ref\ProjectX.API.dll
+C:\Users\221447646\AlumniSpace\ProjectX.API\ProjectX.API\obj\Debug\net8.0\ProjectX.API.csproj.AssemblyReference.cache
+C:\Users\221447646\AlumniSpace\ProjectX.API\ProjectX.API\obj\Debug\net8.0\ProjectX.API.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\221447646\AlumniSpace\ProjectX.API\ProjectX.API\obj\Debug\net8.0\ProjectX.API.AssemblyInfoInputs.cache
+C:\Users\221447646\AlumniSpace\ProjectX.API\ProjectX.API\obj\Debug\net8.0\ProjectX.API.AssemblyInfo.cs
+C:\Users\221447646\AlumniSpace\ProjectX.API\ProjectX.API\obj\Debug\net8.0\ProjectX.API.csproj.CoreCompileInputs.cache
+C:\Users\221447646\AlumniSpace\ProjectX.API\ProjectX.API\obj\Debug\net8.0\ProjectX.API.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\221447646\AlumniSpace\ProjectX.API\ProjectX.API\obj\Debug\net8.0\ProjectX.API.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\221447646\AlumniSpace\ProjectX.API\ProjectX.API\obj\Debug\net8.0\ProjectX.API.sourcelink.json
 C:\Users\221447646\AlumniSpace\ProjectX.API\ProjectX.API\bin\Debug\net8.0\appsettings.Development.json
 C:\Users\221447646\AlumniSpace\ProjectX.API\ProjectX.API\bin\Debug\net8.0\appsettings.json
 C:\Users\221447646\AlumniSpace\ProjectX.API\ProjectX.API\bin\Debug\net8.0\ProjectX.API.exe
@@ -1358,14 +1366,6 @@ C:\Users\221447646\AlumniSpace\ProjectX.API\ProjectX.API\bin\Debug\net8.0\Projec
 C:\Users\221447646\AlumniSpace\ProjectX.API\ProjectX.API\bin\Debug\net8.0\ProjectX.Service.dll
 C:\Users\221447646\AlumniSpace\ProjectX.API\ProjectX.API\bin\Debug\net8.0\ProjectX.Data.pdb
 C:\Users\221447646\AlumniSpace\ProjectX.API\ProjectX.API\bin\Debug\net8.0\ProjectX.Service.pdb
-C:\Users\221447646\AlumniSpace\ProjectX.API\ProjectX.API\obj\Debug\net8.0\ProjectX.API.csproj.AssemblyReference.cache
-C:\Users\221447646\AlumniSpace\ProjectX.API\ProjectX.API\obj\Debug\net8.0\ProjectX.API.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\221447646\AlumniSpace\ProjectX.API\ProjectX.API\obj\Debug\net8.0\ProjectX.API.AssemblyInfoInputs.cache
-C:\Users\221447646\AlumniSpace\ProjectX.API\ProjectX.API\obj\Debug\net8.0\ProjectX.API.AssemblyInfo.cs
-C:\Users\221447646\AlumniSpace\ProjectX.API\ProjectX.API\obj\Debug\net8.0\ProjectX.API.csproj.CoreCompileInputs.cache
-C:\Users\221447646\AlumniSpace\ProjectX.API\ProjectX.API\obj\Debug\net8.0\ProjectX.API.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\221447646\AlumniSpace\ProjectX.API\ProjectX.API\obj\Debug\net8.0\ProjectX.API.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\221447646\AlumniSpace\ProjectX.API\ProjectX.API\obj\Debug\net8.0\ProjectX.API.sourcelink.json
 C:\Users\221447646\AlumniSpace\ProjectX.API\ProjectX.API\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\221447646\AlumniSpace\ProjectX.API\ProjectX.API\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\221447646\AlumniSpace\ProjectX.API\ProjectX.API\obj\Debug\net8.0\staticwebassets\msbuild.ProjectX.API.Microsoft.AspNetCore.StaticWebAssets.props

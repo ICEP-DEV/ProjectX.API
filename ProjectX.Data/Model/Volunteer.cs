@@ -23,6 +23,11 @@ namespace ProjectX.Data.Model
         public int EventId { get; set; }       
 
         //volunteer role
-        public string Role { get; set; }
+        public string Role { get; set; } = string.Empty;
+
+        public string Status { get; set; }   =  "Awaiting";
+
+        public DateTime CreatedAt { get; set; } = DateTime.UtcNow; // Track creation time
+
     }
 }

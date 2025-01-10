@@ -6,13 +6,10 @@ using System.Threading.Tasks;
 
 namespace ProjectX.Data.Model.dto
 {
-    public class VolunteerDTO
+    public class StatusDTO
     {
-        public int EventId { get; set; } // ID of the event
-
         public int AlumnusId { get; set; }
-
-        //volunteer role
-        public string Role { get; set; } = string.Empty;
+        public int EventId { get; set; }
+        public string Status { get; set; } = string.Empty;
     }
 }

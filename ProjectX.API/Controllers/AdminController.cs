@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Internal;
 using Microsoft.Extensions.Configuration;
+using Microsoft.IdentityModel.Tokens;
 using ProjectX.Data;
 using ProjectX.Data.Model;
 using ProjectX.Data.Model.bl;
@@ -138,6 +139,7 @@ namespace ProjectX.API.Controllers
 
             return Ok(events);
         }
+
         [HttpGet]
         [Route("GetEventResponses")]
         public IActionResult GetEventResponses()
@@ -157,7 +159,7 @@ namespace ProjectX.API.Controllers
                         AlumnusCourse = alumnus.Course,
                         EventId = volunteer.EventId,
                         EventTitle = _alumniDbContext.Event.FirstOrDefault(e => e.Id == volunteer.EventId).Title,
-                       // EventDate = _alumniDbContext.Event.FirstOrDefault(e => e.Id == volunteer.EventId).Date,
+                        Status = volunteer.Status,
                         VolunteerRole = volunteer.Role,
                     }
                 )
@@ -168,8 +170,133 @@ namespace ProjectX.API.Controllers
 
             return Ok(responses);
         }
+        [HttpPost]
+        [Route("UpdateStatus")]
+        public async Task<IActionResult> UpdateStatusAsync([FromBody] StatusDTO status)
+        {
+            if (status == null || status.AlumnusId <= 0 )
+            {
+                return BadRequest("Invalid request data.");
+            }
+
+            try
+            {
+                // Fetch the volunteer record by AlumnusId
+                var volunteer = _alumniDbContext.Volunteers.FirstOrDefault(v => v.AlumnusId == status.AlumnusId && v.EventId == status.EventId);
+
+                if (volunteer == null)
+                {
+                    return NotFound("Volunteer not found.");
+                }
+
+                // Update the status
+                volunteer.Status = status.Status;
+                _alumniDbContext.SaveChanges();
+
+                // Get alumni email
+                var alumniEmail = _alumniDbContext.AlumnusProfile
+                    .Where(p => p.AlumnusId == volunteer.AlumnusId)
+                    .Select(p => p.Email)
+                    .FirstOrDefault();
+
+                // Check if alumniEmail is null or empty
+                if (string.IsNullOrWhiteSpace(alumniEmail))
+                {
+                    return StatusCode(400, "Alumni email not found.");
+                }
+
+                // Get event details
+                var eventDetails = _alumniDbContext.Event
+                    .Where(e => e.Id == status.EventId)
+                    .Select(e => new
+                    {
+                        e.Title,
+                        e.Date,
+                        e.Time,
+                        e.Venue,
+                        e.Description
+                    })
+                    .FirstOrDefault(); // Ensure we get a single event or null
+
+                // Check if eventDetails is null to avoid runtime errors
+                if (eventDetails == null)
+                {
+                    return StatusCode(400, "Event not found.");
+                }
+
+                // Define subject and message dynamically based on the status
+                // Initialize subject and message with default values
+                string subject = "Volunteer Status Update";
+                string message = "Dear Alumni,\n\nWe have an update regarding your volunteer request. Please contact the Alumni Office for more details.";
+
+                // Define subject and message dynamically based on the status
+                if (volunteer.Status.Equals("Approved", StringComparison.OrdinalIgnoreCase))
+                {
+                    subject = $"Volunteer Status for Event: {eventDetails.Title}";
+
+                    message = $"Dear Alumni,\n\n" +
+                              $"Your request to volunteer for an upcoming event hosted by Tshwane University of Technology has been approved:\n\n" +
+                              $"Event: {eventDetails.Title}\n" +
+                              $"Description: {eventDetails.Description}\n" +
+                              $"Date: {eventDetails.Date:dddd, MMMM dd, yyyy}\n" +
+                              $"Time: {eventDetails.Time}\n" +
+                              $"Venue: {eventDetails.Venue}\n\n" +
+                              $"For more details, please visit: http://localhost:3000/events\n\n" +
+                              $"We look forward to your participation!\n\n" +
+                              $"Kind Regards,\n" +
+                              $"Alumni Office\n" +
+                              $"Tshwane University of Technology";
+                }
+                else if (volunteer.Status.Equals("Rejected", StringComparison.OrdinalIgnoreCase))
+                {
+                    subject = $"Volunteer Status for Event: {eventDetails.Title}";
+
+                    message = $"Dear Alumni,\n\n" +
+                              $"We regret to inform you that your request to volunteer for the event titled '{eventDetails.Title}' has been declined.\n\n" +
+                              $"We appreciate your interest and encourage you to stay connected for future opportunities.\n\n" +
+                              $"Kind Regards,\n" +
+                              $"Alumni Office\n" +
+                              $"Tshwane University of Technology";
+                }
 
 
+                try
+                {
+                    // Send email
+                    await _emailSender.SendEmailAsync(alumniEmail, subject, message);
+                }
+                catch (Exception ex)
+                {
+                    return StatusCode(500, $"Email error: {ex.Message}");
+                }
+
+
+                return Ok("Status updated successfully.");
+
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Internal server error: {ex.Message}");
+            }
+        }
+
+        [HttpGet]
+        [Route("GetNewVolunteers")]
+        public IActionResult GetNewVolunteers(DateTime? lastChecked = null)
+        {
+            try
+            {
+                // Fetch count of volunteers who are awaiting approval or added after `lastChecked`
+                var newVolunteersCount = _alumniDbContext.Volunteers
+                    .Count(v => v.Status == "Awaiting" || (lastChecked != null && v.CreatedAt > lastChecked));
+
+                return Ok(newVolunteersCount); // Return just the count
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Internal server error: {ex.Message}");
+            }
+        }
 
         [HttpPost]
         [Route("UploadEvents")]

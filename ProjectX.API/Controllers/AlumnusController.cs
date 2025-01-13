@@ -156,11 +156,20 @@ namespace ProjectX.API.Controllers
 
             if (alumni == null)
             {
-                return NotFound("Profile not found.");
+                return NotFound("Alumnus Profile not found.");
             }
 
             // Step 2: Update the LinkedIn profile
             alumni.LinkedInProfile = alumnusDTO.LinkedInProfile;
+
+
+            //Step 3 Update profile image if it's provided
+            if (alumnusDTO.ProfilePicture != null && alumnusDTO.ProfilePicture.Length > 0)
+            {
+
+                alumni.ProfilePicture = alumnusDTO.ProfilePicture;
+
+            }
 
             _alumniDbContext.AlumnusProfile.Update(alumni);
             await _alumniDbContext.SaveChangesAsync();

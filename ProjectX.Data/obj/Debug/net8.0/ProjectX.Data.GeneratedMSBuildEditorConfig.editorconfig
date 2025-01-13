@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ProjectX.Data
-build_property.ProjectDir = C:\Users\221447646\AlumniSpace\ProjectX.API\ProjectX.Data\
+build_property.ProjectDir = C:\ICEP Projects\Project 10 Master API\ProjectX.API\ProjectX.Data\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

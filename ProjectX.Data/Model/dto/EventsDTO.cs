@@ -18,6 +18,6 @@ namespace ProjectX.Data.Model.dto
         public string Time { get; set; } = string.Empty;
         public string Venue { get; set; } = string.Empty;
         public string[] VolunteerRoles { get; set; }
-        public string Media { get; set; } // Base64 string
+        public string Media { get; set; } = string.Empty; // Base64 string
     }
 }

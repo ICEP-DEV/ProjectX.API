@@ -11,5 +11,6 @@ namespace ProjectX.Data.Model.dto
         public int AlumnusId { get; set; }
         public int EventId { get; set; }
         public string Status { get; set; } = string.Empty;
+        public string Role { get; set; } = string.Empty;
     }
 }

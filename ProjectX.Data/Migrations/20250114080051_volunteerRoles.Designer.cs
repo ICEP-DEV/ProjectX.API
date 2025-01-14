@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using ProjectX.Data;
 
@@ -11,9 +12,11 @@ using ProjectX.Data;
 namespace ProjectX.Data.Migrations
 {
     [DbContext(typeof(AlumniDbContext))]
-    partial class AlumniDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250114080051_volunteerRoles")]
+    partial class volunteerRoles
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -340,6 +343,10 @@ namespace ProjectX.Data.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("AlumnusId");
+
+                    b.HasIndex("EventId");
+
                     b.ToTable("RSVPs");
                 });
 
@@ -371,6 +378,25 @@ namespace ProjectX.Data.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Volunteers");
+                });
+
+            modelBuilder.Entity("ProjectX.Data.Model.RSVP", b =>
+                {
+                    b.HasOne("ProjectX.Data.Model.Alumnus", "Alumnus")
+                        .WithMany()
+                        .HasForeignKey("AlumnusId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("ProjectX.Data.Model.Event", "Event")
+                        .WithMany()
+                        .HasForeignKey("EventId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Alumnus");
+
+                    b.Navigation("Event");
                 });
 #pragma warning restore 612, 618
         }

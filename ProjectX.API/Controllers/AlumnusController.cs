@@ -232,51 +232,50 @@ namespace ProjectX.API.Controllers
         [Route("RSVP")]
         public async Task<IActionResult> RSVP([FromBody] RSVPDTO rSVPDTO)
         {
-            // Get the logged-in user's details from the session
-            var userIdString = HttpContext.Session.GetString("UserId");
-
-
-            Console.WriteLine("UserId in session: " + userIdString);
-
-            if (string.IsNullOrEmpty(userIdString) || !int.TryParse(userIdString, out int userId))
+            if (rSVPDTO == null || rSVPDTO.EventId <= 0  || rSVPDTO.AlumnusId <= 0)
             {
-                return Unauthorized("You need to be logged in to RSVP for an event.");
+                return BadRequest("Invalid request data. Please provide valid Event ID and Role.");
             }
 
-            // Fetch alumnus details using the UserId from the session
-            var alumnus = await _alumniDbContext.Alumnus.FirstOrDefaultAsync(a => a.AlumnusId == userId);
+            var alumnus = await _alumniDbContext.AlumnusProfile.FirstOrDefaultAsync(a => a.AlumnusId == rSVPDTO.AlumnusId);
             if (alumnus == null)
             {
                 return NotFound("Alumnus not found.");
             }
 
-            // Check if the event exists
             var eventDetails = await _alumniDbContext.Event.FirstOrDefaultAsync(e => e.Id == rSVPDTO.EventId);
             if (eventDetails == null)
             {
                 return NotFound("Event not found.");
             }
 
-            // Check if the alumnus has already RSVP'd for this event
             var existingRSVP = await _alumniDbContext.RSVPs
-                .FirstOrDefaultAsync(r => r.AlumnusId == userId && r.EventId == rSVPDTO.EventId);
+                .FirstOrDefaultAsync(v => v.AlumnusId == rSVPDTO.AlumnusId && v.EventId == rSVPDTO.EventId);
+
             if (existingRSVP != null)
             {
-                return BadRequest("You have already RSVP'd for this event.");
+                return BadRequest("You have already RSVP'd for this event with the selected role.");
             }
 
-            // Create a new RSVP record
             var newRSVP = new RSVP
             {
-                AlumnusId = alumnus.AlumnusId,
-                EventId = rSVPDTO.EventId,
-                RSVPDate = DateTime.UtcNow,
+                AlumnusId = rSVPDTO.AlumnusId,
+                EventId = rSVPDTO.EventId,               
+
             };
 
-            _alumniDbContext.RSVPs.Add(newRSVP);
+            Console.WriteLine($"New RSVP: {rSVPDTO.AlumnusId} " + "  :" + rSVPDTO.EventId  + " : " + alumnus.FirstName);
+
+
+            _alumniDbContext.RSVPs.AddAsync(newRSVP);
             await _alumniDbContext.SaveChangesAsync();
 
-            return Ok($"RSVP successful for event '{eventDetails.Title}' by alumnus '{alumnus.Email}'.");
+            return Ok(new
+            {
+                message = "Successfully registered for the event.",
+                eventTitle = eventDetails.Title,
+               
+            });
         }
 
         [HttpPost]
@@ -329,8 +328,6 @@ namespace ProjectX.API.Controllers
                 role = volunteerDTO.Role
             });
         }
-
-
 
         [HttpGet]
         [Route("IsLoggedIn")]

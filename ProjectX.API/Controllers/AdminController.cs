@@ -1,10 +1,12 @@
-﻿using Microsoft.AspNetCore.Cors;
+﻿using Azure;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Internal;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 using ProjectX.Data;
+using ProjectX.Data.Migrations;
 using ProjectX.Data.Model;
 using ProjectX.Data.Model.bl;
 using ProjectX.Data.Model.dto;
@@ -34,18 +36,6 @@ namespace ProjectX.API.Controllers
 
         [HttpPost]
         //[Route("Login")]
-
-        public Response Login(Admin admin)
-        {
-            Response response = new Response();
-
-            SqlConnection connection = new SqlConnection(_configuration.GetConnectionString("AlumniDb").ToString());
-
-            BusinessLogic bl = new BusinessLogic();
-            response = bl.Login(admin, connection);
-
-            return response;
-        }
 
         [HttpGet]
         [Route("GetAlumnis")]
@@ -88,6 +78,7 @@ namespace ProjectX.API.Controllers
             return Ok(facultyCounts);
         }
 
+
         [HttpGet]
         [Route("TrackAlumni")]
         public IActionResult TrackAlumni()
@@ -119,6 +110,16 @@ namespace ProjectX.API.Controllers
 
             return Ok(volunteers);
         }
+
+        [HttpGet]
+        [Route("CountRSVPS")]
+        public IActionResult CountRSVPS()
+        {
+            var rsvps = _alumniDbContext.RSVPs.Count();
+
+            return Ok(rsvps);
+        }
+
 
         [HttpGet]
         [Route("GetEvents")]
@@ -170,6 +171,36 @@ namespace ProjectX.API.Controllers
 
             return Ok(responses);
         }
+        [HttpGet]
+        [Route("GetRSVPs")]
+        public IActionResult GetRSVPs()
+        {
+            var rsvps = _alumniDbContext.RSVPs
+                .Join(
+                _alumniDbContext.AlumnusProfile,
+                rsvp => rsvp.AlumnusId,
+                alumnus => alumnus.AlumnusId,
+                (rsvp, alumnus) => new
+                {
+                    AlumnusId = alumnus.AlumnusId,
+                    AlumnusFirstName = alumnus.FirstName,
+                    AlumnusLastName = alumnus.LastName,
+                    AlumnusEmail = alumnus.Email,
+                    AlumnusCampus = alumnus.Campus,
+                    AlumnusCourse = alumnus.Course,
+                    EventId = rsvp.EventId,
+                    EventTitle = _alumniDbContext.Event.FirstOrDefault(e => e.Id == rsvp.EventId).Title,
+                    EventVenue = _alumniDbContext.Event.FirstOrDefault(e => e.Id == rsvp.EventId).Venue,
+                    EventDate = _alumniDbContext.Event.FirstOrDefault(e => e.Id == rsvp.EventId).Date,
+                    
+                }).ToList();
+
+
+            // Reverse the list to make it first-in-last-out
+            rsvps.Reverse();
+
+            return Ok(rsvps);
+        }
         [HttpPost]
         [Route("UpdateStatus")]
         public async Task<IActionResult> UpdateStatusAsync([FromBody] StatusDTO status)
@@ -182,7 +213,7 @@ namespace ProjectX.API.Controllers
             try
             {
                 // Fetch the volunteer record by AlumnusId
-                var volunteer = _alumniDbContext.Volunteers.FirstOrDefault(v => v.AlumnusId == status.AlumnusId && v.EventId == status.EventId);
+                var volunteer = _alumniDbContext.Volunteers.FirstOrDefault(v => v.AlumnusId == status.AlumnusId && v.EventId == status.EventId && v.Role.Equals(status.Role));
 
                 if (volunteer == null)
                 {

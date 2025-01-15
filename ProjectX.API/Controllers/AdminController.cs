@@ -78,6 +78,34 @@ namespace ProjectX.API.Controllers
             return Ok(facultyCounts);
         }
 
+        [HttpGet]
+        [Route("CountRSVPPerFaculty")]
+        public IActionResult CountRSVPPerFaculty()
+        {
+            try
+            {
+                var rsvpCount = _alumniDbContext.RSVPs
+                    .Join(
+                        _alumniDbContext.AlumnusProfile,
+                        rsvp => rsvp.AlumnusId,
+                        alumnus => alumnus.AlumnusId,
+                        (rsvp, alumnus) => new { rsvp, alumnus })
+                    .GroupBy(a => a.alumnus.Faculty)
+                    .Select(group => new
+                    {
+                        Faculty = group.Key,
+                        RSVPCount = group.Count()
+                    })
+                    .ToList();
+
+                return Ok(rsvpCount);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Internal server error: {ex.Message}");
+            }
+        }
+
 
         [HttpGet]
         [Route("TrackAlumni")]

@@ -9,7 +9,7 @@ namespace ProjectX.Data.Model.dto
         {
             LinkedInProfile = string.Empty;
 
-           }
+        }
 
         public int StudentNum { get; set; }
 
@@ -20,8 +20,8 @@ namespace ProjectX.Data.Model.dto
         public int ItsPin { get; set; }
 
         public string LinkedInProfile { get; set; }
-        
 
+        public byte[]? ProfilePicture { get; set; }
 
         /*Token properties for password reset
         public string ResetToken { get; set; }

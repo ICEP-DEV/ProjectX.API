@@ -118,3 +118,19 @@ C:\Users\221447646\AlumniSpace\ProjectX.API\ProjectX.Service\obj\Debug\net8.0\Pr
 C:\Users\221447646\AlumniSpace\ProjectX.API\ProjectX.Service\obj\Debug\net8.0\refint\ProjectX.Service.dll
 C:\Users\221447646\AlumniSpace\ProjectX.API\ProjectX.Service\obj\Debug\net8.0\ProjectX.Service.pdb
 C:\Users\221447646\AlumniSpace\ProjectX.API\ProjectX.Service\obj\Debug\net8.0\ref\ProjectX.Service.dll
+C:\ICEP Projects\Project 10 Master API\ProjectX.API\ProjectX.Service\bin\Debug\net8.0\ProjectX.Service.deps.json
+C:\ICEP Projects\Project 10 Master API\ProjectX.API\ProjectX.Service\bin\Debug\net8.0\ProjectX.Service.dll
+C:\ICEP Projects\Project 10 Master API\ProjectX.API\ProjectX.Service\bin\Debug\net8.0\ProjectX.Service.pdb
+C:\ICEP Projects\Project 10 Master API\ProjectX.API\ProjectX.Service\bin\Debug\net8.0\ProjectX.Data.dll
+C:\ICEP Projects\Project 10 Master API\ProjectX.API\ProjectX.Service\bin\Debug\net8.0\ProjectX.Data.pdb
+C:\ICEP Projects\Project 10 Master API\ProjectX.API\ProjectX.Service\obj\Debug\net8.0\ProjectX.Service.csproj.AssemblyReference.cache
+C:\ICEP Projects\Project 10 Master API\ProjectX.API\ProjectX.Service\obj\Debug\net8.0\ProjectX.Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\ICEP Projects\Project 10 Master API\ProjectX.API\ProjectX.Service\obj\Debug\net8.0\ProjectX.Service.AssemblyInfoInputs.cache
+C:\ICEP Projects\Project 10 Master API\ProjectX.API\ProjectX.Service\obj\Debug\net8.0\ProjectX.Service.AssemblyInfo.cs
+C:\ICEP Projects\Project 10 Master API\ProjectX.API\ProjectX.Service\obj\Debug\net8.0\ProjectX.Service.csproj.CoreCompileInputs.cache
+C:\ICEP Projects\Project 10 Master API\ProjectX.API\ProjectX.Service\obj\Debug\net8.0\ProjectX.Service.sourcelink.json
+C:\ICEP Projects\Project 10 Master API\ProjectX.API\ProjectX.Service\obj\Debug\net8.0\ProjectX.8950EF3A.Up2Date
+C:\ICEP Projects\Project 10 Master API\ProjectX.API\ProjectX.Service\obj\Debug\net8.0\ProjectX.Service.dll
+C:\ICEP Projects\Project 10 Master API\ProjectX.API\ProjectX.Service\obj\Debug\net8.0\refint\ProjectX.Service.dll
+C:\ICEP Projects\Project 10 Master API\ProjectX.API\ProjectX.Service\obj\Debug\net8.0\ProjectX.Service.pdb
+C:\ICEP Projects\Project 10 Master API\ProjectX.API\ProjectX.Service\obj\Debug\net8.0\ref\ProjectX.Service.dll

@@ -79,26 +79,26 @@ namespace ProjectX.API.Controllers
         }
 
         [HttpGet]
-        [Route("CountRSVPPerFaculty")]
-        public IActionResult CountRSVPPerFaculty()
+        [Route("CountVolunteerPerFaculty")]
+        public IActionResult CountVolunteerPerFaculty()
         {
             try
             {
-                var rsvpCount = _alumniDbContext.RSVPs
+                var volunteerCount = _alumniDbContext.Volunteers
                     .Join(
                         _alumniDbContext.AlumnusProfile,
-                        rsvp => rsvp.AlumnusId,
+                        volunteer => volunteer.AlumnusId,
                         alumnus => alumnus.AlumnusId,
-                        (rsvp, alumnus) => new { rsvp, alumnus })
+                        (volunteer, alumnus) => new { volunteer, alumnus })
                     .GroupBy(a => a.alumnus.Faculty)
                     .Select(group => new
                     {
                         Faculty = group.Key,
-                        RSVPCount = group.Count()
+                        VolunteerCount = group.Count()
                     })
                     .ToList();
 
-                return Ok(rsvpCount);
+                return Ok(volunteerCount);
             }
             catch (Exception ex)
             {
@@ -450,6 +450,13 @@ namespace ProjectX.API.Controllers
                 existingEvent.Date = eventsDTO.Date;
                 existingEvent.Time = eventsDTO.Time;
                 existingEvent.Venue = eventsDTO.Venue;
+
+                // Update VolunteerRoles
+                if (eventsDTO.VolunteerRoles != null && eventsDTO.VolunteerRoles.Any())
+                {
+                    existingEvent.VolunteerRoles = eventsDTO.VolunteerRoles;
+                }
+
 
                 // Handle media if a new image is uploaded
                 if (!string.IsNullOrEmpty(eventsDTO.Media))

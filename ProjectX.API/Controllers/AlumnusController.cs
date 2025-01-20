@@ -199,7 +199,7 @@ namespace ProjectX.API.Controllers
                     }
                     else
                     {
-                        return Unauthorized("Incorrect password.");
+                        return Unauthorized("Incorrect credentials.");
                     }
                 }
                 else
@@ -225,7 +225,7 @@ namespace ProjectX.API.Controllers
                     }
                     else
                     {
-                        return Unauthorized("Incorrect password.");
+                        return Unauthorized("Incorrect credentials.");
                     }
                 }
                 else

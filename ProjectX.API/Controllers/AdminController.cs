@@ -79,32 +79,33 @@ namespace ProjectX.API.Controllers
         }
 
         [HttpGet]
-        [Route("CountVolunteerPerFaculty")]
-        public IActionResult CountVolunteerPerFaculty()
+        [Route("CountRSVPPerFaculty")]
+        public IActionResult CountRSVPPerFaculty()
         {
             try
             {
-                var volunteerCount = _alumniDbContext.Volunteers
+                var rsvpCount = _alumniDbContext.RSVPs
                     .Join(
                         _alumniDbContext.AlumnusProfile,
-                        volunteer => volunteer.AlumnusId,
+                        rsvp => rsvp.AlumnusId, 
                         alumnus => alumnus.AlumnusId,
-                        (volunteer, alumnus) => new { volunteer, alumnus })
+                        (rsvp, alumnus) => new { rsvp, alumnus })
                     .GroupBy(a => a.alumnus.Faculty)
                     .Select(group => new
                     {
                         Faculty = group.Key,
-                        VolunteerCount = group.Count()
+                        RSVPCount = group.Count() 
                     })
                     .ToList();
 
-                return Ok(volunteerCount);
+                return Ok(rsvpCount);
             }
             catch (Exception ex)
             {
                 return StatusCode(500, $"Internal server error: {ex.Message}");
             }
         }
+
 
 
         [HttpGet]
@@ -491,8 +492,9 @@ namespace ProjectX.API.Controllers
         [Route("DeleteEvent/{id}")]
         public async Task<IActionResult> DeleteEvent(int id)
         {
-            // Find the existing news item in the database
+            // Find the existing event in the database
             var existingEvent = await _alumniDbContext.Event.FindAsync(id);
+
             if (existingEvent == null)
             {
                 return NotFound(new { message = "Event not found" });
@@ -500,16 +502,28 @@ namespace ProjectX.API.Controllers
 
             try
             {
-                _alumniDbContext.Event.Remove(existingEvent); // Correct entity deletion
-                await _alumniDbContext.SaveChangesAsync(); // Save changes to the database
+                // Get all RSVPs related to the event
+                var rsvpEntries = _alumniDbContext.RSVPs.Where(r => r.EventId == id).ToList();
+                var volunteerEntries = _alumniDbContext.Volunteers.Where(v => v.EventId == id).ToList();
 
-                return Ok(new { message = "Event deleted successfully" }); // Return a success message
+                // Remove related entries from the database
+                _alumniDbContext.RSVPs.RemoveRange(rsvpEntries);
+                _alumniDbContext.Volunteers.RemoveRange(volunteerEntries);
+
+                // Remove the event itself
+                _alumniDbContext.Event.Remove(existingEvent);
+
+                // Save changes to the database
+                await _alumniDbContext.SaveChangesAsync();
+
+                return Ok(new { message = "Event and related entries deleted successfully" });
             }
             catch (Exception ex)
             {
                 return StatusCode(500, new { message = $"Internal server error: {ex.Message}" });
             }
         }
+
 
         [HttpPost]
         [Route("UploadJob")]

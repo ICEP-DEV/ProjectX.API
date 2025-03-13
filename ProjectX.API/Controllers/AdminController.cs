@@ -106,8 +106,6 @@ namespace ProjectX.API.Controllers
             }
         }
 
-
-
         [HttpGet]
         [Route("TrackAlumni")]
         public IActionResult TrackAlumni()
@@ -148,7 +146,6 @@ namespace ProjectX.API.Controllers
 
             return Ok(rsvps);
         }
-
 
         [HttpGet]
         [Route("GetEvents")]
@@ -721,7 +718,6 @@ namespace ProjectX.API.Controllers
             return Ok(new { message = "News uploaded and emails sent successfully" });
         }
 
-
         [HttpPut]
         [Route("UpdateNews/{id}")]
         public async Task<IActionResult> UpdateNews(int id, [FromBody] NewsDTO newsDTO)
@@ -769,7 +765,6 @@ namespace ProjectX.API.Controllers
             }
         }
 
-
         [HttpDelete]
         [Route("DeleteNews/{id}")]
         public async Task<IActionResult> DeleteNews(int id)
@@ -794,6 +789,46 @@ namespace ProjectX.API.Controllers
             }
         }
 
+        [HttpPost]
+        [Route("UploadBlogs")]
+        public async Task<IActionResult> UploadBlogs([FromBody] BlogsDTO blogsDTO)
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
+            //convert string image to bytes
+            byte[] mediaBytes;
+            try
+            {
+                // Remove prefix if it exists
+                string base64Data = blogsDTO.Image.Contains(",") ? blogsDTO.Image.Substring(blogsDTO.Image.IndexOf(",") + 1) : blogsDTO.Image;
+                mediaBytes = Convert.FromBase64String(base64Data);
+            }
+            catch (FormatException)
+            {
+                return BadRequest("Invalid media format");
+            }
+
+            //add new blog(story)
+            var newBlog = new Blogs
+            {
+                
+                Name = blogsDTO.Name,
+                Role = blogsDTO.Role,   
+                Link = blogsDTO.Link,
+                Image = mediaBytes,
+            };
+
+            //add to the database
+            _alumniDbContext.Add(newBlog);
+
+            //save entry
+            await _alumniDbContext.SaveChangesAsync();
+
+            return Ok(new { message = "blog uploaded succcessfully!"});
+        }
 
 
     }

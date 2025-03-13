@@ -18,5 +18,7 @@ namespace ProjectX.Data
         public DbSet<RSVP> RSVPs { get; set; }
         public DbSet<Volunteer> Volunteers { get; set; }
 
+        public DbSet<Blogs>Blogs { get; set; }
+
     }
 }

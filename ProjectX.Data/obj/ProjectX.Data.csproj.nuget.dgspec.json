@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\221447646\\AlumniSpace\\ProjectX.API\\ProjectX.Data\\ProjectX.Data.csproj": {}
+    "C:\\Users\\221447646\\Desktop\\AlumniSpace\\ProjectX.API\\ProjectX.Data\\ProjectX.Data.csproj": {}
   },
   "projects": {
-    "C:\\Users\\221447646\\AlumniSpace\\ProjectX.API\\ProjectX.Data\\ProjectX.Data.csproj": {
+    "C:\\Users\\221447646\\Desktop\\AlumniSpace\\ProjectX.API\\ProjectX.Data\\ProjectX.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\221447646\\AlumniSpace\\ProjectX.API\\ProjectX.Data\\ProjectX.Data.csproj",
+        "projectUniqueName": "C:\\Users\\221447646\\Desktop\\AlumniSpace\\ProjectX.API\\ProjectX.Data\\ProjectX.Data.csproj",
         "projectName": "ProjectX.Data",
-        "projectPath": "C:\\Users\\221447646\\AlumniSpace\\ProjectX.API\\ProjectX.Data\\ProjectX.Data.csproj",
+        "projectPath": "C:\\Users\\221447646\\Desktop\\AlumniSpace\\ProjectX.API\\ProjectX.Data\\ProjectX.Data.csproj",
         "packagesPath": "C:\\Users\\221447646\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\221447646\\AlumniSpace\\ProjectX.API\\ProjectX.Data\\obj\\",
+        "outputPath": "C:\\Users\\221447646\\Desktop\\AlumniSpace\\ProjectX.API\\ProjectX.Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\221447646\\AppData\\Roaming\\NuGet\\NuGet.Config",

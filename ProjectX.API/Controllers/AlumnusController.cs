@@ -33,8 +33,6 @@ namespace ProjectX.API.Controllers
             _logger = logger;
         }
 
-
-
         [HttpPost]
         [Route("Registration")]
         public async Task<IActionResult> Registration([FromBody] AlumnusDTO alumnusDTO)
@@ -114,7 +112,6 @@ namespace ProjectX.API.Controllers
 
 
         }
-
 
         [HttpGet]
         [Route("GetAlumnusProfile")]
@@ -457,6 +454,26 @@ namespace ProjectX.API.Controllers
             return Ok(news);
         }
 
+        [HttpGet]
+        [Route("GetBlogs")]
+        public IActionResult GetBlogs()
+        {
+            //get blogs
+            var blogs = _alumniDbContext.Blogs
+                .Select(a => new BlogsDTO
+                {
+                    Id= a.Id,
+                    Name= a.Name,
+                    Role= a.Role,
+                    Link= a.Link,
+                    Image = Convert.ToBase64String(a.Image) // convert byte[] to Base64 string
+
+                }).ToList();
+                
+            blogs.Reverse();
+
+            return Ok(blogs);
+        }
         
 
         [HttpPost]

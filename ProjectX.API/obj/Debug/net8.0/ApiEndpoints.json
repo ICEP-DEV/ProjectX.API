@@ -31,6 +31,36 @@
   },
   {
     "ContainingType": "ProjectX.API.Controllers.AdminController",
+    "Method": "CountRSVPPerFaculty",
+    "RelativePath": "api/Admin/CountRSVPPerFaculty/CountRSVPPerFaculty",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjectX.API.Controllers.AdminController",
+    "Method": "CountRSVPS",
+    "RelativePath": "api/Admin/CountRSVPS/CountRSVPS",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjectX.API.Controllers.AdminController",
+    "Method": "CountVolunteers",
+    "RelativePath": "api/Admin/CountVolunteers/CountVolunteers",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjectX.API.Controllers.AdminController",
     "Method": "DeleteEvent",
     "RelativePath": "api/Admin/DeleteEvent/DeleteEvent/{id}",
     "HttpMethod": "DELETE",
@@ -81,6 +111,16 @@
     "ContainingType": "ProjectX.API.Controllers.AdminController",
     "Method": "GetAlumnis",
     "RelativePath": "api/Admin/GetAlumnis/GetAlumnis",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjectX.API.Controllers.AdminController",
+    "Method": "GetAlumnis",
+    "RelativePath": "api/Admin/GetAlumnis/GetAlumnis",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -89,44 +129,49 @@
   },
   {
     "ContainingType": "ProjectX.API.Controllers.AdminController",
-    "Method": "Login",
-    "RelativePath": "api/Admin/Login",
-    "HttpMethod": "POST",
+    "Method": "GetEventResponses",
+    "RelativePath": "api/Admin/GetEventResponses/GetEventResponses",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjectX.API.Controllers.AdminController",
+    "Method": "GetEvents",
+    "RelativePath": "api/Admin/GetEvents/GetEvents",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjectX.API.Controllers.AdminController",
+    "Method": "GetNewVolunteers",
+    "RelativePath": "api/Admin/GetNewVolunteers/GetNewVolunteers",
+    "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "Id",
-        "Type": "System.Int32",
-        "IsRequired": false
-      },
-      {
-        "Name": "AdminId",
-        "Type": "System.Int32",
-        "IsRequired": false
-      },
-      {
-        "Name": "Name",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "Password",
-        "Type": "System.String",
+        "Name": "lastChecked",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
         "IsRequired": false
       }
     ],
-    "ReturnTypes": [
-      {
-        "Type": "ProjectX.Data.Model.dto.Response",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjectX.API.Controllers.AdminController",
+    "Method": "GetRSVPs",
+    "RelativePath": "api/Admin/GetRSVPs/GetRSVPs",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
   },
   {
     "ContainingType": "ProjectX.API.Controllers.AdminController",
@@ -196,6 +241,38 @@
       {
         "Name": "newsDTO",
         "Type": "ProjectX.Data.Model.dto.NewsDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjectX.API.Controllers.AdminController",
+    "Method": "UpdateStatusAsync",
+    "RelativePath": "api/Admin/UpdateStatus/UpdateStatus",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "status",
+        "Type": "ProjectX.Data.Model.dto.StatusDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjectX.API.Controllers.AdminController",
+    "Method": "UploadBlogs",
+    "RelativePath": "api/Admin/UploadBlogs/UploadBlogs",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "blogsDTO",
+        "Type": "ProjectX.Data.Model.dto.BlogsDTO",
         "IsRequired": true
       }
     ],
@@ -296,6 +373,16 @@
   },
   {
     "ContainingType": "ProjectX.API.Controllers.AlumnusController",
+    "Method": "GetBlogs",
+    "RelativePath": "api/Alumnus/GetBlogs/GetBlogs",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjectX.API.Controllers.AlumnusController",
     "Method": "GetEvent",
     "RelativePath": "api/Alumnus/GetEvent/GetEvents",
     "HttpMethod": "GET",
@@ -318,6 +405,16 @@
         "IsRequired": true
       }
     ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjectX.API.Controllers.AlumnusController",
+    "Method": "GetLatestNews",
+    "RelativePath": "api/Alumnus/GetLatestNews/GetLatestNews",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
     "ReturnTypes": []
   },
   {
@@ -431,6 +528,22 @@
       {
         "Name": "alumnusDTO",
         "Type": "ProjectX.Data.Model.dto.AlumnusDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjectX.API.Controllers.AlumnusController",
+    "Method": "Volunteer",
+    "RelativePath": "api/Alumnus/Volunteer/Volunteer",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "volunteerDTO",
+        "Type": "ProjectX.Data.Model.dto.VolunteerDTO",
         "IsRequired": true
       }
     ],

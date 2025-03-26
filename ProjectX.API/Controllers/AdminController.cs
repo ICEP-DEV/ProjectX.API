@@ -816,8 +816,8 @@ namespace ProjectX.API.Controllers
             {
                 
                 Name = blogsDTO.Name,
-                Role = blogsDTO.Role,   
-                Link = blogsDTO.Link,
+                Role = blogsDTO.Role,
+                Description = blogsDTO.Description,
                 Image = mediaBytes,
             };
 

@@ -429,18 +429,27 @@ namespace ProjectX.API.Controllers
         public IActionResult GetNewsByType(string newstype)
         {
             // Filter news by type
-            var news = _alumniDbContext.News
+            var newsQuery = _alumniDbContext.News
                 .Where(a => a.NewsType.Equals(newstype))
+                .OrderByDescending(a => a.PublishedDate); // Order by latest news first
+
+            // If the news type is "General", skip the first 4 latest news
+            if (newstype.Equals("General", StringComparison.OrdinalIgnoreCase))
+            {
+                newsQuery = (IOrderedQueryable<News>)newsQuery.Skip(4);
+            }
+
+            var news = newsQuery
                 .Select(a => new NewsDTO
                 {
-                   Id= a.Id,
-                   Headline= a.Headline,
-                   Description= a.Description,
-                   Publisher=  a.Publisher,
-                   PublishedDate= a.PublishedDate,
-                   Link= a.Link,
-                   NewsType= a.NewsType,
-                   Media = Convert.ToBase64String(a.Media)  // Convert byte[] to Base64
+                    Id = a.Id,
+                    Headline = a.Headline,
+                    Description = a.Description,
+                    Publisher = a.Publisher,
+                    PublishedDate = a.PublishedDate,
+                    Link = a.Link,
+                    NewsType = a.NewsType,
+                    Media = Convert.ToBase64String(a.Media)  // Convert byte[] to Base64
                 })
                 .ToList();
 
@@ -453,6 +462,9 @@ namespace ProjectX.API.Controllers
             // Return the filtered news with images as Base64
             return Ok(news);
         }
+
+
+
         [HttpGet]
         [Route("GetLatestNews")]
         public IActionResult GetLatestNews()
@@ -496,7 +508,7 @@ namespace ProjectX.API.Controllers
                     Id= a.Id,
                     Name= a.Name,
                     Role= a.Role,
-                    Link= a.Link,
+                    Description = a.Description,
                     Image = Convert.ToBase64String(a.Image) // convert byte[] to Base64 string
 
                 }).ToList();

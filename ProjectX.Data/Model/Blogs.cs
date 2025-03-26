@@ -11,13 +11,13 @@ namespace ProjectX.Data.Model
         public Blogs() { 
 
             Name = String.Empty;
-            Role = String.Empty;    
-            Link = String.Empty;
+            Role = String.Empty;
+            Description = String.Empty;
         }
         public int Id { get; set; }
         public string Name { get; set; }
         public string Role { get; set; }
-        public string Link { get; set; }
+        public string Description { get; set; }
         public byte[] Image { get; set; } = Array.Empty<byte>();  // Default to an empty byte array
     }
 }

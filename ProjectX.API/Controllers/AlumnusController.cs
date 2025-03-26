@@ -453,6 +453,37 @@ namespace ProjectX.API.Controllers
             // Return the filtered news with images as Base64
             return Ok(news);
         }
+        [HttpGet]
+        [Route("GetLatestNews")]
+        public IActionResult GetLatestNews()
+        {
+            var newsType = "general";
+            var latest = _alumniDbContext.News
+                .Where(a => a.NewsType.Equals(newsType))
+                .OrderByDescending(a => a.PublishedDate) // Order by latest news
+                .Take(4)  // Limit to first 3 news items
+                .Select(a => new NewsDTO
+                {
+                    Id = a.Id,
+                    Headline = a.Headline,
+                    Description = a.Description,
+                    Publisher = a.Publisher,
+                    PublishedDate = a.PublishedDate,
+                    Link = a.Link,
+                    NewsType = a.NewsType,
+                    Media = Convert.ToBase64String(a.Media)  // Convert byte[] to Base64
+                })
+                .ToList();
+
+            // Check if no news found
+            if (!latest.Any())
+            {
+                return NotFound($"No news found for news type");
+            }
+
+            // Return the filtered news with images as Base64
+            return Ok(latest);
+        }
 
         [HttpGet]
         [Route("GetBlogs")]

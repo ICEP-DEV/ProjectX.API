@@ -789,6 +789,38 @@ namespace ProjectX.API.Controllers
             }
         }
 
+        [HttpGet]
+        [Route("GetNews/{newstype}")]
+        public IActionResult GetNewsByType(string newstype)
+        {
+            // Filter news by type
+            var newsQuery = _alumniDbContext.News
+                .Where(a => a.NewsType.Equals(newstype)); 
+           
+            var news = newsQuery
+                .Select(a => new NewsDTO
+                {
+                    Id = a.Id,
+                    Headline = a.Headline,
+                    Description = a.Description,
+                    Publisher = a.Publisher,
+                    PublishedDate = a.PublishedDate,
+                    Link = a.Link,
+                    NewsType = a.NewsType,
+                    Media = Convert.ToBase64String(a.Media)  // Convert byte[] to Base64
+                })
+                .ToList();
+
+            // Check if no news found
+            if (!news.Any())
+            {
+                return NotFound($"No news found for news type: {newstype}");
+            }
+
+            // Return the filtered news with images as Base64
+            return Ok(news);
+        }
+
         [HttpPost]
         [Route("UploadBlogs")]
         public async Task<IActionResult> UploadBlogs([FromBody] BlogsDTO blogsDTO)

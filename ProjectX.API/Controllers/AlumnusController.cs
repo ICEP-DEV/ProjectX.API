@@ -212,7 +212,7 @@ namespace ProjectX.API.Controllers
                 if (alumnus != null)
                 {
                     // If alumnus exists, check if the password is correct
-                    if (alumnus.Password == loginDTO.Password)
+                    if (alumnus.Password == loginDTO.Password && alumnus.AlumnusId == loginDTO.UserId)
                     {
                         // Set session variables
                         HttpContext.Session.SetString("UserId", alumnus.AlumnusId.ToString());

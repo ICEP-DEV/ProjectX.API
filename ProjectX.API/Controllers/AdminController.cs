@@ -11,7 +11,9 @@ using ProjectX.Data.Model;
 using ProjectX.Data.Model.bl;
 using ProjectX.Data.Model.dto;
 using ProjectX.Service;
+using System.Data;
 using System.Data.SqlClient;
+using static System.Net.Mime.MediaTypeNames;
 
 
 namespace ProjectX.API.Controllers
@@ -764,7 +766,7 @@ namespace ProjectX.API.Controllers
                 return StatusCode(500, new { message = $"Internal server error: {ex.Message}" });
             }
         }
-
+ 
         [HttpDelete]
         [Route("DeleteNews/{id}")]
         public async Task<IActionResult> DeleteNews(int id)
@@ -862,6 +864,72 @@ namespace ProjectX.API.Controllers
             return Ok(new { message = "blog uploaded succcessfully!"});
         }
 
+        [HttpPut]
+        [Route("UpdateBlogs/{id}")]
+        public async Task<IActionResult> UpdateBlogs(int id, [FromBody] BlogsDTO blogsDTO)
+        {
+            var existingBlog = await _alumniDbContext.Blogs.FindAsync(id);
+            if (existingBlog == null)
+            {
+                return NotFound(new { message = "Blog not found" });
+            }
+
+            try
+            {
+                // Update fields regardless of media presence
+                existingBlog.Name = blogsDTO.Name;
+                existingBlog.Role = blogsDTO.Role;
+                existingBlog.Description = blogsDTO.Description;
+               // existingBlog.Image = mediaBytes;
+
+                // Handle media if a new image is uploaded
+                if (!string.IsNullOrEmpty(blogsDTO.Image))
+                {
+                    byte[] mediaBytes;
+                    try
+                    {
+                        // Remove prefix if it exists
+                        string base64Data = blogsDTO.Image.Contains(",") ? blogsDTO.Image.Substring(blogsDTO.Image.IndexOf(",") + 1) : blogsDTO.Image;
+                        mediaBytes = Convert.FromBase64String(base64Data);
+                    }
+                    catch (FormatException)
+                    {
+                        return BadRequest("Invalid media format");
+                    }
+                }
+
+                await _alumniDbContext.SaveChangesAsync();
+                return Ok(new { message = "Blog updated successfully" });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { message = $"Internal server error: {ex.Message}" });
+            }
+        }
+
+        [HttpDelete]
+        [Route("DeleteBlogs/{id}")]
+        public async Task<IActionResult> DeleteBlogs(int id)
+        {
+            // Find the existing news item in the database
+            var existingBlog = await _alumniDbContext.Blogs.FindAsync(id);
+            if (existingBlog == null)
+            {
+                return NotFound(new { message = "Blog not found" });
+            }
+
+            try
+            {
+                _alumniDbContext.Blogs.Remove(existingBlog); // Correct entity deletion
+                await _alumniDbContext.SaveChangesAsync(); // Save changes to the database
+
+                return Ok(new { message = "Blog deleted successfully" }); // Return a success message
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { message = $"Internal server error: {ex.Message}" });
+            }
+        }
 
     }
 }

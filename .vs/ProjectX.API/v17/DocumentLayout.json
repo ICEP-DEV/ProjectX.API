@@ -7,87 +7,12 @@
       "RelativeMoniker": "D:0:0:{13E8DF9E-D804-4AB5-9EFB-C2D579DC0548}|ProjectX.API\\ProjectX.API.csproj|solutionrelative:projectx.api\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{13E8DF9E-D804-4AB5-9EFB-C2D579DC0548}|ProjectX.API\\ProjectX.API.csproj|c:\\users\\221447646\\desktop\\alumnispace\\projectx.api\\projectx.api\\controllers\\alumnuscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{13E8DF9E-D804-4AB5-9EFB-C2D579DC0548}|ProjectX.API\\ProjectX.API.csproj|solutionrelative:projectx.api\\controllers\\alumnuscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{13E8DF9E-D804-4AB5-9EFB-C2D579DC0548}|ProjectX.API\\ProjectX.API.csproj|c:\\users\\221447646\\desktop\\alumnispace\\projectx.api\\projectx.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{13E8DF9E-D804-4AB5-9EFB-C2D579DC0548}|ProjectX.API\\ProjectX.API.csproj|solutionrelative:projectx.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9A33301B-4952-4F05-81A6-31F5EEF81DF7}|ProjectX.Data\\ProjectX.Data.csproj|c:\\users\\221447646\\desktop\\alumnispace\\projectx.api\\projectx.data\\migrations\\20250326091001_news-database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9A33301B-4952-4F05-81A6-31F5EEF81DF7}|ProjectX.Data\\ProjectX.Data.csproj|solutionrelative:projectx.data\\migrations\\20250326091001_news-database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\221447646\\AppData\\Local\\SourceServer\\b331f5480eb26d8e4c37b0bf9e5b35b20660f1d4d8c49e2ba0817d9ae94fa893\\ProjectX.API\\Controllers\\AdminController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9A33301B-4952-4F05-81A6-31F5EEF81DF7}|ProjectX.Data\\ProjectX.Data.csproj|c:\\users\\221447646\\desktop\\alumnispace\\projectx.api\\projectx.data\\model\\dto\\blogsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9A33301B-4952-4F05-81A6-31F5EEF81DF7}|ProjectX.Data\\ProjectX.Data.csproj|solutionrelative:projectx.data\\model\\dto\\blogsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9A33301B-4952-4F05-81A6-31F5EEF81DF7}|ProjectX.Data\\ProjectX.Data.csproj|c:\\users\\221447646\\desktop\\alumnispace\\projectx.api\\projectx.data\\model\\blogs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9A33301B-4952-4F05-81A6-31F5EEF81DF7}|ProjectX.Data\\ProjectX.Data.csproj|solutionrelative:projectx.data\\model\\blogs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9A33301B-4952-4F05-81A6-31F5EEF81DF7}|ProjectX.Data\\ProjectX.Data.csproj|c:\\users\\221447646\\desktop\\alumnispace\\projectx.api\\projectx.data\\model\\alumni.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9A33301B-4952-4F05-81A6-31F5EEF81DF7}|ProjectX.Data\\ProjectX.Data.csproj|solutionrelative:projectx.data\\model\\alumni.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9A33301B-4952-4F05-81A6-31F5EEF81DF7}|ProjectX.Data\\ProjectX.Data.csproj|c:\\users\\221447646\\desktop\\alumnispace\\projectx.api\\projectx.data\\model\\dto\\eventsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9A33301B-4952-4F05-81A6-31F5EEF81DF7}|ProjectX.Data\\ProjectX.Data.csproj|solutionrelative:projectx.data\\model\\dto\\eventsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9A33301B-4952-4F05-81A6-31F5EEF81DF7}|ProjectX.Data\\ProjectX.Data.csproj|c:\\users\\221447646\\desktop\\alumnispace\\projectx.api\\projectx.data\\model\\event.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9A33301B-4952-4F05-81A6-31F5EEF81DF7}|ProjectX.Data\\ProjectX.Data.csproj|solutionrelative:projectx.data\\model\\event.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{9A33301B-4952-4F05-81A6-31F5EEF81DF7}|ProjectX.Data\\ProjectX.Data.csproj|c:\\users\\221447646\\desktop\\alumnispace\\projectx.api\\projectx.data\\alumnidbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9A33301B-4952-4F05-81A6-31F5EEF81DF7}|ProjectX.Data\\ProjectX.Data.csproj|solutionrelative:projectx.data\\alumnidbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9A33301B-4952-4F05-81A6-31F5EEF81DF7}|ProjectX.Data\\ProjectX.Data.csproj|c:\\users\\221447646\\desktop\\alumnispace\\projectx.api\\projectx.data\\model\\rsvp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9A33301B-4952-4F05-81A6-31F5EEF81DF7}|ProjectX.Data\\ProjectX.Data.csproj|solutionrelative:projectx.data\\model\\rsvp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9A33301B-4952-4F05-81A6-31F5EEF81DF7}|ProjectX.Data\\ProjectX.Data.csproj|c:\\users\\221447646\\desktop\\alumnispace\\projectx.api\\projectx.data\\model\\dto\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9A33301B-4952-4F05-81A6-31F5EEF81DF7}|ProjectX.Data\\ProjectX.Data.csproj|solutionrelative:projectx.data\\model\\dto\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9A33301B-4952-4F05-81A6-31F5EEF81DF7}|ProjectX.Data\\ProjectX.Data.csproj|c:\\users\\221447646\\desktop\\alumnispace\\projectx.api\\projectx.data\\model\\alumnus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9A33301B-4952-4F05-81A6-31F5EEF81DF7}|ProjectX.Data\\ProjectX.Data.csproj|solutionrelative:projectx.data\\model\\alumnus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9A33301B-4952-4F05-81A6-31F5EEF81DF7}|ProjectX.Data\\ProjectX.Data.csproj|c:\\users\\221447646\\desktop\\alumnispace\\projectx.api\\projectx.data\\model\\dto\\volunteerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9A33301B-4952-4F05-81A6-31F5EEF81DF7}|ProjectX.Data\\ProjectX.Data.csproj|solutionrelative:projectx.data\\model\\dto\\volunteerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9A33301B-4952-4F05-81A6-31F5EEF81DF7}|ProjectX.Data\\ProjectX.Data.csproj|c:\\users\\221447646\\desktop\\alumnispace\\projectx.api\\projectx.data\\model\\dto\\rsvpdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9A33301B-4952-4F05-81A6-31F5EEF81DF7}|ProjectX.Data\\ProjectX.Data.csproj|solutionrelative:projectx.data\\model\\dto\\rsvpdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9A33301B-4952-4F05-81A6-31F5EEF81DF7}|ProjectX.Data\\ProjectX.Data.csproj|c:\\users\\221447646\\desktop\\alumnispace\\projectx.api\\projectx.data\\model\\volunteer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9A33301B-4952-4F05-81A6-31F5EEF81DF7}|ProjectX.Data\\ProjectX.Data.csproj|solutionrelative:projectx.data\\model\\volunteer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9A33301B-4952-4F05-81A6-31F5EEF81DF7}|ProjectX.Data\\ProjectX.Data.csproj|c:\\users\\221447646\\desktop\\alumnispace\\projectx.api\\projectx.data\\model\\dto\\statusdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9A33301B-4952-4F05-81A6-31F5EEF81DF7}|ProjectX.Data\\ProjectX.Data.csproj|solutionrelative:projectx.data\\model\\dto\\statusdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9A33301B-4952-4F05-81A6-31F5EEF81DF7}|ProjectX.Data\\ProjectX.Data.csproj|c:\\users\\221447646\\desktop\\alumnispace\\projectx.api\\projectx.data\\model\\dto\\verifydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9A33301B-4952-4F05-81A6-31F5EEF81DF7}|ProjectX.Data\\ProjectX.Data.csproj|solutionrelative:projectx.data\\model\\dto\\verifydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9A33301B-4952-4F05-81A6-31F5EEF81DF7}|ProjectX.Data\\ProjectX.Data.csproj|c:\\users\\221447646\\desktop\\alumnispace\\projectx.api\\projectx.data\\migrations\\20250114133859_rsvp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9A33301B-4952-4F05-81A6-31F5EEF81DF7}|ProjectX.Data\\ProjectX.Data.csproj|solutionrelative:projectx.data\\migrations\\20250114133859_rsvp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9A33301B-4952-4F05-81A6-31F5EEF81DF7}|ProjectX.Data\\ProjectX.Data.csproj|c:\\users\\221447646\\desktop\\alumnispace\\projectx.api\\projectx.data\\migrations\\20250313090309_blog-database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9A33301B-4952-4F05-81A6-31F5EEF81DF7}|ProjectX.Data\\ProjectX.Data.csproj|solutionrelative:projectx.data\\migrations\\20250313090309_blog-database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9A33301B-4952-4F05-81A6-31F5EEF81DF7}|ProjectX.Data\\ProjectX.Data.csproj|c:\\users\\221447646\\desktop\\alumnispace\\projectx.api\\projectx.data\\migrations\\20250313072018_new-db.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9A33301B-4952-4F05-81A6-31F5EEF81DF7}|ProjectX.Data\\ProjectX.Data.csproj|solutionrelative:projectx.data\\migrations\\20250313072018_new-db.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{13E8DF9E-D804-4AB5-9EFB-C2D579DC0548}|ProjectX.API\\ProjectX.API.csproj|c:\\users\\221447646\\desktop\\alumnispace\\projectx.api\\projectx.api\\controllers\\alumnuscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13E8DF9E-D804-4AB5-9EFB-C2D579DC0548}|ProjectX.API\\ProjectX.API.csproj|solutionrelative:projectx.api\\controllers\\alumnuscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -97,31 +22,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "20250326091001_News-database.cs",
-              "DocumentMoniker": "C:\\Users\\221447646\\Desktop\\AlumniSpace\\ProjectX.API\\ProjectX.Data\\Migrations\\20250326091001_News-database.cs",
-              "RelativeDocumentMoniker": "ProjectX.Data\\Migrations\\20250326091001_News-database.cs",
-              "ToolTip": "C:\\Users\\221447646\\Desktop\\AlumniSpace\\ProjectX.API\\ProjectX.Data\\Migrations\\20250326091001_News-database.cs",
-              "RelativeToolTip": "ProjectX.Data\\Migrations\\20250326091001_News-database.cs",
+              "DocumentIndex": 1,
+              "Title": "AlumniDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\221447646\\Desktop\\AlumniSpace\\ProjectX.API\\ProjectX.Data\\AlumniDbContext.cs",
+              "RelativeDocumentMoniker": "ProjectX.Data\\AlumniDbContext.cs",
+              "ToolTip": "C:\\Users\\221447646\\Desktop\\AlumniSpace\\ProjectX.API\\ProjectX.Data\\AlumniDbContext.cs",
+              "RelativeToolTip": "ProjectX.Data\\AlumniDbContext.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-26T09:10:02.028Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "20250313090309_Blog-database.cs",
-              "DocumentMoniker": "C:\\Users\\221447646\\Desktop\\AlumniSpace\\ProjectX.API\\ProjectX.Data\\Migrations\\20250313090309_Blog-database.cs",
-              "RelativeDocumentMoniker": "ProjectX.Data\\Migrations\\20250313090309_Blog-database.cs",
-              "ToolTip": "C:\\Users\\221447646\\Desktop\\AlumniSpace\\ProjectX.API\\ProjectX.Data\\Migrations\\20250313090309_Blog-database.cs",
-              "RelativeToolTip": "ProjectX.Data\\Migrations\\20250313090309_Blog-database.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-13T09:03:09.651Z"
+              "WhenOpened": "2025-05-05T13:15:34.825Z"
             },
             {
               "$type": "Document",
@@ -131,240 +44,22 @@
               "RelativeDocumentMoniker": "ProjectX.API\\Controllers\\AdminController.cs",
               "ToolTip": "C:\\Users\\221447646\\Desktop\\AlumniSpace\\ProjectX.API\\ProjectX.API\\Controllers\\AdminController.cs",
               "RelativeToolTip": "ProjectX.API\\Controllers\\AdminController.cs",
-              "ViewState": "AQIAANECAAAAAAAAAAAkwP4CAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAGQDAABaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-13T08:51:51.463Z",
+              "WhenOpened": "2025-05-05T13:00:19.25Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "BlogsDTO.cs",
-              "DocumentMoniker": "C:\\Users\\221447646\\Desktop\\AlumniSpace\\ProjectX.API\\ProjectX.Data\\Model\\dto\\BlogsDTO.cs",
-              "RelativeDocumentMoniker": "ProjectX.Data\\Model\\dto\\BlogsDTO.cs",
-              "ToolTip": "C:\\Users\\221447646\\Desktop\\AlumniSpace\\ProjectX.API\\ProjectX.Data\\Model\\dto\\BlogsDTO.cs",
-              "RelativeToolTip": "ProjectX.Data\\Model\\dto\\BlogsDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAhAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-13T08:38:22.789Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Blogs.cs",
-              "DocumentMoniker": "C:\\Users\\221447646\\Desktop\\AlumniSpace\\ProjectX.API\\ProjectX.Data\\Model\\Blogs.cs",
-              "RelativeDocumentMoniker": "ProjectX.Data\\Model\\Blogs.cs",
-              "ToolTip": "C:\\Users\\221447646\\Desktop\\AlumniSpace\\ProjectX.API\\ProjectX.Data\\Model\\Blogs.cs",
-              "RelativeToolTip": "ProjectX.Data\\Model\\Blogs.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAXAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-13T07:36:27.041Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "20250313072018_New-Db.cs",
-              "DocumentMoniker": "C:\\Users\\221447646\\Desktop\\AlumniSpace\\ProjectX.API\\ProjectX.Data\\Migrations\\20250313072018_New-Db.cs",
-              "RelativeDocumentMoniker": "ProjectX.Data\\Migrations\\20250313072018_New-Db.cs",
-              "ToolTip": "C:\\Users\\221447646\\Desktop\\AlumniSpace\\ProjectX.API\\ProjectX.Data\\Migrations\\20250313072018_New-Db.cs",
-              "RelativeToolTip": "ProjectX.Data\\Migrations\\20250313072018_New-Db.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-13T07:20:19.201Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Alumni.cs",
-              "DocumentMoniker": "C:\\Users\\221447646\\Desktop\\AlumniSpace\\ProjectX.API\\ProjectX.Data\\Model\\Alumni.cs",
-              "RelativeDocumentMoniker": "ProjectX.Data\\Model\\Alumni.cs",
-              "ToolTip": "C:\\Users\\221447646\\Desktop\\AlumniSpace\\ProjectX.API\\ProjectX.Data\\Model\\Alumni.cs",
-              "RelativeToolTip": "ProjectX.Data\\Model\\Alumni.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-07T11:53:55.97Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "AlumnusController.cs",
               "DocumentMoniker": "C:\\Users\\221447646\\Desktop\\AlumniSpace\\ProjectX.API\\ProjectX.API\\Controllers\\AlumnusController.cs",
               "RelativeDocumentMoniker": "ProjectX.API\\Controllers\\AlumnusController.cs",
               "ToolTip": "C:\\Users\\221447646\\Desktop\\AlumniSpace\\ProjectX.API\\ProjectX.API\\Controllers\\AlumnusController.cs",
               "RelativeToolTip": "ProjectX.API\\Controllers\\AlumnusController.cs",
-              "ViewState": "AQIAALABAAAAAAAAAAAiwM8BAAAJAAAA",
+              "ViewState": "AQIAAHIAAAAAAAAAAAAowJMAAABYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-01T12:58:06.01Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Alumnus.cs",
-              "DocumentMoniker": "C:\\Users\\221447646\\Desktop\\AlumniSpace\\ProjectX.API\\ProjectX.Data\\Model\\Alumnus.cs",
-              "RelativeDocumentMoniker": "ProjectX.Data\\Model\\Alumnus.cs",
-              "ToolTip": "C:\\Users\\221447646\\Desktop\\AlumniSpace\\ProjectX.API\\ProjectX.Data\\Model\\Alumnus.cs",
-              "RelativeToolTip": "ProjectX.Data\\Model\\Alumnus.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAfAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-08T09:25:10.224Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\221447646\\Desktop\\AlumniSpace\\ProjectX.API\\ProjectX.API\\Program.cs",
-              "RelativeDocumentMoniker": "ProjectX.API\\Program.cs",
-              "ToolTip": "C:\\Users\\221447646\\Desktop\\AlumniSpace\\ProjectX.API\\ProjectX.API\\Program.cs",
-              "RelativeToolTip": "ProjectX.API\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAwAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-16T13:03:12.328Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "AdminController.cs",
-              "DocumentMoniker": "C:\\Users\\221447646\\AppData\\Local\\SourceServer\\b331f5480eb26d8e4c37b0bf9e5b35b20660f1d4d8c49e2ba0817d9ae94fa893\\ProjectX.API\\Controllers\\AdminController.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Local\\SourceServer\\b331f5480eb26d8e4c37b0bf9e5b35b20660f1d4d8c49e2ba0817d9ae94fa893\\ProjectX.API\\Controllers\\AdminController.cs",
-              "ToolTip": "C:\\Users\\221447646\\AppData\\Local\\SourceServer\\b331f5480eb26d8e4c37b0bf9e5b35b20660f1d4d8c49e2ba0817d9ae94fa893\\ProjectX.API\\Controllers\\AdminController.cs",
-              "RelativeToolTip": "..\\..\\..\\AppData\\Local\\SourceServer\\b331f5480eb26d8e4c37b0bf9e5b35b20660f1d4d8c49e2ba0817d9ae94fa893\\ProjectX.API\\Controllers\\AdminController.cs",
-              "ViewState": "AQIAABQDAAAAAAAAAAAAACADAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-13T09:40:42.497Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "StatusDTO.cs",
-              "DocumentMoniker": "C:\\Users\\221447646\\Desktop\\AlumniSpace\\ProjectX.API\\ProjectX.Data\\Model\\dto\\StatusDTO.cs",
-              "RelativeDocumentMoniker": "ProjectX.Data\\Model\\dto\\StatusDTO.cs",
-              "ToolTip": "C:\\Users\\221447646\\Desktop\\AlumniSpace\\ProjectX.API\\ProjectX.Data\\Model\\dto\\StatusDTO.cs",
-              "RelativeToolTip": "ProjectX.Data\\Model\\dto\\StatusDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-10T08:30:19.1Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Event.cs",
-              "DocumentMoniker": "C:\\Users\\221447646\\Desktop\\AlumniSpace\\ProjectX.API\\ProjectX.Data\\Model\\Event.cs",
-              "RelativeDocumentMoniker": "ProjectX.Data\\Model\\Event.cs",
-              "ToolTip": "C:\\Users\\221447646\\Desktop\\AlumniSpace\\ProjectX.API\\ProjectX.Data\\Model\\Event.cs",
-              "RelativeToolTip": "ProjectX.Data\\Model\\Event.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-07T11:53:54.175Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "Volunteer.cs",
-              "DocumentMoniker": "C:\\Users\\221447646\\Desktop\\AlumniSpace\\ProjectX.API\\ProjectX.Data\\Model\\Volunteer.cs",
-              "RelativeDocumentMoniker": "ProjectX.Data\\Model\\Volunteer.cs",
-              "ToolTip": "C:\\Users\\221447646\\Desktop\\AlumniSpace\\ProjectX.API\\ProjectX.Data\\Model\\Volunteer.cs",
-              "RelativeToolTip": "ProjectX.Data\\Model\\Volunteer.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAABYAAAAoAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-07T11:53:31.283Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "VolunteerDTO.cs",
-              "DocumentMoniker": "C:\\Users\\221447646\\Desktop\\AlumniSpace\\ProjectX.API\\ProjectX.Data\\Model\\dto\\VolunteerDTO.cs",
-              "RelativeDocumentMoniker": "ProjectX.Data\\Model\\dto\\VolunteerDTO.cs",
-              "ToolTip": "C:\\Users\\221447646\\Desktop\\AlumniSpace\\ProjectX.API\\ProjectX.Data\\Model\\dto\\VolunteerDTO.cs",
-              "RelativeToolTip": "ProjectX.Data\\Model\\dto\\VolunteerDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAhAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-07T11:52:27.533Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "EventsDTO.cs",
-              "DocumentMoniker": "C:\\Users\\221447646\\Desktop\\AlumniSpace\\ProjectX.API\\ProjectX.Data\\Model\\dto\\EventsDTO.cs",
-              "RelativeDocumentMoniker": "ProjectX.Data\\Model\\dto\\EventsDTO.cs",
-              "ToolTip": "C:\\Users\\221447646\\Desktop\\AlumniSpace\\ProjectX.API\\ProjectX.Data\\Model\\dto\\EventsDTO.cs",
-              "RelativeToolTip": "ProjectX.Data\\Model\\dto\\EventsDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-18T06:34:46.289Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "VerifyDTO.cs",
-              "DocumentMoniker": "C:\\Users\\221447646\\Desktop\\AlumniSpace\\ProjectX.API\\ProjectX.Data\\Model\\dto\\VerifyDTO.cs",
-              "RelativeDocumentMoniker": "ProjectX.Data\\Model\\dto\\VerifyDTO.cs",
-              "ToolTip": "C:\\Users\\221447646\\Desktop\\AlumniSpace\\ProjectX.API\\ProjectX.Data\\Model\\dto\\VerifyDTO.cs",
-              "RelativeToolTip": "ProjectX.Data\\Model\\dto\\VerifyDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-10T12:45:41.569Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "RSVP.cs",
-              "DocumentMoniker": "C:\\Users\\221447646\\Desktop\\AlumniSpace\\ProjectX.API\\ProjectX.Data\\Model\\RSVP.cs",
-              "RelativeDocumentMoniker": "ProjectX.Data\\Model\\RSVP.cs",
-              "ToolTip": "C:\\Users\\221447646\\Desktop\\AlumniSpace\\ProjectX.API\\ProjectX.Data\\Model\\RSVP.cs",
-              "RelativeToolTip": "ProjectX.Data\\Model\\RSVP.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-14T12:51:51.246Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "AlumniDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\221447646\\Desktop\\AlumniSpace\\ProjectX.API\\ProjectX.Data\\AlumniDbContext.cs",
-              "RelativeDocumentMoniker": "ProjectX.Data\\AlumniDbContext.cs",
-              "ToolTip": "C:\\Users\\221447646\\Desktop\\AlumniSpace\\ProjectX.API\\ProjectX.Data\\AlumniDbContext.cs",
-              "RelativeToolTip": "ProjectX.Data\\AlumniDbContext.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAuAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-22T07:22:56.664Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "RSVPDTO.cs",
-              "DocumentMoniker": "C:\\Users\\221447646\\Desktop\\AlumniSpace\\ProjectX.API\\ProjectX.Data\\Model\\dto\\RSVPDTO.cs",
-              "RelativeDocumentMoniker": "ProjectX.Data\\Model\\dto\\RSVPDTO.cs",
-              "ToolTip": "C:\\Users\\221447646\\Desktop\\AlumniSpace\\ProjectX.API\\ProjectX.Data\\Model\\dto\\RSVPDTO.cs",
-              "RelativeToolTip": "ProjectX.Data\\Model\\dto\\RSVPDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-14T13:22:38.622Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "LoginDTO.cs",
-              "DocumentMoniker": "C:\\Users\\221447646\\Desktop\\AlumniSpace\\ProjectX.API\\ProjectX.Data\\Model\\dto\\LoginDTO.cs",
-              "RelativeDocumentMoniker": "ProjectX.Data\\Model\\dto\\LoginDTO.cs",
-              "ToolTip": "C:\\Users\\221447646\\Desktop\\AlumniSpace\\ProjectX.API\\ProjectX.Data\\Model\\dto\\LoginDTO.cs",
-              "RelativeToolTip": "ProjectX.Data\\Model\\dto\\LoginDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-21T09:52:54.333Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "20250114133859_rsvp.cs",
-              "DocumentMoniker": "C:\\Users\\221447646\\Desktop\\AlumniSpace\\ProjectX.API\\ProjectX.Data\\Migrations\\20250114133859_rsvp.cs",
-              "RelativeDocumentMoniker": "ProjectX.Data\\Migrations\\20250114133859_rsvp.cs",
-              "ToolTip": "C:\\Users\\221447646\\Desktop\\AlumniSpace\\ProjectX.API\\ProjectX.Data\\Migrations\\20250114133859_rsvp.cs",
-              "RelativeToolTip": "ProjectX.Data\\Migrations\\20250114133859_rsvp.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-14T13:39:00.79Z"
+              "WhenOpened": "2025-05-05T12:50:23.824Z"
             }
           ]
         }

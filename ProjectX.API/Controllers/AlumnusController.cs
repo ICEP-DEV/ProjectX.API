@@ -423,6 +423,25 @@ namespace ProjectX.API.Controllers
             // Return the filtered jobs
             return Ok(jobs);
         }
+        [HttpGet]
+        [Route("JobsPerFaculty/{faculty}")]
+        public IActionResult JobsPerFaculty(string faculty) 
+        {
+            // Filter jobs by the specified faculty
+            var jobs = _alumniDbContext.Job
+                .Where(a => a.Faculty.Equals(faculty)) // Case-insensitive comparison
+                .Count();
+
+            // Check if no jobs were found
+            if (jobs == 0)
+            {
+                return NotFound($"No jobs found for faculty: {faculty}");
+            }
+
+            // Return the filtered jobs
+            return Ok(jobs);
+        }
+
 
         [HttpGet]
         [Route("GetNews/{newstype}")]
